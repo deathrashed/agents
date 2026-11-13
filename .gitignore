@@ -1,0 +1,29 @@
+# Only rd's own instructions and rules live here. Everything below is
+# installed or written by tools and must never be committed.
+skills/
+skillz/
+.skill-lock.json
+repos/
+apps/
+mcp/
+knowledge/
+plugins/
+node_modules/
+.cache/
+cache/
+state/
+*.db
+*.db-*
+*.sqlite*
+*.log
+# Written by the claude-mem tool, not rd
+rules/claude-mem-context.md
+# Secrets and local overrides
+.env
+.env.*
+*.key
+*.pem
+*token*
+*secret*
+*.local.*
+.DS_Store

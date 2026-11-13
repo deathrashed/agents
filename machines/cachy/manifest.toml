@@ -1,0 +1,74 @@
+# ~/.agents/manifest.toml: third-party agent tools on this machine (cachy).
+# Hand-maintained. Update it whenever a tool is installed, upgraded, rewired
+# or removed (see rules/tools.md, "Token and output tools").
+# owner: self = installed and upgraded by rd directly; cc-presets = lives
+#        under ~/.local/share/cc-presets; skip = deliberately not installed.
+# Last checked: 2026-11-14.
+
+[tools.rtk]
+owner     = "self"
+version   = "1.2.0"                       # rtk --version
+edition   = "oss"                         # Apache-2.0 build, no BUSL engine
+source    = "https://github.com/rtk-ai/rtk/releases/tag/v1.2.0"
+install   = "RTK_EDITION=oss RTK_VERSION=v1.2.0 RTK_INSTALL_DIR=~/.local/bin sh install.sh  # installer checks checksums.txt"
+binary    = "~/.local/bin/rtk"
+telemetry = "off"                         # rtk telemetry status -> consent: no
+status    = "active"
+[tools.rtk.agents]
+claude = "PreToolUse Bash hook `rtk hook claude` (rtk init -g --hook-only); no RTK.md"
+codex  = "none (not yet)"
+
+[tools.context-mode]
+owner     = "cc-presets"                  # to move to its own install when used
+version   = "1.0.169"                     # upstream 2.x; licence ELv2
+source    = "https://github.com/mksglu/context-mode"
+binary    = "~/.local/share/cc-presets/runtime/node_modules/context-mode/cli.bundle.mjs"
+telemetry = "none"
+status    = "installed, inactive"         # never on with rtk for the same agent
+[tools.context-mode.agents]
+claude = "none"
+codex  = "MCP entry present, enabled = false"
+
+[tools.rea]
+owner     = "self"                        # run via npx, pinned in Codex config
+version   = "6.7.0"                       # rea-agents@6.7.0; upstream 6.9.0
+source    = "https://github.com/morluto/rea"
+data      = "~/.local/share/rea"
+telemetry = "none found"
+status    = "active"
+[tools.rea.agents]
+codex  = "MCP `rea` (npx -y rea-agents@6.7.0 mcp)"
+claude = "none"
+
+[tools.caveman]
+owner     = "cc-presets"
+version   = "cli 1.3.4"                   # @caveman-ai/cli; binaries in ~/.caveman/bin
+source    = "https://github.com/juliusbrussee/caveman"
+telemetry = "off"                         # `caveman telemetry off` -> ~/.caveman-cloud/config.json
+status    = "mode only (cc-presets `caveman` / `dual`)"
+[tools.caveman.agents]
+claude = "none"
+codex  = "MCP entry present, enabled = false"
+
+[tools.headroom]
+owner     = "skip"
+source    = "https://github.com/headroomlabs-ai/headroom"
+telemetry = "on by default upstream (HEADROOM_TELEMETRY=off)"
+status    = "not installed"               # API proxy; overlaps cc-switch
+
+[tools.claude-mem]
+owner     = "self"                        # Claude plugin claude-mem@thedotmack
+version   = "15.16.0"                     # per installed_plugins.json
+source    = "https://github.com/thedotmack/claude-mem"
+binary    = "~/.local/bin/claude-mem"
+telemetry = "unchecked"                   # [UNVERIFIED]
+status    = "enabled; plugin cache dir missing, ~/.claude-mem/CAPTURE_BROKEN present: check"
+
+[skills]
+# Third-party skills: `npx skills` is the only manager. Its lockfile is the
+# source of truth; don't copy the list here.
+manager     = "npx skills"
+lockfile    = "~/.local/state/skills/.skill-lock.json"
+stale_lock  = "~/.agents/.skill-lock.json"   # old location, not authoritative
+install_dir = "~/.agents/skills"
+own_skills  = "rd's own skills live in deathrashed/agents (layout being redone)"

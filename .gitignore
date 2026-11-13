@@ -27,3 +27,4 @@ rules/claude-mem-context.md
 *secret*
 *.local.*
 .DS_Store
+__pycache__/

@@ -31,3 +31,13 @@ Not wired up yet. The plan is for each machine to link these files into
 `~/.agents` (or have chezmoi manage them), leaving skills and tool state in
 `~/.agents` untouched. See the change log on cachy
 (`~/.local/state/system-cleanup/log.md`) for what has been applied.
+
+## Health check
+
+`just agents-check` (or `scripts/agents-check`) is a read-only check of
+`~/.agents` and every agent that reads it. Tool paths live in
+`checks/agents.toml`. Flags: `--json`, `--config=PATH`. Exit 0 = no FAIL,
+1 = at least one FAIL, 2 = could not run. It never writes and prints file
+names only, never secret values. Needs python 3.11+ (or `tomli`).
+
+Weekly routine: `just -f ~/projects/rd-agents/justfile agents-check --json`

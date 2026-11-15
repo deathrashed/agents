@@ -73,6 +73,8 @@ rules  = "writes ~/.agents/rules/claude-mem-context.md"
 [skills]
 manager     = "npx skills"
 lockfile    = "~/.local/state/skills/.skill-lock.json"   # 206 entries on 2026-11-15
-stale_lock  = "~/.agents/.skill-lock.json"                # 3 entries, not authoritative
 install_dir = "~/.agents/skills"
-other_writers = "skillshare (~/.config/skillshare), cc-switch (~/.ai/.cc-switch), gstack, ghostex: to be turned off"
+# 2026-11-16: ~/.agents rebuilt fresh; old tree (incl. stale 3-entry lock, skillz/) is ~/Archive/agents-archive
+contents    = "171 npx-skills (lock) + Codex .system + 59 gstack (kept; gstack source ~/.claude/skills/gstack is missing, so they are empty shells until gstack is reinstalled) + rd's own: 23 riley dirs + mac-disk-audit, rename-chat, new-repo"
+shared_with = "~/.codex/skills and ~/.cursor/skills are links to ~/.agents/skills"
+other_writers = "skillshare: ~/.agents/skills target removed (claude target kept; _riley source = links into ~/.agents/skills); cc-switch: links dropped, app not installed; ghostex: links trashed"

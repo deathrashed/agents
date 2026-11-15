@@ -26,7 +26,7 @@ apply to (`cachy` or `m3`) where the two differ. Don't hardcode
 
 ## Applying
 
-m3: linked file by file on 2026-11-15 (AGENTS.md, main.md, rules/*.md, manifest.toml). cachy: not wired up yet. The plan is for each machine to link these files into
+m3: linked file by file on 2026-11-15 (AGENTS.md, main.md, rules/*.md, manifest.toml); on 2026-11-16 `~/.agents` was rebuilt fresh (only those links, `repos`, and `skills/`), with the old tree moved to `~/Archive/agents-archive`. cachy: not wired up yet. The plan is for each machine to link these files into
 `~/.agents` (or have chezmoi manage them), leaving skills and tool state in
 `~/.agents` untouched. See the change log on cachy
 (`~/.local/state/system-cleanup/log.md`) for what has been applied.

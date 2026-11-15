@@ -22,12 +22,11 @@ Paths in the rules are written as `~/...` and tagged with the machine they
 apply to (`cachy` or `m3`) where the two differ. Don't hardcode
 `/home/rd` or `/Users/...`.
 
-`machines/m3/` doesn't exist yet; the Mac's manifest gets written when its
-`~/.agents` is migrated.
+`machines/m3/manifest.toml` holds the Mac's manifest (added 2026-11-15).
 
 ## Applying
 
-Not wired up yet. The plan is for each machine to link these files into
+m3: linked file by file on 2026-11-15 (AGENTS.md, main.md, rules/*.md, manifest.toml). cachy: not wired up yet. The plan is for each machine to link these files into
 `~/.agents` (or have chezmoi manage them), leaving skills and tool state in
 `~/.agents` untouched. See the change log on cachy
 (`~/.local/state/system-cleanup/log.md`) for what has been applied.

@@ -1,0 +1,77 @@
+# ~/.agents/manifest.toml: third-party agent tools on this machine (m3).
+# Hand-maintained. Update it whenever a tool is installed, upgraded, rewired
+# or removed (see rules/tools.md, "Token and output tools").
+# owner: self = installed and upgraded by rd directly; cc-presets = lives
+#        under ~/.local/share/cc-presets.
+# Last checked: 2026-11-15 (native, m3.local).
+
+[tools.rtk]
+owner     = "self"
+version   = "1.2.0"                       # rtk --version (upgraded from 0.44.2 on 2026-11-15)
+edition   = "oss"                         # Apache-2.0 build, no BUSL engine
+source    = "https://github.com/rtk-ai/rtk/releases/tag/v1.2.0"
+install   = "RTK_EDITION=oss RTK_VERSION=v1.2.0 RTK_INSTALL_DIR=~/.local/bin sh install.sh  # installer checks checksums.txt"
+binary    = "~/.local/bin/rtk"
+telemetry = "off"                         # rtk telemetry status -> consent: no
+status    = "active"
+[tools.rtk.agents]
+claude = "~/.claude/RTK.md imported by CLAUDE.md (@RTK.md); no hook"
+codex  = "PreToolUse hook via cc-presets hook.mjs `codex rtk pretooluse`"
+
+[tools.context-mode]
+owner     = "cc-presets"
+version   = "1.0.169"                     # runtime/node_modules/context-mode/package.json
+source    = "https://github.com/mksglu/context-mode"
+binary    = "~/.local/bin/context-mode"   # wrapper -> cc-presets cli.bundle.mjs
+telemetry = "none"
+status    = "hooks active in Codex"       # kept on with rtk + caveman by rd's choice (2026-11-15)
+[tools.context-mode.agents]
+codex = "hooks via cc-presets (`codex context …`, 6 events); MCP entry enabled = false"
+
+[tools.rea]
+owner     = "self"
+version   = "6.7.0"                       # pinned in ~/.codex/config.toml args
+source    = "https://github.com/morluto/rea"
+data      = "~/.local/share/rea"
+telemetry = "none found"
+status    = "configured, disabled"        # no rea on PATH
+[tools.rea.agents]
+codex = "MCP `rea` (npx rea-agents@6.7.0 mcp), enabled = false"
+
+[tools.caveman]
+owner     = "cc-presets"
+version   = "cli 1.3.4"                   # @caveman-ai/cli package.json
+source    = "https://github.com/juliusbrussee/caveman"
+telemetry = "off"                         # `caveman telemetry off` on 2026-11-15
+status    = "hooks active in Codex"       # kept by rd's choice (2026-11-15)
+[tools.caveman.agents]
+codex  = "hooks via cc-presets (`codex caveman …`, 10 events); MCP entry enabled = false"
+claude = "plugin caveman@caveman 4.0.1 installed, not enabled"
+
+[tools.headroom]
+owner     = "self"                        # pip --user: ~/Library/Python/3.12/bin/headroom
+version   = "0.44.0"
+source    = "https://github.com/headroomlabs-ai/headroom"
+telemetry = "on by default upstream; HEADROOM_TELEMETRY not set in ~/.config/fish"
+status    = "installed, kept (rd 2026-11-15)"
+
+[tools.claude-mem]
+owner     = "self"                        # Claude plugin claude-mem@thedotmack
+version   = "15.18.3"                     # per installed_plugins.json
+source    = "https://github.com/thedotmack/claude-mem"
+binary    = "~/.local/bin/claude-mem"
+data      = "~/.claude-mem"
+telemetry = "unchecked"                   # [UNVERIFIED]
+status    = "active"
+[tools.claude-mem.agents]
+claude = "plugin enabled"
+codex  = "MCP `claude-mem` enabled"
+gemini = "wrote a <claude-mem-context> block into ~/.gemini/GEMINI.md at install"
+rules  = "writes ~/.agents/rules/claude-mem-context.md"
+
+[skills]
+manager     = "npx skills"
+lockfile    = "~/.local/state/skills/.skill-lock.json"   # 206 entries on 2026-11-15
+stale_lock  = "~/.agents/.skill-lock.json"                # 3 entries, not authoritative
+install_dir = "~/.agents/skills"
+other_writers = "skillshare (~/.config/skillshare), cc-switch (~/.ai/.cc-switch), gstack, ghostex: to be turned off"

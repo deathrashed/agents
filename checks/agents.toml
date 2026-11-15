@@ -8,7 +8,8 @@
 #   hooks         hook config files/dirs the tool reads
 #   reads_agents_skills / reads_agents_md   true | false | "via-link" | "unverified"
 #   proof         where the facts come from (docs URL, source strings, or disk)
-# Verified on cachy 2026-11-14. Mac (m3) entries are [UNVERIFIED] until checked there.
+# Verified on cachy 2026-11-14 and on m3 2026-11-15 (paths under ~ are the same;
+# m3 binaries live in /opt/homebrew/bin or ~/.local/bin, see [tools.<id>.m3]).
 
 [machines.cachy]
 hostname = "cachy"
@@ -18,8 +19,7 @@ npx_lock = "~/.local/state/skills/.skill-lock.json"
 [machines.m3]
 hostname = "m3"                      # also matches m3.local
 os = "darwin"
-npx_lock = "~/.local/state/skills/.skill-lock.json"   # [UNVERIFIED] on m3
-unverified = true
+npx_lock = "~/.local/state/skills/.skill-lock.json"   # verified on m3 2026-11-15 (XDG_STATE_HOME=~/.local/state)
 
 [shared]
 agents_dir = "~/.agents"
@@ -146,4 +146,37 @@ name = "OpenRouter (API provider, not an agent)"
 referenced_in = ["~/.codex/config.toml ([model_providers.openrouter], key from a command)", "~/.config/opencode/plugins/claude-mem.js"]
 note = "No other agent config on cachy mentions it. Key values are never read or printed."
 
-# Mac (m3): same tool ids expected; every path above is [UNVERIFIED] there.
+
+# ---- m3 (macOS) overrides, checked natively 2026-11-15 ----
+[tools.claude.m3]
+proof = "m3: ~/.local/bin/claude 2.1.325; ~/.claude/CLAUDE.md"
+
+[tools.codex.m3]
+proof = "m3: ~/.local/bin/codex 0.169.0-alpha.7; cc-presets hooks in ~/.codex/hooks.json"
+
+[tools.cursor-agent.m3]
+proof = "m3: ~/.local/bin/cursor-agent 2026.11.11; ~/.cursor/rules has gentle-ai.mdc only"
+
+[tools.grok.m3]
+reads_agents_md = "via-link"
+note = "m3: ~/.grok/rules exists (ai-memory-handoff.md)"
+proof = "m3: grok 1.0.70 via mise node (~/.local/share/mise/installs/node/24.21.0/bin/grok)"
+
+[tools.omp.m3]
+proof = "m3: /opt/homebrew/bin/omp (omp 18.20.0); ~/.omp/agent has no AGENTS.md yet"
+
+[tools.pi.m3]
+note = "m3: pi CLI not on PATH; ~/.pi/agent exists without AGENTS.md"
+proof = "m3: command -v pi -> none"
+
+[tools.opencode.m3]
+proof = "m3: ~/.opencode/bin/opencode v2.2.5"
+
+[tools.kilo.m3]
+proof = "m3: /opt/homebrew/bin/kilo 7.8.27 (+ old npm kilocode); kilo.jsonc has no instructions key"
+
+[tools.agy.m3]
+proof = "m3: /opt/homebrew/bin/agy 1.5.6"
+
+[tools.gemini.m3]
+note = "m3: gemini CLI not on PATH; ~/.gemini/GEMINI.md also read by agy"

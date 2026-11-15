@@ -1,9 +1,10 @@
 # ~/.agents/manifest.toml: third-party agent tools on this machine (cachy).
 # Hand-maintained. Update it whenever a tool is installed, upgraded, rewired
-# or removed (see rules/tools.md, "Token and output tools").
+# or removed (see rules/tools.md, "Token savers").
 # owner: self = installed and upgraded by rd directly; cc-presets = lives
 #        under ~/.local/share/cc-presets; skip = deliberately not installed.
-# Last checked: 2026-11-14.
+# Last checked: 2026-11-14. Token-saver rows below are [UNVERIFIED] planned state:
+# cachy was offline on 2026-11-16 (checklist C0-C5 in ~/Documents/token-saver-plan.md on m3).
 
 [tools.rtk]
 owner     = "self"
@@ -16,7 +17,7 @@ telemetry = "off"                         # rtk telemetry status -> consent: no
 status    = "active"
 [tools.rtk.agents]
 claude = "PreToolUse Bash hook `rtk hook claude` (rtk init -g --hook-only); no RTK.md"
-codex  = "none (not yet)"
+codex  = "none (not yet)"             # planned C4: rtk init -g --codex --dry-run, then apply [UNVERIFIED]
 
 [tools.context-mode]
 owner     = "cc-presets"                  # to move to its own install when used
@@ -49,12 +50,22 @@ status    = "mode only (cc-presets `caveman` / `dual`)"
 [tools.caveman.agents]
 claude = "none"
 codex  = "MCP entry present, enabled = false"
+planned = "C3: upstream 4.1.0 for Claude (plugin, CAVEMAN_DEFAULT_MODE=manual) + Codex (installer --only codex); retire cc-presets 1.3.4 hooks [UNVERIFIED]"
 
 [tools.headroom]
-owner     = "skip"
+owner     = "skip"                        # planned: self via uv tool (C1) [UNVERIFIED]
+version   = "0.44.0"                      # planned pin, matches m3
 source    = "https://github.com/headroomlabs-ai/headroom"
-telemetry = "on by default upstream (HEADROOM_TELEMETRY=off)"
-status    = "not installed"               # API proxy; overlaps cc-switch
+telemetry = "planned off: fish universal HEADROOM_TELEMETRY=off + HEADROOM_BEACON=off [UNVERIFIED]"
+status    = "not installed (cachy offline 2026-11-16)"   # per-session `headroom wrap` only once installed
+
+[tools.ponytail]
+owner     = "skip"                        # planned: self (C2) [UNVERIFIED]
+version   = "5.3.3"                       # planned pin, matches m3
+source    = "https://github.com/DietrichGebert/ponytail/releases/tag/v5.3.3"
+telemetry = "none"                        # local CSV ledger; keep webhookUrl empty
+status    = "not installed (cachy offline 2026-11-16)"
+planned   = "claude, opencode, omp, grok, kilo, cursor (same commands as m3); not codex"
 
 [tools.claude-mem]
 owner     = "self"                        # Claude plugin claude-mem@thedotmack

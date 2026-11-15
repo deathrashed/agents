@@ -326,7 +326,7 @@ def hook_commands(obj, path=()):
 def check_hooks(r, cfg, tools):
     markers = {"rtk": re.compile(r"(^|[/\s'\"])rtk(\s|$|['\"])|rtk-rewrite|rtk hook"),
                "context-mode": re.compile(r"context-mode", re.I),
-               "caveman": re.compile(r"caveman", re.I)}
+               "caveman": re.compile(r"hook\.mjs \S+ caveman|caveman-(proxy|shrink)|native-hook", re.I)}  # 4.x SessionStart = reply style, see token_tools
     details, sts = [], []
     for tid, t in tools.items():
         found, pre = set(), []
@@ -426,6 +426,14 @@ def check_manifest(r, cfg):
             return m.group(1) if m else None
         except OSError:
             return None
+    def claude_plugin(key):
+        try:
+            return load_json(X("~/.claude/plugins/installed_plugins.json"))["plugins"][key][0].get("version")
+        except (OSError, ValueError, KeyError, IndexError):
+            return None
+    def headroom():
+        b = next((X(x) for x in cfg.get("token_tools", {}).get("headroom", {}).get("bin", []) if os.path.isfile(X(x))), None)
+        return ver(run([b, "--version"], timeout=20)) if b else None
     def claude_mem():
         try:
             e = load_json(X("~/.claude/plugins/installed_plugins.json"))["plugins"]["claude-mem@thedotmack"][0]
@@ -437,7 +445,10 @@ def check_manifest(r, cfg):
         "rtk": lambda: ver(run(["rtk", "--version"])),
         "context-mode": lambda: pkg("~/.local/share/cc-presets/runtime/node_modules/context-mode/package.json"),
         "rea": codex_rea,
-        "caveman": lambda: pkg("~/.local/share/cc-presets/runtime/node_modules/@caveman-ai/cli/package.json"),
+        # upstream 4.x (Claude plugin) when installed, else the old cc-presets CLI
+        "caveman": lambda: claude_plugin("caveman@caveman") or pkg("~/.local/share/cc-presets/runtime/node_modules/@caveman-ai/cli/package.json"),
+        "ponytail": lambda: claude_plugin("ponytail@ponytail"),
+        "headroom": headroom,
         "claude-mem": claude_mem,
     }
     details, sts = [], []
@@ -510,7 +521,115 @@ def check_telemetry(r):
             sts.append("OK"); details.append("OK   caveman: no config, env opt-out set")
         else:
             sts.append("WARN"); details.append("WARN caveman: no ~/.caveman-cloud/config.json and no env opt-out")
-    r.add("telemetry", "Telemetry off for rtk and caveman", worst(sts), "", details)
+    r.add("telemetry", "Telemetry off for rtk and caveman (headroom: see token_tools)", worst(sts), "", details)
+
+def _text(p):
+    try:
+        with open(X(p), encoding="utf-8", errors="replace") as f:
+            return f.read()
+    except OSError:
+        return ""
+
+def _fish_universal(name):
+    """Value of an exported fish universal variable (only for non-secret switches)."""
+    m = re.search(rf"^SETUVAR (?:--export )?{re.escape(name)}:(.*)$", _text("~/.config/fish/fish_variables"), re.M)
+    return m.group(1) if m else None
+
+def check_token_tools(r, cfg):
+    """ponytail + headroom + reply-style rule. Read-only; prints names and switches, never values of secrets."""
+    tt = cfg.get("token_tools", {})
+    details, sts = [], []
+    # --- ponytail: where it is wired (native plugin per agent), and where it must not be
+    pt = tt.get("ponytail", {})
+    probes = {
+        "claude": lambda: (load_json(X("~/.claude/settings.json")).get("enabledPlugins", {}) or {}).get("ponytail@ponytail") is True,
+        "opencode": lambda: "@dietrichgebert/ponytail" in json.dumps([load_json(X("~/.config/opencode/opencode.json")).get(k, []) for k in ("plugin", "plugins")]),
+        "omp": lambda: "ponytail" in _text("~/.omp/plugins/installed_plugins.json"),
+        "grok": lambda: "ponytail" in (load_any(X("~/.grok/config.toml")).get("plugins", {}) or {}).get("enabled", []),
+        "kilo": lambda: "@dietrichgebert/ponytail" in json.dumps(load_json(X("~/.config/kilo/kilo.jsonc")).get("plugin", [])),
+        "cursor-agent": lambda: "ponytail" in _text("~/.cursor/hooks.json"),
+        "codex": lambda: "ponytail" in _text("~/.codex/hooks.json") or "ponytail" in _text("~/.codex/config.toml"),
+    }
+    def probe(a):
+        try:
+            return probes[a]()
+        except (OSError, ValueError, KeyError, AttributeError):
+            return None
+    for a in pt.get("agents", []):
+        got = probe(a)
+        st = "OK" if got else "WARN"
+        sts.append(st); details.append(f"{st:<4} ponytail on {a}: {'wired' if got else ('not wired' if got is False else 'config unreadable')}")
+    for a in pt.get("never", []):
+        got = probe(a)
+        st = "FAIL" if got else "OK"
+        sts.append(st); details.append(f"{st:<4} ponytail on {a}: {'present (not allowed)' if got else 'absent (as intended)'}")
+    try:
+        pc = load_json(X(pt.get("config", "~/.config/ponytail/config.json")))
+    except (OSError, ValueError):
+        pc = {}
+    hook = str(pc.get("webhookUrl", "") or "").strip()
+    st = "FAIL" if hook else "OK"
+    sts.append(st); details.append(f"{st:<4} ponytail ledger: webhookUrl {'SET (ledger leaves the machine)' if hook else 'empty (local CSV only)'}")
+    # Grok also runs ~/.cursor/hooks.json (Cursor compat) unless [compat.cursor] hooks = false
+    try:
+        gc = load_any(X("~/.grok/config.toml"))
+    except (OSError, ValueError):
+        gc = {}
+    cursor_compat = ((gc.get("compat", {}) or {}).get("cursor", {}) or {}).get("hooks", True) is not False
+    if probe("grok") and probe("cursor-agent") and cursor_compat:
+        sts.append("WARN"); details.append("WARN ponytail on grok twice: grok plugin + ~/.cursor/hooks.json via Cursor compat ([compat.cursor] hooks = false in ~/.grok/config.toml would stop the second)")
+    # --- reply style: at most one always-on reply-style tool per agent
+    for a, tools in (pt.get("reply_style", {}) or {}).items():
+        on = []
+        for t in tools:
+            if t == "ponytail" and probe(a):
+                on.append("ponytail")
+            elif t == "caveman" and a == "claude":
+                try:
+                    s = load_json(X("~/.claude/settings.json"))
+                except (OSError, ValueError):
+                    continue
+                enabled = (s.get("enabledPlugins", {}) or {}).get("caveman@caveman") is True
+                mode = str((s.get("env", {}) or {}).get("CAVEMAN_DEFAULT_MODE", "")).lower()
+                if enabled and mode not in ("off", "manual"):
+                    on.append("caveman")
+                elif enabled:
+                    details.append(f"INFO caveman on {a}: on demand (CAVEMAN_DEFAULT_MODE={mode})")
+        st = "FAIL" if len(on) > 1 else "OK"
+        sts.append(st); details.append(f"{st:<4} reply style on {a}: always-on {on or 'none'}")
+    # --- headroom: installed, telemetry off, no permanent proxy routing
+    hr = tt.get("headroom", {})
+    hbin = next((X(b) for b in hr.get("bin", []) if os.path.isfile(X(b))), None)
+    if not hbin:
+        sts.append("WARN"); details.append("WARN headroom: not installed (looked in " + ", ".join(hr.get("bin", [])) + ")")
+    else:
+        details.append(f"OK   headroom: {ver(run([hbin, '--version'], timeout=20)) or '?'} at {short(hbin)}")
+        env = dict(os.environ)
+        for n in ("HEADROOM_TELEMETRY", "HEADROOM_BEACON"):
+            if n not in env and _fish_universal(n) is not None:
+                env[n] = _fish_universal(n)
+        try:
+            out = subprocess.run([hbin, "telemetry"], capture_output=True, text=True, timeout=20, env=env).stdout
+        except (OSError, subprocess.SubprocessError):
+            out = ""
+        m = re.search(r"Upload beacon:\s*(\w+)", out)
+        st = "OK" if m and m.group(1).upper() == "OFF" else ("FAIL" if m else "WARN")
+        sts.append(st); details.append(f"{st:<4} headroom telemetry: upload beacon {m.group(1) if m else '?'} (env or fish universal HEADROOM_TELEMETRY/HEADROOM_BEACON)")
+    port = str(hr.get("port", 8787))
+    route = re.compile(rf"(localhost|127\.0\.0\.1):{port}\b")
+    hits = []
+    for f in hr.get("route_files", []):
+        if route.search(_text(f)):
+            hits.append(f)
+    if any(route.search(os.environ.get(v, "")) for v in ("ANTHROPIC_BASE_URL", "OPENAI_BASE_URL")):
+        hits.append("current env *_BASE_URL")
+    st = "FAIL" if hits else "OK"
+    sts.append(st); details.append(f"{st:<4} headroom routing: " + (f"permanent :{port} route in {', '.join(hits)} (use `headroom wrap` per session)" if hits else f"no permanent :{port} route (per-session wrap only)"))
+    mcp = [f for f in ("~/.claude.json", "~/.codex/config.toml") if re.search(r"[\"\[.]headroom[\"\].]", _text(f))]
+    if mcp:
+        sts.append("WARN"); details.append(f"WARN headroom MCP left registered in {', '.join(mcp)} (a wrap without --no-mcp)")
+    r.add("token_tools", "ponytail + headroom wiring, telemetry, one reply style per agent", worst(sts),
+          f"{sts.count('FAIL')} FAIL, {sts.count('WARN')} WARN", details)
 
 # ---------------------------------------------------------------- main
 def main(argv):
@@ -535,7 +654,8 @@ def main(argv):
                      (check_duplicates, (r, tools)), (check_writers, (r, cfg, mcfg)),
                      (check_pointers, (r, cfg, tools)), (check_hooks, (r, cfg, tools)),
                      (check_plugins, (r,)), (check_manifest, (r, cfg)),
-                     (check_repo, (r, cfg, machine)), (check_telemetry, (r,))):
+                     (check_repo, (r, cfg, machine)), (check_telemetry, (r,)),
+                     (check_token_tools, (r, cfg))):
         try:
             fn(*args)
         except Exception as e:  # keep going; report the crash as a FAIL

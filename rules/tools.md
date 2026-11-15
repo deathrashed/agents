@@ -53,18 +53,52 @@ server, tell rd which profile or flag to restart with (Claude
 `-c mcp_servers.<name>.enabled=true`) instead of re-enabling it permanently.
 Details: m3 `~/AGENTS.md` "MCP servers". [HA]
 
-## Token and output tools
+## Token savers
 
-What's installed and who owns it is in `~/.agents/manifest.toml`. [RD]
+What's installed, versions and owners: `~/.agents/manifest.toml`.
+`agents-check` (checks `output_hooks`, `telemetry`, `token_tools`) proves
+the wiring. [RD]
 
-- rtk is the default output tool. On cachy it hooks Claude's Bash calls
-  (`rtk hook claude`); check savings with `rtk gain`. [RD]
-- One output tool per agent. Never run rtk and context-mode (or another
-  output rewriter) on the same agent at once. [RD]
-- No installs that edit the shared `AGENTS.md`, `CLAUDE.md` or the
-  `~/.codex/AGENTS.md` link. Use hook-only or dry-run options, and check
-  the `AGENTS.md` sha256 before and after. [RD]
-- caveman is a cc-presets mode only, with telemetry off
-  (`caveman telemetry off`). Don't install its CLI, proxy or plugin
-  separately. [RD]
-- Update the manifest whenever one of these tools changes. [RD]
+One tool per layer per agent, from the tool call to the model's reply: [RD]
+
+1. Tool output: **rtk**. Hooks: Claude (`rtk hook claude`), Cursor
+   (`rtk hook cursor`), omp/pi (`~/.config/pi/extensions/rtk.ts`),
+   opencode (plugin); Codex via cc-presets (`hook.mjs codex rtk`, only in
+   presets whose `hook-config.json` mode has `rtk: true`; `normal` has it
+   off). kilo and agy get rules files only; Grok has no rtk hook. Check
+   savings with `rtk gain`. Never add a second output rewriter to an agent
+   that runs rtk.
+2. Context/API compression: **headroom**, per session only:
+   `headroom wrap <agent>` (claude, codex, grok, opencode, omp; cursor
+   prints manual steps). No permanent `*_BASE_URL` proxy env anywhere, no
+   `headroom wrap grok-build` (it edits `~/.grok/config.toml`), never
+   `headroom learn --apply` (it writes CLAUDE/AGENTS files). Keep
+   `HEADROOM_OUTPUT_SHAPER` off.
+3. Reply style: **at most one always-on** of ponytail or caveman per agent.
+   - ponytail: native plugin on Claude, opencode, omp, Grok, kilo; Cursor
+     hooks from `~/Projects/_forks/ponytail`
+     (`node scripts/cursor-hooks.js install|uninstall`). Not on Codex.
+     Never copy its `AGENTS.md`. Its ledger is a local CSV under
+     `~/.config/ponytail/`; keep `webhookUrl` empty.
+   - caveman 4.x upstream: Codex always-on (SessionStart hook in
+     `~/.codex/hooks.json`, skills in `~/.agents/skills`). Claude has the
+     `caveman@caveman` plugin on demand only
+     (`CAVEMAN_DEFAULT_MODE=manual` in `~/.claude/settings.json`), because
+     ponytail is Claude's always-on style. No caveman on opencode or Grok
+     (their installers write AGENTS.md blocks). Don't install the caveman
+     CLI rocks (proxy, Auto routing, Browse). The old cc-presets 1.3.4
+     caveman hooks are retired.
+
+Rules for every token tool: [RD]
+- No install that edits the shared `AGENTS.md`, `CLAUDE.md`, `GEMINI.md`,
+  `~/.grok/AGENTS.md` or the `~/.codex/AGENTS.md` link. Use plugins,
+  hook-only or dry-run options, and compare the instruction-file sha256
+  before and after.
+- Telemetry off: rtk consent no; caveman `~/.caveman-cloud/config.json`
+  telemetry off; headroom `HEADROOM_TELEMETRY=off` and
+  `HEADROOM_BEACON=off` (fish universal, plus `launchctl setenv` on m3);
+  ponytail has none.
+- Pin versions and update the manifest whenever one changes.
+- Measure before keeping: `rtk gain`, `headroom savings`,
+  `/ponytail-gain`, `/caveman-stats`. Drop a tool that doesn't pay for
+  itself.

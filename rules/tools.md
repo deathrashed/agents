@@ -63,11 +63,13 @@ One tool per layer per agent, from the tool call to the model's reply: [RD]
 
 1. Tool output: **rtk**. Hooks: Claude (`rtk hook claude`), Cursor
    (`rtk hook cursor`), omp/pi (`~/.config/pi/extensions/rtk.ts`),
-   opencode (plugin); Codex via cc-presets (`hook.mjs codex rtk`, only in
-   presets whose `hook-config.json` mode has `rtk: true`; `normal` has it
-   off). kilo and agy get rules files only; Grok has no rtk hook. Check
-   savings with `rtk gain`. Never add a second output rewriter to an agent
-   that runs rtk.
+   opencode (plugin), Codex (`rtk hook codex`, Bash matcher in
+   `~/.codex/hooks.json`, also in cc-presets' bundle so a preset switch
+   keeps it). Don't run `rtk init -g --codex` as-is: it adds an `@RTK.md`
+   line to `~/.codex/AGENTS.md` (the shared link); merge only its hook.
+   kilo and agy get rules files only; Grok has no rtk hook (its Claude and
+   Cursor hook compat is off). Check savings with `rtk gain`. Never add a
+   second output rewriter to an agent that runs rtk.
 2. Context/API compression: **headroom**, per session only:
    `headroom wrap <agent>` (claude, codex, grok, opencode, omp; cursor
    prints manual steps). No permanent `*_BASE_URL` proxy env anywhere, no
@@ -86,8 +88,10 @@ One tool per layer per agent, from the tool call to the model's reply: [RD]
      (`CAVEMAN_DEFAULT_MODE=manual` in `~/.claude/settings.json`), because
      ponytail is Claude's always-on style. No caveman on opencode or Grok
      (their installers write AGENTS.md blocks). Don't install the caveman
-     CLI rocks (proxy, Auto routing, Browse). The old cc-presets 1.3.4
-     caveman hooks are retired.
+     CLI rocks (proxy, Auto routing, Browse). The cc-presets caveman 1.3.4
+     (hooks, MCP, `~/.caveman/bin`, `caveman` CLI) is removed; the
+     `caveman-learn` skill needs the upstream CLI, so it doesn't work until
+     that is installed on purpose (telemetry off first).
 
 Rules for every token tool: [RD]
 - No install that edits the shared `AGENTS.md`, `CLAUDE.md`, `GEMINI.md`,

@@ -17,10 +17,10 @@ status    = "active"
 [tools.rtk.agents]
 claude   = "PreToolUse Bash hook `rtk hook claude` (rtk init -g --hook-only, 2026-11-15); CLAUDE.md is now the shared link, so ~/.claude/RTK.md is no longer imported"
 opencode = "plugin ~/.config/opencode/plugins/rtk.ts (rtk init --show)"
-codex  = "PreToolUse hook via cc-presets hook.mjs `codex rtk pretooluse`; INACTIVE: hook.mjs fails open (cannot read hook-config.json, see note) and preset normal has rtk = false"
+codex  = "PreToolUse Bash hook `rtk hook codex` in ~/.codex/hooks.json + cc-presets bundle codexHooks (hook from rtk init -g --codex, merged by hand so ~/.codex/AGENTS.md stays untouched; 2026-11-16). Tested: git status -> rtk git status"
 omp    = "extension ~/.config/pi/extensions/rtk.ts (shared with pi; rtk init -g --agent omp, 2026-11-16)"
 cursor = "preToolUse hook `rtk hook cursor` in ~/.cursor/hooks.json (rtk init -g --agent cursor, 2026-11-16)"
-note   = "cc-presets hook.mjs resolves its config from new URL(import.meta.url).pathname, which keeps %E2%80%8B in the /Volumes/Apfspace/<zero-width-space>/ path, so every `hook.mjs` hook prints {} (verified 2026-11-16)"
+note   = "cc-presets hook.mjs cannot read its hook-config.json (new URL(import.meta.url).pathname keeps %E2%80%8B from the /Volumes/Apfspace/<zero-width-space>/ path), so every remaining `hook.mjs` hook (context-mode x6, legacy gsd) prints {}; the dead hook.mjs rtk entry was removed 2026-11-16"
 
 [tools.context-mode]
 owner     = "cc-presets"
@@ -28,7 +28,7 @@ version   = "1.0.169"                     # runtime/node_modules/context-mode/pa
 source    = "https://github.com/mksglu/context-mode"
 binary    = "~/.local/bin/context-mode"   # wrapper -> cc-presets cli.bundle.mjs
 telemetry = "none"
-status    = "hooks wired in Codex but INACTIVE"   # hook.mjs fails open (see tools.rtk.agents.note); preset normal has context = false
+status    = "hooks wired in Codex but INACTIVE"   # hook.mjs fails open (see tools.rtk.agents.note); left in place by rd's choice
 [tools.context-mode.agents]
 codex = "hooks via cc-presets (`codex context …`, 6 events); MCP entry enabled = false"
 
@@ -43,13 +43,14 @@ status    = "configured, disabled"        # no rea on PATH
 codex = "MCP `rea` (npx rea-agents@6.7.0 mcp), enabled = false"
 
 [tools.caveman]
-owner     = "self"                        # upstream 4.x suite (was cc-presets cli 1.3.4 until 2026-11-16)
+owner     = "self"                        # upstream 4.x suite; cc-presets cli 1.3.4 removed 2026-11-16
 version   = "4.1.0"                       # Claude plugin caveman@caveman; Codex installer v4.1.0 (1e91f13)
 source    = "https://github.com/JuliusBrussee/caveman/releases/tag/v4.1.0"
 install   = "claude plugin update caveman@caveman ; node installer/install.js --only codex (from a v4.1.0 clone, --dry-run first)"
-telemetry = "off"                         # ~/.caveman-cloud/config.json telemetry.enabled = false; upstream CLI rocks not installed
+telemetry = "off"                         # ~/.caveman-cloud/config.json telemetry.enabled = false (kept); upstream CLI/rocks not installed
 status    = "Codex always-on; Claude on demand"
-legacy    = "cc-presets cli 1.3.4 binaries still in ~/.caveman/bin and ~/.local/bin/caveman; its 10 Codex hooks removed, MCP entry enabled = false"
+removed   = "1.3.4: ~/.caveman/bin (Trash), ~/.local/bin/caveman wrapper (Trash), @caveman-ai/cli in cc-presets runtime (npm uninstall), Codex [mcp_servers.caveman] + cc-caveman skill entry, all cc-presets bundle/hook-config refs (2026-11-16)"
+data      = "~/.caveman (mem, dbs, receipts; kept)"
 [tools.caveman.agents]
 codex    = "SessionStart hook ~/.codex/caveman/hooks/codex-sessionstart.js (trust once with /hooks) + 22 skills in ~/.agents/skills"
 claude   = "plugin caveman@caveman 4.1.0 enabled, CAVEMAN_DEFAULT_MODE=manual (on demand; ponytail is Claude's always-on style)"

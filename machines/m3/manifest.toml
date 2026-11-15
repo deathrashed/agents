@@ -15,7 +15,8 @@ binary    = "~/.local/bin/rtk"
 telemetry = "off"                         # rtk telemetry status -> consent: no
 status    = "active"
 [tools.rtk.agents]
-claude = "~/.claude/RTK.md imported by CLAUDE.md (@RTK.md); no hook"
+claude   = "PreToolUse Bash hook `rtk hook claude` (rtk init -g --hook-only, 2026-11-15); CLAUDE.md is now the shared link, so ~/.claude/RTK.md is no longer imported"
+opencode = "plugin ~/.config/opencode/plugins/rtk.ts (rtk init --show)"
 codex  = "PreToolUse hook via cc-presets hook.mjs `codex rtk pretooluse`"
 
 [tools.context-mode]

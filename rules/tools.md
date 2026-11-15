@@ -12,13 +12,25 @@ defaults), PRE, HA, G, RD.
 - Avoid competing output transformations. Get the exact source or output
   before edits that depend on exact text. [CX]
 - CodeGraph: use it if `.codegraph/` exists. Initialise only when rd asks.
-  Never in `~` or temp dirs. One index per worktree. [CX]
+  Never in `~` or temp dirs. One index per worktree; never copy, link or
+  reuse another checkout's index. Prefer watcher auto-sync; run `sync` only
+  when the watcher is off or stale, and rebuild only after confirmed
+  corruption. No destructive or admin CodeGraph lifecycle commands unless rd
+  asks. [CX]
 - Subagents: work directly by default. Delegate bounded, independent tasks
-  with clear ownership; the lead verifies the result. [CX][PK]
+  with clear ownership; preserve other agents' changes; the lead integrates
+  and verifies the result. [CX][PK]
+- Treat cmux, Otty, Orca and hcom hooks as integrations: check the relevant
+  session and runtime before diagnosing or changing them. [CX]
+- OMX runtime workflows: only when rd asks and the runtime is available. On
+  m3, read `~/.codex/guidance/omx-runtime.md` and the relevant skills first.
+  [CX]
 - Skills: load a skill when it's invoked or clearly useful. On m3, search the
   local library first with `~/.agents/skillz/_skillz_/bin/skillz-search
   "<task>"`; prefer `[curated]` results. `[repo]` results are references to
   read, never install. [CX][PRE][HA]
+- Don't copy or link a discovered skill into `~/.agents/skills/` unless rd
+  asks to activate it permanently; read it from its source path. [HA]
 - A skill never authorises destructive, external or production actions on
   its own. [PRE]
 - Memory: read it when helpful and verify anything that may have changed.
@@ -30,6 +42,16 @@ defaults), PRE, HA, G, RD.
   absent on 2026-11-11). Ask rd where to record changes before creating one.
   [RD]
 - For other memory updates, wait until rd asks. [CX]
+
+## MCP servers (m3)
+
+m3 has 8 GB RAM and every MCP server starts a process per session. Always-on
+servers are limited to `fsearch`, `browse`, `codegraph` and `claude-mem`
+(Codex); everything else stays defined but off. If a task needs a disabled
+server, tell rd which profile or flag to restart with (Claude
+`--mcp-config ~/.claude/mcp-profiles/<profile>.json`, Codex
+`-c mcp_servers.<name>.enabled=true`) instead of re-enabling it permanently.
+Details: m3 `~/AGENTS.md` "MCP servers". [HA]
 
 ## Token and output tools
 

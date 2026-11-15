@@ -16,6 +16,8 @@ Communication), S.
 - Verify at the layer that matters: the live runtime, rendered UI, terminal,
   or mounted storage. Static config and unit tests don't prove live success.
   [CX]
+- Validate user-facing documents and interfaces in their intended renderer
+  when possible; report rendering gaps plainly. [CX]
 - No fake green checks. A check you couldn't run is reported as
   [UNVERIFIED], not passed. [PK][S]
 - Stop gathering evidence once the question is answered. [CX]

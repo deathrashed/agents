@@ -45,6 +45,8 @@ within their scope. Source keys are listed in `rules/sources.md`.
   CodeGraph or memory, or delegating to subagents.
 - `rules/scripts-and-notes.md`: when writing personal scripts or their
   Obsidian docs.
+- `rules/homelab.md`: before networking, SSH, mounts, Docker or anything
+  spanning both machines.
 - `rules/conflicts.md`: when two sources disagree. Open items await rd.
 - `rules/sources.md`: to check where a rule came from.
 

@@ -17,6 +17,7 @@ ruflo, claude-mem) are excluded unless a key says so.
 | AA | cachy `~/audio-agent/AGENTS.md` (deathrashed/audio-agent) | 2026-11-10 |
 | PRE | m3 `~/.agents/skillz/_skillz_/PREAMBLE.md` | 2026-08-25 |
 | HA | m3 `~/AGENTS.md` "Home Agent Instructions" (re-read 2026-11-15, file edited 2026-11-15 12:32) | 2026-11-15 |
+| MEM | cachy `~/downloads/memory/` (`areas/homelab-access-map.md`, `preferences.md`, `topics/automation-stack.md`); no addresses copied | 2026-11-16 |
 | RD | rd's answers to open questions (repo scope, `npx skills`, memory after structural changes) | 2026-11-11 |
 
 Not used: cachy `~/projects/dotfiles/CLAUDE.md`, a clone of anIcedAntFA/dotfiles

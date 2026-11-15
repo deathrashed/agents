@@ -1,7 +1,7 @@
 # Coding style
 
 Sources: CX (Work and communication; Inspect and verify), TR (Core Behavior,
-Edits), PK (rules 3, 14, 15), KI (§5), AA (Working in this repo).
+Edits), PK (rules 3, 14, 15), KI (§5), AA (Working in this repo), MEM (preferences, automation-stack).
 
 - Prefer small, reviewable changes, existing utilities and established
   patterns. Avoid new dependencies unless they're needed. [CX]
@@ -21,3 +21,18 @@ Edits), PK (rules 3, 14, 15), KI (§5), AA (Working in this repo).
   regression coverage where it's at risk. [CX]
 - Keep project docs (README, AGENTS.md, ADRs) in sync when behaviour changes.
   Record hard-to-reverse decisions as ADRs. [AA][PK]
+- Prefer CLI-first, idempotent solutions. Include inline comments and error
+  handling in code. [MEM]
+- Work directly in the existing project. Don't create git worktrees unless
+  there is a concrete need. [MEM]
+
+## Commit messages
+
+- Format: `<type> - <scope>: <summary>`, not `type(scope):`. Lowercase,
+  imperative, under 72 characters, no emoji, no trailing period. Describe the
+  change, not the files. [MEM]
+- Types: `add`, `fix`, `clean`, `test`, `build`, `style`, `work`, `docs`,
+  `perf`, `conf`, `tax`, `move`, `remove`. Not Conventional Commit types.
+  `clean` = redundant or dead material; `work` = refactoring; `move` =
+  relocation or renaming; `remove` = deliberately dropping a capability;
+  `tax` = taxonomy. [MEM]

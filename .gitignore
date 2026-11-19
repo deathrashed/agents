@@ -8,6 +8,10 @@ apps/
 mcp/
 knowledge/
 plugins/
+# rd's own marketplace lives here and is committed
+!/marketplace/plugins/
+!/marketplace/.agents/plugins/
+!/marketplace/plugins/*/skills/
 node_modules/
 .cache/
 cache/

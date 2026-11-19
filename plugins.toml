@@ -1,0 +1,73 @@
+# Declared plugin setup. Pointers only: no third-party code lives in this repo.
+# Seeded from m3 on 2026-11-19 (~/.claude/settings.json enabledPlugins,
+# ~/.claude/plugins/known_marketplaces.json). A sync script is not written yet;
+# until then this file is the record to apply by hand.
+#
+# Marketplace values: "owner/repo" (GitHub), "git:<url>", or "path:<dir>".
+# Pin a marketplace by appending "@<tag-or-sha>" once pinning is verified.
+
+[marketplaces]
+claude-plugins-official  = "anthropics/claude-plugins-official"
+anthropic-agent-skills   = "anthropics/skills"
+mattpocock               = "mattpocock/skills"
+caveman                  = "JuliusBrussee/caveman"
+claude-code-warp         = "warpdotdev/claude-code-warp"
+skills                   = "timharris707/skills"
+typesafe-ai              = "typesafe-ai/skills"
+ruflo                    = "ruvnet/ruflo"
+ai-memory                = "akitaonrails/ai-memory"
+thedotmack               = "thedotmack/claude-mem"
+geoffjay-claude-plugins  = "geoffjay/claude-plugins"
+ponytail                 = "DietrichGebert/ponytail"
+ecc                      = "git:https://github.com/affaan-m/ECC.git"
+last30days-skill         = "git:https://github.com/mvanhorn/last30days-skill.git"
+claude-video             = "git:https://github.com/bradautomates/claude-video.git"
+# rd: own marketplace (this repo), registered with BOTH agents on m3 2026-11-20:
+#   claude plugin marketplace add ~/Projects/rd-agents/marketplace
+#   codex  plugin marketplace add ~/Projects/rd-agents/marketplace
+# Claude reads marketplace/.claude-plugin/marketplace.json, Codex reads
+# marketplace/.agents/plugins/marketplace.json. Entry names must match each
+# plugin's own manifest name. Plugins live in marketplace/plugins/<name>/ with
+# both .claude-plugin/plugin.json and .codex-plugin/plugin.json.
+rd                       = "path:~/Projects/rd-agents/marketplace"
+# openviking is a local directory marketplace on m3 only
+# (~/.openviking/marketplaces/openviking-claude); not declared here.
+
+[plugins.claude]
+# Enabled in ~/.claude/settings.json on m3.
+enabled = [
+  "pyright-lsp@claude-plugins-official",
+  "typescript-lsp@claude-plugins-official",
+  "superpowers@claude-plugins-official",
+  "skill-creator@claude-plugins-official",
+  "session-report@claude-plugins-official",
+  "plugin-dev@claude-plugins-official",
+  "claude-mem@thedotmack",
+  "ecc@ecc",
+  "rust-tokio-expert@geoffjay-claude-plugins",
+  "rust-gpui-developer@geoffjay-claude-plugins",
+  "ponytail@ponytail",
+  "caveman@caveman",
+]
+# Installed but switched off in settings.json.
+disabled = [
+  "ai-memory@ai-memory",
+]
+# Installed per ~/.claude/plugins/installed_plugins.json but absent from
+# settings.json enabledPlugins (state unknown: decide to keep, enable or drop).
+# Not carried into enabled/disabled on purpose.
+unreviewed = [
+  "mattpocock-skills@mattpocock", "gopls-lsp@claude-plugins-official",
+  "warp@claude-code-warp", "openviking-memory@openviking",
+  "last30days@last30days-skill", "watch@claude-video", "typesafe@typesafe-ai",
+  "firebase@claude-plugins-official", "telegram@claude-plugins-official",
+  "github@claude-plugins-official", "code-review@claude-plugins-official",
+  "claude-md-management@claude-plugins-official",
+  "ruflo-mods@ruflo", "ruflo-swarm@ruflo", "ruflo-console@ruflo",
+]
+
+[plugins.own]
+# Plugins authored in marketplace/plugins/ (available from "rd", not yet
+# enabled anywhere: the loose obsidian-* skills in ~/.agents/skills still exist
+# on m3, so enabling would load every skill twice).
+obsidian = "0.1.0"   # 37 skills, copied from ~/.agents/skills/obsidian-* on 2026-11-20

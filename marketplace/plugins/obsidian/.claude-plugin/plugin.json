@@ -1,0 +1,8 @@
+{
+  "name": "obsidian",
+  "displayName": "Obsidian",
+  "version": "0.1.0",
+  "description": "37 skills for working an Obsidian vault: daily notes, capture, tasks, projects, review, synthesis and vault health",
+  "author": { "name": "rd" },
+  "keywords": ["obsidian", "notes", "vault", "pkm"]
+}

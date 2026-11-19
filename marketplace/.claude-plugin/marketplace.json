@@ -1,0 +1,22 @@
+{
+  "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
+  "name": "rd",
+  "description": "rd's own plugins plus pointers to loose single-plugin GitHub repos",
+  "owner": { "name": "rd" },
+  "plugins": [
+    {
+      "name": "obsidian",
+      "description": "37 skills for working an Obsidian vault",
+      "version": "0.1.0",
+      "source": "./plugins/obsidian"
+    },
+    {
+      "name": "chrome-extension-builder",
+      "description": "Plan, build, test and improve Chrome Manifest V3 extensions (upstream: khadinakbarlabs/chrome-extension-builder-plugin)",
+      "source": {
+        "source": "github",
+        "repo": "khadinakbarlabs/chrome-extension-builder-plugin"
+      }
+    }
+  ]
+}

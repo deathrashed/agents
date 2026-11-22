@@ -25,6 +25,13 @@ MAX_TEXT = 1_000_000
 def X(p):
     return os.path.expanduser(p)
 
+def paint(status, text):
+    """Colour a status tag on a terminal. NO_COLOR turns it off; FORCE_COLOR turns it on for pipes."""
+    if os.environ.get("NO_COLOR") or not (sys.stdout.isatty() or os.environ.get("FORCE_COLOR")):
+        return text
+    code = {"OK": "32", "WARN": "33", "FAIL": "31"}.get(status)
+    return f"\033[{code}m{text}\033[0m" if code else text
+
 def short(p):
     p = str(p)
     return "~" + p[len(HOME):] if p == HOME or p.startswith(HOME + os.sep) else p
@@ -667,9 +674,10 @@ def main(argv):
                           "overall": overall, "counts": counts, "checks": r.checks}, indent=2))
     else:
         print(f"agents-check on {machine}" + (" [UNVERIFIED machine profile]" if mcfg.get("unverified") else ""))
-        print(f"overall {overall}: {counts['OK']} OK, {counts['WARN']} WARN, {counts['FAIL']} FAIL\n")
+        print(f"overall {paint(overall, overall)}: {counts['OK']} OK, {counts['WARN']} WARN, {counts['FAIL']} FAIL\n")
         for c in r.checks:
-            print(f"[{c['status']:<4}] {c['id']}: {c['summary']}  ({c['title']})")
+            tag = f"[{c['status']:<4}]"
+            print(f"{paint(c['status'], tag)} {c['id']}: {c['summary']}  ({c['title']})")
         for c in r.checks:
             if c["details"] and (c["status"] != "OK" or c["id"] in ("output_hooks", "instruction_pointers")):
                 print(f"\n== {c['id']} ({c['status']})")

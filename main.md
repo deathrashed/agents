@@ -51,3 +51,8 @@ within their scope. Source keys are listed in `rules/sources.md`.
 - `rules/sources.md`: to check where a rule came from.
 
 `rules/claude-mem-context.md` is written by the claude-mem tool, not by rd.
+
+## Shared notes vault
+
+- `rules/vault.md`: ALWAYS read at the start of a task. Where project notes,
+  memories and session summaries live, shared by every agent.

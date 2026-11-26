@@ -82,7 +82,7 @@ codex    = "not installed (by design)"
 
 [tools.claude-mem]
 owner     = "self"                        # Claude plugin claude-mem@thedotmack
-version   = "15.18.3"                     # per installed_plugins.json
+version   = "17.0.0"                      # per installed_plugins.json
 source    = "https://github.com/thedotmack/claude-mem"
 binary    = "~/.local/bin/claude-mem"
 data      = "~/.claude-mem"

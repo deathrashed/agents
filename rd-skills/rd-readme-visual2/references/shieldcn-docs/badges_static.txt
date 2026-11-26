@@ -1,0 +1,77 @@
+# source: https://shieldcn.dev/docs/badges/static (fetched 2026-10-15)
+shieldcn
+Docs
+Studio
+Showcase
+Builder
+Sponsorjal-co/shieldcn919
+Search docs⌘KSearch documentation
+Search all badge providers, guides, and reference docs.
+Getting Started
+IntroductionREADME StudioCLIAgent SkillNewSelf-HostingAPI ReferenceToken PoolSponsor
+Customization
+Badges
+Badge GroupStatic BadgeDynamic JSONHTTPS Endpoint
+Badge Providers
+Charts
+OverviewStar history
+Headers
+OverviewGenerator
+Sponsors
+OverviewGenerator
+Contributors
+OverviewGenerator
+Registry
+More
+shieldcnMember of the Vercel OSS Program
+Analytics provided by OpenPanel
+Monitored by Sentry
+Powered by Neon.
+Community
+GitHubjal-co/uiStatsllms.txtPrivacyContact
+Product
+DocumentationAPI ReferenceToken PoolGeneratorAgent Skill
+inspired by shields.io and badgen.net
+Made with  in  by Justin Levine
+Static Badge
+Create a badge with any custom text and color.
+GET/badge/:badgeContent.svg
+Path Parameters
+badgeContentrequired
+Dashes separate label, message, and color. Underscores → spaces.
+format
+variant
+size
+theme
+mode
+logoAutoUpload SVG
+logoColor—
+label
+flagssplit
++Show color overrides
+URLMarkdownHTMLrStAsciiDoc
+<picture><source media="(prefers-color-scheme: dark)" srcset="https://shieldcn.dev/badge/build-passing-green.svg?mode=dark"><img alt="badge" src="https://shieldcn.dev/badge/build-passing-green.svg?mode=light"></picture>
+Execute
+Text encoding
+Input | Output |
+_ or %20 | Space |
+__ | Literal _ |
+-- | Literal - |
+Named colors
+brightgreen, green, yellow, orange, red, blue, purple, violet, grey, lightgrey — or any hex value.
+Examples
+Named color (green)
+Secondary variant
+Outline variant
+Community badge
+Status badge
+Blue theme
+Copy-paste examples
+Classic build badge for status rows
+<picture><source media="(prefers-color-scheme: dark)" srcset="https://shieldcn.dev/badge/build-passing-green.svg?mode=dark"><img alt="build passing" src="https://shieldcn.dev/badge/build-passing-green.svg?mode=light"></picture>
+Outline — subtle metadata badge for repo headers
+<picture><source media="(prefers-color-scheme: dark)" srcset="https://shieldcn.dev/badge/license-MIT-green.svg?variant=outline&amp;mode=dark"><img alt="license MIT" src="https://shieldcn.dev/badge/license-MIT-green.svg?variant=outline&amp;mode=light"></picture>
+Secondary — contributor-friendly signal
+<picture><source media="(prefers-color-scheme: dark)" srcset="https://shieldcn.dev/badge/PRs-welcome-brightgreen.svg?variant=secondary&amp;mode=dark"><img alt="PRs welcome" src="https://shieldcn.dev/badge/PRs-welcome-brightgreen.svg?variant=secondary&amp;mode=light"></picture>
+On This Page
+Text encodingNamed colorsExamplesCopy-paste examples

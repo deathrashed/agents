@@ -1,0 +1,43 @@
+{
+  "skill_name": "rd-codebase-powerup",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "Power up the repo at /Users/rd/Projects/audio-agent. Focus on exposing or wrapping capabilities that already exist (CLI, library companions, tools, unfinished assistant/library WIP if present). Compact report only — no implementation. Prefer leverage over inventing a web product.",
+      "expected_output": "Compact Codebase Power-Up Report with inspection scope, up to 3 Pass-1 opportunities citing real paths, leverage-first ranking, implementation gate, and no code edits.",
+      "files": [],
+      "expectations": [
+        "Output is a compact power-up report (not a full mega-template unless justified)",
+        "Includes an explicit inspection scope stating what was sampled",
+        "Includes at least one LEV-/leverage-style opportunity grounded in an existing path or command",
+        "Does not recommend implementing changes in this turn (gates on user approval)",
+        "Opportunities cite concrete file paths or command names from the repo",
+        "Does not invent a greenfield web/dashboard as the top recommendation without foothold"
+      ]
+    },
+    {
+      "id": 2,
+      "prompt": "Run rd-codebase-powerup on /tmp/powerup-eval-libonly. It is a tiny Python library with no CLI, API, or UI. Recommend only what the surface can support.",
+      "expected_output": "Report that respects surface boundary: limited or no CLI/API/UI opportunities; states constraint; still evidence-backed.",
+      "files": [],
+      "expectations": [
+        "Acknowledges there is no CLI/API/UI surface (or equivalent constraint)",
+        "Does not invent a full product dashboard/auth platform as a primary recommendation",
+        "Any opportunity is grounded in files that exist in that tiny tree",
+        "Stops at report/gate without editing the fixture"
+      ]
+    },
+    {
+      "id": 3,
+      "prompt": "Give me a full formal power-up audit and roadmap for /Users/rd/Projects/audio-agent (deep audit). Still do not implement anything.",
+      "expected_output": "Full report with project understanding, capability map, opportunities, roadmap sections, and gate — still evidence-backed.",
+      "files": [],
+      "expectations": [
+        "Uses fuller report structure (project understanding and/or capability map and/or roadmap)",
+        "Still includes evidence-backed opportunities with IDs",
+        "Includes implementation gate / asks before editing",
+        "Does not edit repository files"
+      ]
+    }
+  ]
+}

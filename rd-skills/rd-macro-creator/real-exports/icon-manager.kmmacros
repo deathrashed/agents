@@ -1,0 +1,2726 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>Activate</key>
+		<string>Normal</string>
+		<key>CreationDate</key>
+		<real>459296154.57989401</real>
+		<key>CustomIconData</key>
+		<data>
+		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
+		WFlaIAfZAAIAGQALABoAC2Fjc3BBUFBMAAAAAGFwcGwAAAAAAAAAAAAAAAAA
+		AAAAAAD21gABAAAAANMtYXBwbAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+		AAAAAAAAAAAAAAAAAAAAAAAAAAAAC2Rlc2MAAAEIAAAAb2RzY20AAAF4AAAF
+		imNwcnQAAAcEAAAAOHd0cHQAAAc8AAAAFHJYWVoAAAdQAAAAFGdYWVoAAAdk
+		AAAAFGJYWVoAAAd4AAAAFHJUUkMAAAeMAAAADmNoYWQAAAecAAAALGJUUkMA
+		AAeMAAAADmdUUkMAAAeMAAAADmRlc2MAAAAAAAAAFEdlbmVyaWMgUkdCIFBy
+		b2ZpbGUAAAAAAAAAAAAAABRHZW5lcmljIFJHQiBQcm9maWxlAAAAAAAAAAAA
+		AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABtbHVj
+		AAAAAAAAAB8AAAAMc2tTSwAAACgAAAGEZGFESwAAACQAAAGsY2FFUwAAACQA
+		AAHQdmlWTgAAACQAAAH0cHRCUgAAACYAAAIYdWtVQQAAACoAAAI+ZnJGVQAA
+		ACgAAAJoaHVIVQAAACgAAAKQemhUVwAAABIAAAK4a29LUgAAABYAAALKbmJO
+		TwAAACYAAALgY3NDWgAAACIAAAMGaGVJTAAAAB4AAAMocm9STwAAACQAAANG
+		ZGVERQAAACwAAANqaXRJVAAAACgAAAOWc3ZTRQAAACYAAALgemhDTgAAABIA
+		AAO+amFKUAAAABoAAAPQZWxHUgAAACIAAAPqcHRQTwAAACYAAAQMbmxOTAAA
+		ACgAAAQyZXNFUwAAACYAAAQMdGhUSAAAACQAAARadHJUUgAAACIAAAR+ZmlG
+		SQAAACgAAASgaHJIUgAAACgAAATIcGxQTAAAACwAAATwcnVSVQAAACIAAAUc
+		ZW5VUwAAACYAAAU+YXJFRwAAACYAAAVkAFYBYQBlAG8AYgBlAGMAbgD9ACAA
+		UgBHAEIAIABwAHIAbwBmAGkAbABHAGUAbgBlAHIAZQBsACAAUgBHAEIALQBw
+		AHIAbwBmAGkAbABQAGUAcgBmAGkAbAAgAFIARwBCACAAZwBlAG4A6AByAGkA
+		YwBDHqUAdQAgAGgA7ABuAGgAIABSAEcAQgAgAEMAaAB1AG4AZwBQAGUAcgBm
+		AGkAbAAgAFIARwBCACAARwBlAG4A6QByAGkAYwBvBBcEMAQzBDAEOwRMBD0E
+		OAQ5ACAEPwRABD4ERAQwBDkEOwAgAFIARwBCAFAAcgBvAGYAaQBsACAAZwDp
+		AG4A6QByAGkAcQB1AGUAIABSAFYAQgDBAGwAdABhAGwA4QBuAG8AcwAgAFIA
+		RwBCACAAcAByAG8AZgBpAGyQGnUoAFIARwBCgnJfaWPPj/DHfLwYACAAUgBH
+		AEIAINUEuFzTDMd8AEcAZQBuAGUAcgBpAHMAawAgAFIARwBCAC0AcAByAG8A
+		ZgBpAGwATwBiAGUAYwBuAP0AIABSAEcAQgAgAHAAcgBvAGYAaQBsBeQF6AXV
+		BeQF2QXcACAAUgBHAEIAIAXbBdwF3AXZAFAAcgBvAGYAaQBsACAAUgBHAEIA
+		IABnAGUAbgBlAHIAaQBjAEEAbABsAGcAZQBtAGUAaQBuAGUAcwAgAFIARwBC
+		AC0AUAByAG8AZgBpAGwAUAByAG8AZgBpAGwAbwAgAFIARwBCACAAZwBlAG4A
+		ZQByAGkAYwBvZm6QGgBSAEcAQmPPj/Blh072TgCCLAAgAFIARwBCACAw1zDt
+		MNUwoTCkMOsDkwO1A70DuQO6A8wAIAPAA8EDvwPGA68DuwAgAFIARwBCAFAA
+		ZQByAGYAaQBsACAAUgBHAEIAIABnAGUAbgDpAHIAaQBjAG8AQQBsAGcAZQBt
+		AGUAZQBuACAAUgBHAEIALQBwAHIAbwBmAGkAZQBsDkIOGw4jDkQOHw4lDkwA
+		IABSAEcAQgAgDhcOMQ5IDicORA4bAEcAZQBuAGUAbAAgAFIARwBCACAAUABy
+		AG8AZgBpAGwAaQBZAGwAZQBpAG4AZQBuACAAUgBHAEIALQBwAHIAbwBmAGkA
+		aQBsAGkARwBlAG4AZQByAGkBDQBrAGkAIABSAEcAQgAgAHAAcgBvAGYAaQBs
+		AFUAbgBpAHcAZQByAHMAYQBsAG4AeQAgAHAAcgBvAGYAaQBsACAAUgBHAEIE
+		HgQxBEkEOAQ5ACAEPwRABD4ERAQ4BDsETAAgAFIARwBCAEcAZQBuAGUAcgBp
+		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
+		TgAAABIAAAO+amFKUAAAABoAAAPQZWxHUgAAACIAAAPqcHRQTwAAACYAAAQM
+		bmxOTAAAACgAAAQyZXNFUwAAACYAAAQMdGhUSAAAACQAAARadHJUUgAAACIA
+		AAR+ZmlGSQAAACgAAASgaHJIUgAAACgAAATIcGxQTAAAACwAAATwcnVSVQAA
+		ACIAAAUcZW5VUwAAACYAAAU+YXJFRwAAACYAAAVkAFYBYQBlAG8AYgBlAGMA
+		bgD9ACAAUgBHAEIAIABwAHIAbwBmAGkAbABHAGUAbgBlAHIAZQBsACAAUgBH
+		AEIALQBwAHIAbwBmAGkAbABQAGUAcgBmAGkAbAAgAFIARwBCACAAZwBlAG4A
+		6AByAGkAYwBDHqUAdQAgAGgA7ABuAGgAIABSAEcAQgAgAEMAaAB1AG4AZwBQ
+		AGUAcgBmAGkAbAAgAFIARwBCACAARwBlAG4A6QByAGkAYwBvBBcEMAQzBDAE
+		OwRMBD0EOAQ5ACAEPwRABD4ERAQwBDkEOwAgAFIARwBCAFAAcgBvAGYAaQBs
+		ACAAZwDpAG4A6QByAGkAcQB1AGUAIABSAFYAQgDBAGwAdABhAGwA4QBuAG8A
+		cwAgAFIARwBCACAAcAByAG8AZgBpAGyQGnUoAFIARwBCgnJfaWPPj/DHfLwY
+		ACAAUgBHAEIAINUEuFzTDMd8AEcAZQBuAGUAcgBpAHMAawAgAFIARwBCAC0A
+		cAByAG8AZgBpAGwATwBiAGUAYwBuAP0AIABSAEcAQgAgAHAAcgBvAGYAaQBs
+		BeQF6AXVBeQF2QXcACAAUgBHAEIAIAXbBdwF3AXZAFAAcgBvAGYAaQBsACAA
+		UgBHAEIAIABnAGUAbgBlAHIAaQBjAEEAbABsAGcAZQBtAGUAaQBuAGUAcwAg
+		AFIARwBCAC0AUAByAG8AZgBpAGwAUAByAG8AZgBpAGwAbwAgAFIARwBCACAA
+		ZwBlAG4AZQByAGkAYwBvZm6QGgBSAEcAQmPPj/Blh072TgCCLAAgAFIARwBC
+		ACAw1zDtMNUwoTCkMOsDkwO1A70DuQO6A8wAIAPAA8EDvwPGA68DuwAgAFIA
+		RwBCAFAAZQByAGYAaQBsACAAUgBHAEIAIABnAGUAbgDpAHIAaQBjAG8AQQBs
+		AGcAZQBtAGUAZQBuACAAUgBHAEIALQBwAHIAbwBmAGkAZQBsDkIOGw4jDkQO
+		Hw4lDkwAIABSAEcAQgAgDhcOMQ5IDicORA4bAEcAZQBuAGUAbAAgAFIARwBC
+		ACAAUAByAG8AZgBpAGwAaQBZAGwAZQBpAG4AZQBuACAAUgBHAEIALQBwAHIA
+		bwBmAGkAaQBsAGkARwBlAG4AZQByAGkBDQBrAGkAIABSAEcAQgAgAHAAcgBv
+		AGYAaQBsAFUAbgBpAHcAZQByAHMAYQBsAG4AeQAgAHAAcgBvAGYAaQBsACAA
+		UgBHAEIEHgQxBEkEOAQ5ACAEPwRABD4ERAQ4BDsETAAgAFIARwBCAEcAZQBu
+		AGUAcgBpAGMAIABSAEcAQgAgAFAAcgBvAGYAaQBsAGUGRQZEBkEAIAYqBjkG
+		MQZKBkEAIABSAEcAQgAgBicGRAY5BicGRQAAdGV4dAAAAABDb3B5cmlnaHQg
+		MjAwNyBBcHBsZSBJbmMuLCBhbGwgcmlnaHRzIHJlc2VydmVkLgBYWVogAAAA
+		AAAA81IAAQAAAAEWz1hZWiAAAAAAAAB0TQAAPe4AAAPQWFlaIAAAAAAAAFp1
+		AACscwAAFzRYWVogAAAAAAAAKBoAABWfAAC4NmN1cnYAAAAAAAAAAQHNAABz
+		ZjMyAAAAAAABDEIAAAXe///zJgAAB5IAAP2R///7ov///aMAAAPcAADAbIAA
+		IFA4JBYNB4RCYVC4MBASEwqAAMDgiBQC+wCDQO+wAAgCAgBHwCAH/JQAAwBH
+		H4/H+AHm/AU/nu8XS4X+/n0+oYBAUFAsISoq2M9X8FA4HAO4QAVxS1QACgWD
+		gADQaDAA950AGS3wSAAS/nOAGu9xW/2w3XOwnOuTYWn6+He7YQBgiIhOJC0u
+		Go8Ho/gIHAK4AAVRKzqeDAeAAeDqtRKkfVyJAAMgpggGCsS3nyKAA9m+uF44
+		1oZye/n493tBAMEBCJhGWls0ni9QCBw0A26ACeH2Th8SDqqAHyAgiAEGvROA
+		BoGHJHQTiW08g7JwA+n63FIRhU+ng321qtZrthsnptQwAWyACaG2DhwhisYA
+		H8BQkAFA0OSLwu6wA636CgAGsd4NpOfx7HybpTCUFzuO88AQruLZbGieJ7AE
+		A4Cn0dgABYCD0gREAARABERAPEgCxMgSTGOcoLJcfirAMAJ8QRBQXwa9KBtX
+		CAQCxCYehWjQUNu4R+pRFSSJagclJMgSRgOAiWmyc5+AAYZqnofJwFQJUbu7
+		HKBR2E4OisWpokqMoKAOIoVIEfCOIYhIEAKgRdmsgQ1k2dh8nGVQly8b8wIk
+		1kxzKaJIDDNQgM44SWTihEoJGYBsIEOBPz3Ps/xxB9CzMSAxgqA9FpGfNHUe
+		g1IgBSaWjgTp1z5P1AUFMQOivCZJCuBADiCEp+0bU6DyggRfm2lA3FTGhxlT
+		LtNx01gUA6LhemmRp6lKAgknuZThADOlgIIA5/o4W4EhsAA5gWLZ+HGUghhb
+		BtKIGAQDAaCwMiWT5ig6BQEg6CZ9LkfyQ2+giQJadoDAmABxnse5xnOWowh2
+		nB5nUhFugaCp/gKBji4HgiGJai56HfcR5v5kGU5Ug6AgAAARAQAAAwAAAAEA
+		EAAAAQEAAwAAAAEAEAAAAQIAAwAAAAQAACbsAQMAAwAAAAEABQAAAQYAAwAA
+		AAEAAgAAAQoAAwAAAAEAAQAAAREABAAAAAEAACOAARIAAwAAAAEAAQAAARUA
+		AwAAAAEABAAAARYAAwAAAAEAEAAAARcABAAAAAEAAAKZARwAAwAAAAEAAQAA
+		ASgAAwAAAAEAAgAAAT0AAwAAAAEAAgAAAVIAAwAAAAEAAQAAAVMAAwAAAAQA
+		ACb0h3MABwAAB8gAACb8AAAAAAAIAAgACAAIAAEAAQABAAEAAAfIYXBwbAIg
+		AABtbnRyUkdCIFhZWiAH2QACABkACwAaAAthY3NwQVBQTAAAAABhcHBsAAAA
+		AAAAAAAAAAAAAAAAAAAA9tYAAQAAAADTLWFwcGwAAAAAAAAAAAAAAAAAAAAA
+		AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAtkZXNjAAABCAAAAG9k
+		c2NtAAABeAAABYpjcHJ0AAAHBAAAADh3dHB0AAAHPAAAABRyWFlaAAAHUAAA
+		ABRnWFlaAAAHZAAAABRiWFlaAAAHeAAAABRyVFJDAAAHjAAAAA5jaGFkAAAH
+		nAAAACxiVFJDAAAHjAAAAA5nVFJDAAAHjAAAAA5kZXNjAAAAAAAAABRHZW5l
+		cmljIFJHQiBQcm9maWxlAAAAAAAAAAAAAAAUR2VuZXJpYyBSR0IgUHJvZmls
+		ZQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+		AAAAAAAAbWx1YwAAAAAAAAAfAAAADHNrU0sAAAAoAAABhGRhREsAAAAkAAAB
+		rGNhRVMAAAAkAAAB0HZpVk4AAAAkAAAB9HB0QlIAAAAmAAACGHVrVUEAAAAq
+		AAACPmZyRlUAAAAoAAACaGh1SFUAAAAoAAACkHpoVFcAAAASAAACuGtvS1IA
+		AAAWAAACym5iTk8AAAAmAAAC4GNzQ1oAAAAiAAADBmhlSUwAAAAeAAADKHJv
+		Uk8AAAAkAAADRmRlREUAAAAsAAADaml0SVQAAAAoAAADlnN2U0UAAAAmAAAC
+		4HpoQ04AAAASAAADvmphSlAAAAAaAAAD0GVsR1IAAAAiAAAD6nB0UE8AAAAm
+		AAAEDG5sTkwAAAAoAAAEMmVzRVMAAAAmAAAEDHRoVEgAAAAkAAAEWnRyVFIA
+		AAAiAAAEfmZpRkkAAAAoAAAEoGhySFIAAAAoAAAEyHBsUEwAAAAsAAAE8HJ1
+		UlUAAAAiAAAFHGVuVVMAAAAmAAAFPmFyRUcAAAAmAAAFZABWAWEAZQBvAGIA
+		ZQBjAG4A/QAgAFIARwBCACAAcAByAG8AZgBpAGwARwBlAG4AZQByAGUAbAAg
+		AFIARwBCAC0AcAByAG8AZgBpAGwAUABlAHIAZgBpAGwAIABSAEcAQgAgAGcA
+		ZQBuAOgAcgBpAGMAQx6lAHUAIABoAOwAbgBoACAAUgBHAEIAIABDAGgAdQBu
+		AGcAUABlAHIAZgBpAGwAIABSAEcAQgAgAEcAZQBuAOkAcgBpAGMAbwQXBDAE
+		MwQwBDsETAQ9BDgEOQAgBD8EQAQ+BEQEMAQ5BDsAIABSAEcAQgBQAHIAbwBm
+		AGkAbAAgAGcA6QBuAOkAcgBpAHEAdQBlACAAUgBWAEIAwQBsAHQAYQBsAOEA
+		bgBvAHMAIABSAEcAQgAgAHAAcgBvAGYAaQBskBp1KABSAEcAQoJyX2ljz4/w
+		x3y8GAAgAFIARwBCACDVBLhc0wzHfABHAGUAbgBlAHIAaQBzAGsAIABSAEcA
+		QgAtAHAAcgBvAGYAaQBsAE8AYgBlAGMAbgD9ACAAUgBHAEIAIABwAHIAbwBm
+		AGkAbAXkBegF1QXkBdkF3AAgAFIARwBCACAF2wXcBdwF2QBQAHIAbwBmAGkA
+		bAAgAFIARwBCACAAZwBlAG4AZQByAGkAYwBBAGwAbABnAGUAbQBlAGkAbgBl
+		AHMAIABSAEcAQgAtAFAAcgBvAGYAaQBsAFAAcgBvAGYAaQBsAG8AIABSAEcA
+		QgAgAGcAZQBuAGUAcgBpAGMAb2ZukBoAUgBHAEJjz4/wZYdO9k4AgiwAIABS
+		AEcAQgAgMNcw7TDVMKEwpDDrA5MDtQO9A7kDugPMACADwAPBA78DxgOvA7sA
+		IABSAEcAQgBQAGUAcgBmAGkAbAAgAFIARwBCACAAZwBlAG4A6QByAGkAYwBv
+		AEEAbABnAGUAbQBlAGUAbgAgAFIARwBCAC0AcAByAG8AZgBpAGUAbA5CDhsO
+		Iw5EDh8OJQ5MACAAUgBHAEIAIA4XDjEOSA4nDkQOGwBHAGUAbgBlAGwAIABS
+		AEcAQgAgAFAAcgBvAGYAaQBsAGkAWQBsAGUAaQBuAGUAbgAgAFIARwBCAC0A
+		cAByAG8AZgBpAGkAbABpAEcAZQBuAGUAcgBpAQ0AawBpACAAUgBHAEIAIABw
+		AHIAbwBmAGkAbABVAG4AaQB3AGUAcgBzAGEAbABuAHkAIABwAHIAbwBmAGkA
+		bAAgAFIARwBCBB4EMQRJBDgEOQAgBD8EQAQ+BEQEOAQ7BEwAIABSAEcAQgBH
+		AGUAbgBlAHIAaQBjACAAUgBHAEIAIABQAHIAbwBmAGkAbABlBkUGRAZBACAG
+		KgY5BjEGSgZBACAAUgBHAEIAIAYnBkQGOQYnBkUAAHRleHQAAAAAQ29weXJp
+		Z2h0IDIwMDcgQXBwbGUgSW5jLiwgYWxsIHJpZ2h0cyByZXNlcnZlZC4AWFla
+		IAAAAAAAAPNSAAEAAAABFs9YWVogAAAAAAAAdE0AAD3uAAAD0FhZWiAAAAAA
+		AABadQAArHMAABc0WFlaIAAAAAAAACgaAAAVnwAAuDZjdXJ2AAAAAAAAAAEB
+		zQAAc2YzMgAAAAAAAQxCAAAF3v//8yYAAAeSAAD9kf//+6L///2jAAAD3AAA
+		wGw=
+		</data>
+		<key>IsActive</key>
+		<false/>
+		<key>Macros</key>
+		<array>
+			<dict>
+				<key>Actions</key>
+				<array>
+					<dict>
+						<key>ActionColor</key>
+						<string>Aqua</string>
+						<key>ActionName</key>
+						<string>Instructions</string>
+						<key>ActionUID</key>
+						<integer>999442919</integer>
+						<key>MacroActionType</key>
+						<string>Comment</string>
+						<key>StyledText</key>
+						<data>
+						cnRmZAAAAAADAAAAAgAAAAcAAABU
+						WFQucnRmAQAAAC5hAwAAKwAAAAEA
+						AABZAwAAe1xydGYxXGFuc2lcYW5z
+						aWNwZzEyNTJcY29jb2FydGYyNzA5
+						Clxjb2NvYXRleHRzY2FsaW5nMFxj
+						b2NvYXBsYXRmb3JtMHtcZm9udHRi
+						bFxmMFxmc3dpc3NcZmNoYXJzZXQw
+						IEhlbHZldGljYTtcZjFcZm5pbFxm
+						Y2hhcnNldDAgTHVjaWRhR3JhbmRl
+						LUJvbGQ7XGYyXGZzd2lzc1xmY2hh
+						cnNldDAgSGVsdmV0aWNhLUJvbGQ7
+						Cn0Ke1xjb2xvcnRibDtccmVkMjU1
+						XGdyZWVuMjU1XGJsdWUyNTU7XHJl
+						ZDBcZ3JlZW4wXGJsdWUwO30Ke1wq
+						XGV4cGFuZGVkY29sb3J0Ymw7O1xj
+						c3NyZ2JcYzBcYzBcYzBcYzg0NzA2
+						XGNuYW1lIGNvbnRyb2xUZXh0Q29s
+						b3I7fQpccGFyZFx0eDU2MFx0eDEx
+						MjBcdHgxNjgwXHR4MjI0MFx0eDI4
+						MDBcdHgzMzYwXHR4MzkyMFx0eDQ0
+						ODBcdHg1MDQwXHR4NTYwMFx0eDYx
+						NjBcdHg2NzIwXHBhcmRpcm5hdHVy
+						YWxccGFydGlnaHRlbmZhY3RvcjAK
+						ClxmMFxmczI4IFxjZjIgQ3JlYXRl
+						IGEgZm9sZGVyIHdoZXJlIHlvdSdk
+						IGxpa2UgdG8gc3RvcmUgeW91ciBj
+						dXN0b20gaWNvbnMgYW5kIGVudGVy
+						IGl0cyBwYXRoIGludG8gdGhlIGdy
+						ZWVuIGFjdGlvbiBiZWxvdy5cClwK
+						XHBhcmRcdHg1NjBcdHgxMTIwXHR4
+						MTY4MFx0eDIyNDBcdHgyODAwXHR4
+						MzM2MFx0eDM5MjBcdHg0NDgwXHR4
+						NTA0MFx0eDU2MDBcdHg2MTYwXHR4
+						NjcyMFxwYXJkaXJuYXR1cmFsXHBh
+						cnRpZ2h0ZW5mYWN0b3IwCgpcZjFc
+						YiBcY2YyIFx1YzBcdTg5OTcgXHU4
+						OTg0IApcZjIgSQpcZjBcYjAgCT0g
+						Q2hvb3NlIEljb25cCgpcZjFcYiBc
+						dWMwXHU4OTYzIFx1ODk5NyBcdTg5
+						ODQgClxmMiBJCQpcZjBcYjAgPSBO
+						ZXcgSWNvbiAoZnJvbSBDbGlwYm9h
+						cmQgLyBBcHAgSWNvbiAvIEltYWdl
+						IEZpbGUgLyBTZWFyY2ggT25saW5l
+						KX0BAAAAIwAAAAEAAAAHAAAAVFhU
+						LnJ0ZhAAAAAJBz9ltgEAAAAAAAAA
+						AAAA
+						</data>
+						<key>Title</key>
+						<string>Instructions</string>
+					</dict>
+					<dict>
+						<key>ActionColor</key>
+						<string>Green</string>
+						<key>ActionName</key>
+						<string>Set Icon Folder Path</string>
+						<key>ActionUID</key>
+						<integer>999442920</integer>
+						<key>MacroActionType</key>
+						<string>SetVariableToText</string>
+						<key>Text</key>
+						<string>/Volumes/Apfspace/Iconography/color/extra/km</string>
+						<key>Variable</key>
+						<string>Local__IconFolder</string>
+					</dict>
+					<dict>
+						<key>Action</key>
+						<string>ExpandTildeInPath</string>
+						<key>ActionName</key>
+						<string>Expand Path</string>
+						<key>ActionUID</key>
+						<integer>999442921</integer>
+						<key>MacroActionType</key>
+						<string>Filter</string>
+						<key>Source</key>
+						<string>Variable</string>
+						<key>Variable</key>
+						<string>Local__IconFolder</string>
+					</dict>
+					<dict>
+						<key>ActionName</key>
+						<string>Icon Chooser or New Custom Icon?</string>
+						<key>ActionUID</key>
+						<integer>999442922</integer>
+						<key>Conditions</key>
+						<dict>
+							<key>ConditionList</key>
+							<array>
+								<dict>
+									<key>ConditionType</key>
+									<string>Text</string>
+									<key>Text</key>
+									<string>%Trigger%</string>
+									<key>TextConditionType</key>
+									<string>Contains</string>
+									<key>TextValue</key>
+									<string>⌃</string>
+								</dict>
+								<dict>
+									<key>ConditionType</key>
+									<string>Text</string>
+									<key>Text</key>
+									<string>%TriggerValue%</string>
+									<key>TextConditionType</key>
+									<string>Is</string>
+									<key>TextValue</key>
+									<string>New Icon</string>
+								</dict>
+							</array>
+							<key>ConditionListMatch</key>
+							<string>Any</string>
+						</dict>
+						<key>ElseActions</key>
+						<array>
+							<dict>
+								<key>ActionName</key>
+								<string>Convert .svg/.ico/.icns to .png If they Exist</string>
+								<key>ActionUID</key>
+								<integer>999442965</integer>
+								<key>DisplayKind</key>
+								<string>None</string>
+								<key>HonourFailureSettings</key>
+								<true/>
+								<key>IncludeStdErr</key>
+								<false/>
+								<key>IncludedVariables</key>
+								<array>
+									<string>9999</string>
+								</array>
+								<key>MacroActionType</key>
+								<string>ExecuteShellScript</string>
+								<key>Path</key>
+								<string></string>
+								<key>Source</key>
+								<string>Nothing</string>
+								<key>Text</key>
+								<string>#!/bin/bash
+
+# Functions for specific operations
+
+convert_svg_to_png() {
+    local svg_file="$1"
+    local png_file="${svg_file%.svg}.png"
+    qlmanage -t -s 1000 -o . "$svg_file" 2&gt; /dev/null
+    mv "$svg_file".png "$png_file"
+    sips -z 64 64 "$png_file" &amp;&gt; /dev/null
+    rm "$svg_file"
+}
+
+convert_icns_to_png() {
+    local icns_file="$1"
+    local png_file="${icns_file%.icns}.png"
+    sips -s format png "$icns_file" --out "$png_file" &amp;&gt; /dev/null
+    sips -z 64 64 "$png_file" &amp;&gt; /dev/null
+    rm "$icns_file"
+}
+
+convert_ico_to_png() {
+    local ico_file="$1"
+    local png_file="${ico_file%.ico}.png"
+    dd bs=1 skip="$(hexdump -ve '1/1 "%02X"' "$ico_file" | tr -d '\n' | sed 's/.*\(00000200\|00000100\).*/\1/;s//\n/g')" count=16 2&gt;/dev/null | od -An -N2 -i | awk '{print $1+4}' | xargs -I{} dd bs=1 skip={} if="$ico_file" of="$png_file" 2&gt;/dev/null
+    sips -z 64 64 "$png_file" &amp;&gt; /dev/null
+
+    # Only delete the original .ico if the .png was successfully created
+    if [ -f "$png_file" ]; then
+        rm "$ico_file"
+    else
+        echo "Error: Failed to convert $ico_file to PNG"
+    fi
+}
+
+# Main Script
+
+FOLDER_PATH="$KMVAR_Local__IconFolder"
+if [ -z "$FOLDER_PATH" ]; then
+    echo "Error: Folder path is empty."
+    exit 1
+fi
+cd "$FOLDER_PATH" || exit
+
+shopt -s nullglob
+
+# Process SVGs
+for svg_file in *.svg; do
+    convert_svg_to_png "$svg_file"
+done
+
+# Process ICNS
+for icns_file in *.icns; do
+    convert_icns_to_png "$icns_file"
+done
+
+# Process ICOs
+for ico_file in *.ico; do
+    convert_ico_to_png "$ico_file"
+done
+
+shopt -u nullglob
+</string>
+								<key>TimeOutAbortsMacro</key>
+								<true/>
+								<key>TrimResults</key>
+								<true/>
+								<key>TrimResultsNew</key>
+								<true/>
+								<key>UseText</key>
+								<true/>
+							</dict>
+							<dict>
+								<key>ActionName</key>
+								<string>Choose Icon</string>
+								<key>ActionUID</key>
+								<integer>999442966</integer>
+								<key>Actions</key>
+								<array>
+									<dict>
+										<key>ActionName</key>
+										<string>Get Icon Paths as List</string>
+										<key>ActionUID</key>
+										<integer>999442967</integer>
+										<key>DisplayKind</key>
+										<string>AppendVar</string>
+										<key>HonourFailureSettings</key>
+										<true/>
+										<key>IncludeStdErr</key>
+										<false/>
+										<key>IncludedVariables</key>
+										<array>
+											<string>9999</string>
+										</array>
+										<key>IsDisclosed</key>
+										<false/>
+										<key>MacroActionType</key>
+										<string>ExecuteShellScript</string>
+										<key>Path</key>
+										<string></string>
+										<key>Source</key>
+										<string>Nothing</string>
+										<key>Text</key>
+										<string>#!/bin/bash
+
+# Get the value of the Keyboard Maestro variable
+Local__IconFolder="$KMVAR_Local__IconFolder"
+
+# Search for .png files recursively and print their paths
+find "$Local__IconFolder" -type f -name "*.png" | sort</string>
+										<key>TimeOutAbortsMacro</key>
+										<true/>
+										<key>TrimResults</key>
+										<true/>
+										<key>TrimResultsNew</key>
+										<true/>
+										<key>UseText</key>
+										<true/>
+										<key>Variable</key>
+										<string>Local__IconList</string>
+									</dict>
+									<dict>
+										<key>ActionName</key>
+										<string>HTML Prompt with Grid of Icons</string>
+										<key>ActionUID</key>
+										<integer>999442968</integer>
+										<key>Floating</key>
+										<true/>
+										<key>HasTitle</key>
+										<false/>
+										<key>MacroActionType</key>
+										<string>CustomPrompt</string>
+										<key>Text</key>
+										<string>&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+    &lt;style&gt;
+        /* macOS Dark Mode Styling */
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            background-color: #1e1e1e;
+            color: #ddd;
+            margin: 0;
+        }
+
+        /* Dynamic grid styles will be injected here by the script */
+
+.icon-cell {
+    width: 46px;   /* Set the width */
+    height: 46px;  /* Set the height */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #555;
+    padding: 10px;
+    box-shadow: 2px 2px 5px #000;
+    transition: background 0.3s;
+    cursor: pointer;
+}
+        .icon-cell:hover {
+            background: #333;
+        }
+
+        img {
+    width: 46px;
+    height: 46px;
+}
+.icon-grid {
+    padding: 10px;
+    box-sizing: border-box;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 10px;
+    max-height: 510px;
+    overflow-y: auto;
+    overflow-x: hidden; /* Prevent horizontal scroll */
+    width: 500px;
+}
+.icon-cell.active {
+    background: #444;
+    box-shadow: 2px 2px 5px #222;
+}
+.search-bar {
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.search-input {
+    flex-grow: 1;
+    padding: 5px;
+    margin-right: 10px;
+    border-radius: 5px;
+    background-color: #2e2e2e; /* lighter grey than main background */
+    color: #ddd; /* text color to match the other texts */
+}
+
+.btn-add {
+    background-image: url('data:image/svg+xml;utf8,&lt;svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="white" viewBox="0 0 24 24"&gt;&lt;path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"&gt;&lt;/path&gt;&lt;/svg&gt;');
+    width: 30px;
+    height: 30px;
+    border: none;
+    cursor: pointer;
+    background-color: transparent;
+    margin-left: 10px;
+}
+
+.btn {
+    width: 30px;
+    height: 30px;
+    border: none;
+    cursor: pointer;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: transparent;
+}
+
+.btn-search {
+    background-image: url('data:image/svg+xml;utf8,&lt;svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"&gt;&lt;circle cx="11" cy="11" r="8"&gt;&lt;/circle&gt;&lt;line x1="21" y1="21" x2="16.65" y2="16.65"&gt;&lt;/line&gt;&lt;/svg&gt;');
+}
+
+.btn-clear {
+    border: none;
+    cursor: pointer;
+    padding: 5px 10px; /* added some padding for better appearance */
+    background-color: lightgray;
+    color: #1e1e1e; /* Text color */
+    border-radius: 5px; /* Optional, for rounded corners */
+    transition: background-color 0.2s; /* Transition for hover effect */
+}
+
+.btn-clear:hover {
+    background-color: gray; /* Darken the button on hover */
+}
+    &lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;div class="search-bar"&gt;
+    &lt;input type="text" id="searchInput" class="search-input" placeholder="Search icons..." spellcheck="false" oninput="filterIcons()"&gt;
+&lt;button class="btn btn-add" id="addButton" title="Add Icon"&gt;&lt;/button&gt;
+&lt;/div&gt;
+&lt;div class="icon-grid" id="iconGrid"&gt;
+    &lt;!-- Icons will be displayed here --&gt;
+&lt;/div&gt;
+
+&lt;script&gt;
+let activeIndex = 0;
+
+function highlightIcon(index) {
+    const iconCells = document.querySelectorAll('.icon-cell');
+    if (iconCells.length === 0) return;
+
+    // Remove active class from all icons
+    iconCells.forEach(cell =&gt; cell.classList.remove('active'));
+
+    // Ensure index is in valid range
+    index = Math.max(0, Math.min(index, iconCells.length - 1));
+
+    // Add active class to the selected icon
+    const selectedIconCell = iconCells[index];
+    selectedIconCell.classList.add('active');
+
+    // Check if the selected icon is out of view and adjust the scrollTop property if necessary
+    const gridElement = document.getElementById('iconGrid');
+    const cellTop = selectedIconCell.offsetTop;
+    const cellBottom = cellTop + selectedIconCell.clientHeight;
+
+    if (cellTop &lt; gridElement.scrollTop) {
+        // If the icon is above the visible area, adjust the scrollTop to ensure the entire cell is visible
+        gridElement.scrollTop = cellTop - selectedIconCell.offsetHeight;
+    } else if (cellBottom &gt; gridElement.scrollTop + gridElement.clientHeight) {
+        // If the icon is below the visible area
+        gridElement.scrollTop = cellBottom - gridElement.clientHeight;
+    }
+
+    activeIndex = index;
+}
+
+function handleArrowKeyNavigation(event) {
+    const iconCells = document.querySelectorAll('.icon-cell');
+    if (iconCells.length === 0) return;
+
+    switch(event.key) {
+        case 'ArrowUp':
+            activeIndex -= 6;
+            break;
+        case 'ArrowDown':
+            activeIndex += 6;
+            break;
+        case 'ArrowLeft':
+            activeIndex -= 1;
+            break;
+        case 'ArrowRight':
+            activeIndex += 1;
+            break;
+    }
+
+    // Adjust activeIndex to stay within bounds
+    activeIndex = Math.max(0, Math.min(activeIndex, iconCells.length - 1));
+    highlightIcon(activeIndex);
+}
+
+function populateGrid(iconPaths) {
+    const gridElement = document.getElementById('iconGrid');
+    while (gridElement.firstChild) {
+        gridElement.removeChild(gridElement.lastChild);
+    }
+
+    iconPaths.forEach(iconPath =&gt; {
+        iconPath = iconPath.trim();
+        let iconCell = document.createElement('div');
+        iconCell.classList.add('icon-cell');
+        iconCell.dataset.path = iconPath;
+
+        iconCell.onclick = function() {
+            let path = this.dataset.path;
+            window.KeyboardMaestro.SetVariable('Local__IconChoice', path);
+            window.KeyboardMaestro.Submit('OK');
+        };
+
+        let iconImage = document.createElement('img');
+        iconImage.src = `file://${iconPath}`;
+        iconCell.appendChild(iconImage);
+        gridElement.appendChild(iconCell);
+    });
+    
+    // Reset activeIndex to 0 and highlight the first icon
+    activeIndex = 0;
+    highlightIcon(activeIndex);
+}
+
+function filterIcons() {
+    const searchTerm = document.getElementById('searchInput').value.toLowerCase();
+    const filteredIcons = allIconPaths.filter(iconPath =&gt; {
+        const fileName = iconPath.split('/').pop().toLowerCase();
+        return fileName.includes(searchTerm);
+    });
+    populateGrid(filteredIcons);
+}
+
+async function kmResize() {
+    setTimeout(() =&gt; {
+        var scrollWidth = document.documentElement.scrollWidth + 20;
+        var scrollHeight = document.documentElement.scrollHeight + 2;
+        window.KeyboardMaestro.ResizeWindow(scrollWidth + "," + scrollHeight);
+    }, 100);
+}
+
+document.addEventListener('DOMContentLoaded', function() {
+    if (!window.KeyboardMaestro) {
+        console.error("KeyboardMaestro is not available!");
+        return;
+    }
+
+    var iconListString = window.KeyboardMaestro.GetVariable("Local__IconList");
+    if (!iconListString) {
+        console.error("Failed to retrieve icon list");
+        return;
+    }
+
+    window.allIconPaths = iconListString.split(/\r?\n/).filter(icon =&gt; icon.trim());
+
+    document.getElementById('searchInput').addEventListener('input', filterIcons);
+    
+document.addEventListener('keydown', function(event) {
+    if (event.key === "Escape") {
+        window.KeyboardMaestro.Submit('Cancel');
+        return;
+    }
+
+    // Handle arrow keys for icon navigation
+    if (['ArrowUp', 'ArrowDown', 'ArrowLeft', 'ArrowRight'].includes(event.key)) {
+        handleArrowKeyNavigation(event);
+        return;
+    }
+
+    // When the Enter key is pressed, submit the form with the selected icon's path
+    if (event.key === 'Enter') {
+        const iconCells = document.querySelectorAll('.icon-cell');
+        if (iconCells[activeIndex]) {
+            let path = iconCells[activeIndex].dataset.path;
+            window.KeyboardMaestro.SetVariable('Local__IconChoice', path);
+            window.KeyboardMaestro.Submit('OK');
+        }
+    }
+});
+
+    populateGrid(allIconPaths);
+    document.getElementById('searchInput').focus();
+    kmResize();
+    document.getElementById('addButton').addEventListener('click', function() {
+    window.KeyboardMaestro.SetVariable('Local__NewIcon', 'true');
+    window.KeyboardMaestro.Submit('OK');
+	});
+
+});
+&lt;/script&gt;
+&lt;/body&gt;
+&lt;/html&gt;</string>
+										<key>TimeOutAbortsMacro</key>
+										<true/>
+										<key>Transparent</key>
+										<true/>
+										<key>UseText</key>
+										<true/>
+									</dict>
+									<dict>
+										<key>ActionName</key>
+										<string>New Icon?</string>
+										<key>ActionUID</key>
+										<integer>999442969</integer>
+										<key>Conditions</key>
+										<dict>
+											<key>ConditionList</key>
+											<array>
+												<dict>
+													<key>ConditionType</key>
+													<string>Variable</string>
+													<key>Variable</key>
+													<string>Local__NewIcon</string>
+													<key>VariableConditionType</key>
+													<string>Exists</string>
+													<key>VariableValue</key>
+													<string>value</string>
+												</dict>
+											</array>
+											<key>ConditionListMatch</key>
+											<string>All</string>
+										</dict>
+										<key>ElseActionListDisclosed</key>
+										<false/>
+										<key>ElseActions</key>
+										<array/>
+										<key>IsDisclosed</key>
+										<false/>
+										<key>MacroActionType</key>
+										<string>IfThenElse</string>
+										<key>ThenActions</key>
+										<array>
+											<dict>
+												<key>ActionUID</key>
+												<integer>999442970</integer>
+												<key>Asynchronously</key>
+												<false/>
+												<key>IsDisclosed</key>
+												<false/>
+												<key>MacroActionType</key>
+												<string>ExecuteMacro</string>
+												<key>MacroUID</key>
+												<string>502D7230-C69F-4116-A4DB-F4A98E8CCC7B</string>
+												<key>Parameter</key>
+												<string>New Icon</string>
+												<key>TimeOutAbortsMacro</key>
+												<true/>
+												<key>UseParameter</key>
+												<true/>
+											</dict>
+										</array>
+										<key>TimeOutAbortsMacro</key>
+										<true/>
+									</dict>
+									<dict>
+										<key>ActionName</key>
+										<string>Cancel on Dismiss</string>
+										<key>ActionUID</key>
+										<integer>999442971</integer>
+										<key>Conditions</key>
+										<dict>
+											<key>ConditionList</key>
+											<array>
+												<dict>
+													<key>ConditionType</key>
+													<string>Variable</string>
+													<key>Variable</key>
+													<string>Local__IconChoice</string>
+													<key>VariableConditionType</key>
+													<string>IsEmpty</string>
+													<key>VariableValue</key>
+													<string>value</string>
+												</dict>
+											</array>
+											<key>ConditionListMatch</key>
+											<string>All</string>
+										</dict>
+										<key>ElseActionListDisclosed</key>
+										<false/>
+										<key>ElseActions</key>
+										<array/>
+										<key>IsDisclosed</key>
+										<false/>
+										<key>MacroActionType</key>
+										<string>IfThenElse</string>
+										<key>ThenActions</key>
+										<array>
+											<dict>
+												<key>Action</key>
+												<string>CancelThisMacro</string>
+												<key>ActionUID</key>
+												<integer>999442972</integer>
+												<key>IsDisclosed</key>
+												<false/>
+												<key>MacroActionType</key>
+												<string>Cancel</string>
+											</dict>
+										</array>
+										<key>TimeOutAbortsMacro</key>
+										<true/>
+									</dict>
+									<dict>
+										<key>ActionName</key>
+										<string>Set System Clipboard to Chosen Icon (AS)</string>
+										<key>ActionUID</key>
+										<integer>999442973</integer>
+										<key>DisplayKind</key>
+										<string>None</string>
+										<key>HonourFailureSettings</key>
+										<true/>
+										<key>IncludeStdErr</key>
+										<false/>
+										<key>IncludedVariables</key>
+										<array>
+											<string>9999</string>
+										</array>
+										<key>IsDisclosed</key>
+										<false/>
+										<key>MacroActionType</key>
+										<string>ExecuteAppleScript</string>
+										<key>Path</key>
+										<string></string>
+										<key>Text</key>
+										<string>set inst to system attribute "KMINSTANCE"
+tell application "Keyboard Maestro Engine"
+	set imagePath to getvariable "Local__IconChoice" instance inst
+end tell
+
+set the clipboard to (read (POSIX file imagePath) as «class PNGf»)
+</string>
+										<key>TimeOutAbortsMacro</key>
+										<true/>
+										<key>TrimResults</key>
+										<true/>
+										<key>TrimResultsNew</key>
+										<true/>
+										<key>UseText</key>
+										<true/>
+									</dict>
+								</array>
+								<key>MacroActionType</key>
+								<string>Group</string>
+								<key>TimeOutAbortsMacro</key>
+								<true/>
+							</dict>
+							<dict>
+								<key>ActionName</key>
+								<string>Paste Icon</string>
+								<key>ActionUID</key>
+								<integer>999442974</integer>
+								<key>Actions</key>
+								<array>
+									<dict>
+										<key>ActionName</key>
+										<string>Focus Macro Icon Well</string>
+										<key>ActionUID</key>
+										<integer>999442975</integer>
+										<key>DisplayKind</key>
+										<string>None</string>
+										<key>HonourFailureSettings</key>
+										<true/>
+										<key>IncludeStdErr</key>
+										<false/>
+										<key>IncludedVariables</key>
+										<array>
+											<string>9999</string>
+										</array>
+										<key>MacroActionType</key>
+										<string>ExecuteAppleScript</string>
+										<key>Path</key>
+										<string></string>
+										<key>Text</key>
+										<string>tell application "System Events"
+	tell application process "Keyboard Maestro"
+		set frontmost to true
+		tell (first window whose subrole is "AXStandardWindow")
+			tell group 6
+				tell splitter group 1
+					tell scroll area 3
+						set focused of image 1 to true
+					end tell
+				end tell
+			end tell
+		end tell
+	end tell
+end tell
+</string>
+										<key>TimeOutAbortsMacro</key>
+										<true/>
+										<key>TrimResults</key>
+										<true/>
+										<key>TrimResultsNew</key>
+										<true/>
+										<key>UseText</key>
+										<true/>
+									</dict>
+									<dict>
+										<key>Action</key>
+										<string>Paste</string>
+										<key>ActionName</key>
+										<string>Paste Icon</string>
+										<key>ActionUID</key>
+										<integer>999442976</integer>
+										<key>IsDisclosed</key>
+										<false/>
+										<key>MacroActionType</key>
+										<string>CutCopyPaste</string>
+										<key>TimeOutAbortsMacro</key>
+										<true/>
+									</dict>
+								</array>
+								<key>MacroActionType</key>
+								<string>Group</string>
+								<key>TimeOutAbortsMacro</key>
+								<true/>
+							</dict>
+						</array>
+						<key>MacroActionType</key>
+						<string>IfThenElse</string>
+						<key>ThenActions</key>
+						<array>
+							<dict>
+								<key>ActionName</key>
+								<string>New Custom Icon Dialog (HTML)</string>
+								<key>ActionUID</key>
+								<integer>999442923</integer>
+								<key>Actions</key>
+								<array>
+									<dict>
+										<key>ActionName</key>
+										<string>Clipboard to Temporary File?</string>
+										<key>ActionUID</key>
+										<integer>999442924</integer>
+										<key>Conditions</key>
+										<dict>
+											<key>ConditionList</key>
+											<array>
+												<dict>
+													<key>ClipboardConditionType</key>
+													<string>HasImage</string>
+													<key>ClipboardText</key>
+													<string></string>
+													<key>ConditionType</key>
+													<string>Clipboard</string>
+												</dict>
+											</array>
+											<key>ConditionListMatch</key>
+											<string>All</string>
+										</dict>
+										<key>ElseActionListDisclosed</key>
+										<false/>
+										<key>ElseActions</key>
+										<array/>
+										<key>IsDisclosed</key>
+										<false/>
+										<key>MacroActionType</key>
+										<string>IfThenElse</string>
+										<key>ThenActions</key>
+										<array>
+											<dict>
+												<key>ActionName</key>
+												<string>Write System Clipboard to Temporary File</string>
+												<key>ActionUID</key>
+												<integer>999442925</integer>
+												<key>Append</key>
+												<false/>
+												<key>Destination</key>
+												<string>/private/tmp/Temp Icon.png</string>
+												<key>Encoding</key>
+												<string>UTF8</string>
+												<key>Format</key>
+												<string>PNG</string>
+												<key>Format2</key>
+												<string>PNG</string>
+												<key>IsDisclosed</key>
+												<false/>
+												<key>MacroActionType</key>
+												<string>WriteFile</string>
+												<key>NotifyOnFailure</key>
+												<false/>
+												<key>Source</key>
+												<string>Clipboard</string>
+											</dict>
+										</array>
+										<key>TimeOutAbortsMacro</key>
+										<true/>
+									</dict>
+									<dict>
+										<key>ActionUID</key>
+										<integer>999442926</integer>
+										<key>Floating</key>
+										<true/>
+										<key>HasTitle</key>
+										<false/>
+										<key>MacroActionType</key>
+										<string>CustomPrompt</string>
+										<key>Text</key>
+										<string>&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+    &lt;title&gt;Custom Prompt&lt;/title&gt;
+    &lt;style&gt;
+        /* macOS dark mode styles */
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+            background-color: #1e1e1e;
+            color: #ffffff;
+            padding: 15px 15px 5px 15px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            max-width: 220px;
+        }
+
+        .icon-container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 64px;
+            height: 64px;
+            border: 2px solid #888; 
+            border-radius: 5px;
+            margin-bottom: 10px;
+            position: relative;
+        }
+
+        img.icon {
+            max-width: 62px;
+            max-height: 62px;
+            display: none;
+        }
+
+        button {
+            width: 150px;
+            margin: 8px 0;
+            background-color: #007aff;
+            color: #ffffff;
+            border: none;
+            padding: 8px;
+            border-radius: 5px;
+            transition: background-color 0.2s;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #005fcc;
+        }
+
+        button:disabled {
+            background-color: #5a5a5a;
+            cursor: not-allowed;
+        }
+
+        .clipboard-section {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            border: 1px solid #666;
+            padding: 10px;
+            border-radius: 5px;
+            margin-bottom: 5px;
+        }
+
+        .button-section {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+.error-message {
+    position: absolute;
+    top: 43%;  /* Slightly increased from 50% to move it downwards */
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    display: none;
+    font-size: 0.8rem;
+    background-color: #1e1e1e;
+    padding: 2px; 
+    border-radius: 5px;
+    width: 90%; 
+    height: 60%; 
+    line-height: 1.2;  /* This sets the spacing between lines */
+}
+
+    &lt;/style&gt;
+&lt;/head&gt;
+&lt;body onload="kmResize()"&gt;
+    &lt;div class="clipboard-section"&gt;
+        &lt;div class="icon-container"&gt;
+            &lt;img src="/private/tmp/Temp Icon.png" alt="Icon" class="icon" onload="handleImageLoad()" onerror="handleImageError()"&gt;
+            &lt;span class="error-message"&gt;No image&lt;br&gt;on clipboard&lt;/span&gt;
+        &lt;/div&gt;
+       &lt;button id="clipboardButton" onclick="handleButtonClick('Clipboard')" accessKey="c"&gt;Clipboard&lt;/button&gt;
+    &lt;/div&gt;
+    &lt;div class="button-section"&gt;
+        &lt;button onclick="handleButtonClick('App Icon')" accessKey="a"&gt;App Icon&lt;/button&gt;
+        &lt;button onclick="handleButtonClick('Image File')" accessKey="i"&gt;Image File&lt;/button&gt;
+        &lt;button onclick="handleButtonClick('Search Online')" accessKey="s"&gt;Search Online&lt;/button&gt;
+    &lt;/div&gt;
+
+    &lt;script&gt;
+        async function kmResize() {
+            var scrollWidth = Math.min(document.documentElement.scrollWidth, 220);
+            var scrollHeight = Math.min(document.documentElement.scrollHeight, 330);
+            window.KeyboardMaestro.ResizeWindow(scrollWidth + "," + scrollHeight);
+        }
+
+        function handleImageLoad() {
+            var iconImage = document.querySelector(".icon");
+            iconImage.style.display = "block";
+        }
+
+        function handleImageError() {
+            var iconContainer = document.querySelector(".icon-container");
+            var errorMessage = iconContainer.querySelector(".error-message");
+            var clipboardButton = document.getElementById("clipboardButton");
+
+            errorMessage.style.display = "block";
+            clipboardButton.disabled = true;
+        }
+
+        function handleButtonClick(choice) {
+            window.KeyboardMaestro.SetVariable('Local__ButtonChoice', choice);
+            window.KeyboardMaestro.Submit(choice);
+        }
+
+document.addEventListener('keydown', function(event) {
+    const clipboardButton = document.getElementById('clipboardButton');
+    switch (event.key.toLowerCase()) {
+        case 'c':
+            if (!clipboardButton.disabled) {
+                handleButtonClick('Clipboard');
+            }
+            break;
+        case 'a':
+            handleButtonClick('App Icon');
+            break;
+        case 'i':
+            handleButtonClick('Image File');
+            break;
+        case 's':
+            handleButtonClick('Search Online');
+            break;
+        case 'escape':
+            handleButtonClick('Cancel');
+            break;
+    }
+});
+
+    &lt;/script&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</string>
+										<key>TimeOutAbortsMacro</key>
+										<true/>
+										<key>UseText</key>
+										<true/>
+									</dict>
+									<dict>
+										<key>ActionName</key>
+										<string>Delete Temporary .png File</string>
+										<key>ActionUID</key>
+										<integer>999442927</integer>
+										<key>Destination</key>
+										<string></string>
+										<key>MacroActionType</key>
+										<string>File</string>
+										<key>NotifyOnFailure</key>
+										<false/>
+										<key>Operation</key>
+										<string>Delete</string>
+										<key>Source</key>
+										<string>/private/tmp/Temp Icon.png</string>
+									</dict>
+								</array>
+								<key>MacroActionType</key>
+								<string>Group</string>
+								<key>TimeOutAbortsMacro</key>
+								<true/>
+							</dict>
+							<dict>
+								<key>ActionColor</key>
+								<string>Purple</string>
+								<key>ActionName</key>
+								<string>Switch of Prompt Button Choices</string>
+								<key>ActionUID</key>
+								<integer>999442928</integer>
+								<key>CaseEntries</key>
+								<array>
+									<dict>
+										<key>Actions</key>
+										<array>
+											<dict>
+												<key>Action</key>
+												<string>CancelThisMacro</string>
+												<key>ActionUID</key>
+												<integer>999442929</integer>
+												<key>IsDisclosed</key>
+												<false/>
+												<key>MacroActionType</key>
+												<string>Cancel</string>
+											</dict>
+										</array>
+										<key>ConditionType</key>
+										<string>Is</string>
+										<key>TestValue</key>
+										<string>Cancel</string>
+									</dict>
+									<dict>
+										<key>Actions</key>
+										<array>
+											<dict>
+												<key>ActionName</key>
+												<string>Prompt for Icon Name</string>
+												<key>ActionUID</key>
+												<integer>999442930</integer>
+												<key>Buttons</key>
+												<array>
+													<dict>
+														<key>Button</key>
+														<string>OK</string>
+													</dict>
+													<dict>
+														<key>Button</key>
+														<string>Cancel</string>
+														<key>Cancel</key>
+														<true/>
+													</dict>
+												</array>
+												<key>IsDisclosed</key>
+												<false/>
+												<key>MacroActionType</key>
+												<string>PromptForUserInput</string>
+												<key>Prompt</key>
+												<string></string>
+												<key>TimeOutAbortsMacro</key>
+												<true/>
+												<key>Title</key>
+												<string></string>
+												<key>Variables</key>
+												<array>
+													<dict>
+														<key>Default</key>
+														<string>Icon - %ICUDateTime%dd.MM.yyyy HH.mm.ss%</string>
+														<key>Type</key>
+														<string>Automatic</string>
+														<key>Variable</key>
+														<string>Local__Icon Name</string>
+													</dict>
+												</array>
+											</dict>
+										</array>
+										<key>ConditionType</key>
+										<string>Is</string>
+										<key>TestValue</key>
+										<string>Clipboard</string>
+									</dict>
+									<dict>
+										<key>Actions</key>
+										<array>
+											<dict>
+												<key>ActionName</key>
+												<string>Set Clipboard to App Icon</string>
+												<key>ActionUID</key>
+												<integer>999442931</integer>
+												<key>Actions</key>
+												<array>
+													<dict>
+														<key>ActionName</key>
+														<string>Prompt for App</string>
+														<key>ActionUID</key>
+														<integer>999442932</integer>
+														<key>FileType</key>
+														<string>File</string>
+														<key>IsDisclosed</key>
+														<false/>
+														<key>Location</key>
+														<string>/Applications</string>
+														<key>MacroActionType</key>
+														<string>PromptForFile</string>
+														<key>NotifyOnFailure</key>
+														<false/>
+														<key>Parameter</key>
+														<string>.app</string>
+														<key>Variable</key>
+														<string>Local__AppPath</string>
+														<key>WindowTitle</key>
+														<string>Choose App...</string>
+													</dict>
+													<dict>
+														<key>Action</key>
+														<string>BaseName</string>
+														<key>ActionUID</key>
+														<integer>999442933</integer>
+														<key>Destination</key>
+														<string>Variable</string>
+														<key>DestinationVariable</key>
+														<string>Local__AppName</string>
+														<key>MacroActionType</key>
+														<string>Filter</string>
+														<key>Source</key>
+														<string>Variable</string>
+														<key>Variable</key>
+														<string>Local__AppPath</string>
+													</dict>
+													<dict>
+														<key>ActionName</key>
+														<string>Get App Icon Path</string>
+														<key>ActionUID</key>
+														<integer>999442934</integer>
+														<key>DisplayKind</key>
+														<string>Variable</string>
+														<key>HonourFailureSettings</key>
+														<true/>
+														<key>IncludeStdErr</key>
+														<false/>
+														<key>IncludedVariables</key>
+														<array>
+															<string>9999</string>
+														</array>
+														<key>MacroActionType</key>
+														<string>ExecuteShellScript</string>
+														<key>Path</key>
+														<string></string>
+														<key>Source</key>
+														<string>Nothing</string>
+														<key>Text</key>
+														<string># Get the app path from the Keyboard Maestro variable
+APP_PATH="$KMVAR_Local__AppPath"
+
+# Path to the application's Info.plist
+INFO_PLIST="$APP_PATH/Contents/Info.plist"
+
+# Extract the name of the primary icon from the Info.plist (if available)
+ICON_NAME=$(defaults read "$INFO_PLIST" CFBundleIconFile 2&gt;/dev/null)
+
+# If CFBundleIconFile doesn't have an extension, add .icns
+if [[ "$ICON_NAME" &amp;&amp; ! "$ICON_NAME" == *.* ]]; then
+    ICON_NAME="$ICON_NAME.icns"
+fi
+
+# Build the initial path to the icon assuming it's in the Resources directory
+ICON_PATH="$APP_PATH/Contents/Resources/$ICON_NAME"
+
+# If the icon is not directly in the Resources directory, search for it in subdirectories
+if [[ ! -f "$ICON_PATH" ]]; then
+    ICON_PATH=$(find "$APP_PATH/Contents/Resources" -name "$ICON_NAME" | head -n 1)
+fi
+
+# Check if the file exists. If not, then the icon wasn't found
+if [[ ! -f "$ICON_PATH" ]]; then
+    echo "Icon not found"
+    exit 1
+else
+    echo "$ICON_PATH"
+fi
+</string>
+														<key>TimeOutAbortsMacro</key>
+														<true/>
+														<key>TrimResults</key>
+														<true/>
+														<key>TrimResultsNew</key>
+														<true/>
+														<key>UseText</key>
+														<true/>
+														<key>Variable</key>
+														<string>Local__AppIconPath</string>
+													</dict>
+													<dict>
+														<key>ActionUID</key>
+														<integer>999442935</integer>
+														<key>ImagePath</key>
+														<string>%Variable%Local__AppIconPath%</string>
+														<key>ImageSource</key>
+														<string>File</string>
+														<key>IsDisclosed</key>
+														<false/>
+														<key>MacroActionType</key>
+														<string>SetClipboardToImage</string>
+													</dict>
+												</array>
+												<key>MacroActionType</key>
+												<string>Group</string>
+												<key>TimeOutAbortsMacro</key>
+												<true/>
+											</dict>
+											<dict>
+												<key>ActionName</key>
+												<string>Prompt for Icon Name</string>
+												<key>ActionUID</key>
+												<integer>999442936</integer>
+												<key>Buttons</key>
+												<array>
+													<dict>
+														<key>Button</key>
+														<string>OK</string>
+													</dict>
+													<dict>
+														<key>Button</key>
+														<string>Cancel</string>
+														<key>Cancel</key>
+														<true/>
+													</dict>
+												</array>
+												<key>IsDisclosed</key>
+												<false/>
+												<key>MacroActionType</key>
+												<string>PromptForUserInput</string>
+												<key>Prompt</key>
+												<string></string>
+												<key>TimeOutAbortsMacro</key>
+												<true/>
+												<key>Title</key>
+												<string></string>
+												<key>Variables</key>
+												<array>
+													<dict>
+														<key>Default</key>
+														<string>%Variable%Local__AppName%</string>
+														<key>Type</key>
+														<string>Automatic</string>
+														<key>Variable</key>
+														<string>Local__Icon Name</string>
+													</dict>
+												</array>
+											</dict>
+										</array>
+										<key>ConditionType</key>
+										<string>Is</string>
+										<key>TestValue</key>
+										<string>App Icon</string>
+									</dict>
+									<dict>
+										<key>Actions</key>
+										<array>
+											<dict>
+												<key>ActionName</key>
+												<string>Set Clipboard to Image File</string>
+												<key>ActionUID</key>
+												<integer>999442937</integer>
+												<key>Actions</key>
+												<array>
+													<dict>
+														<key>ActionUID</key>
+														<integer>999442938</integer>
+														<key>FileType</key>
+														<string>File</string>
+														<key>IsDisclosed</key>
+														<false/>
+														<key>Location</key>
+														<string>%FinderInsertionLocation%</string>
+														<key>MacroActionType</key>
+														<string>PromptForFile</string>
+														<key>NotifyOnFailure</key>
+														<false/>
+														<key>Parameter</key>
+														<string>public.image</string>
+														<key>Variable</key>
+														<string>Local__FilePath</string>
+														<key>WindowTitle</key>
+														<string>Choose File...</string>
+													</dict>
+													<dict>
+														<key>Action</key>
+														<string>BaseName</string>
+														<key>ActionName</key>
+														<string>Get Image File Basename</string>
+														<key>ActionUID</key>
+														<integer>999442939</integer>
+														<key>Destination</key>
+														<string>Variable</string>
+														<key>DestinationVariable</key>
+														<string>Local__FileName</string>
+														<key>IsDisclosed</key>
+														<false/>
+														<key>MacroActionType</key>
+														<string>Filter</string>
+														<key>Source</key>
+														<string>Variable</string>
+														<key>Variable</key>
+														<string>Local__FilePath</string>
+													</dict>
+													<dict>
+														<key>ActionUID</key>
+														<integer>999442940</integer>
+														<key>ImagePath</key>
+														<string>%Variable%Local__FilePath%</string>
+														<key>ImageSource</key>
+														<string>File</string>
+														<key>IsDisclosed</key>
+														<false/>
+														<key>MacroActionType</key>
+														<string>SetClipboardToImage</string>
+													</dict>
+												</array>
+												<key>IsDisclosed</key>
+												<false/>
+												<key>MacroActionType</key>
+												<string>Group</string>
+												<key>TimeOutAbortsMacro</key>
+												<true/>
+											</dict>
+											<dict>
+												<key>ActionName</key>
+												<string>Prompt for Icon Name</string>
+												<key>ActionUID</key>
+												<integer>999442941</integer>
+												<key>Buttons</key>
+												<array>
+													<dict>
+														<key>Button</key>
+														<string>OK</string>
+													</dict>
+													<dict>
+														<key>Button</key>
+														<string>Cancel</string>
+														<key>Cancel</key>
+														<true/>
+													</dict>
+												</array>
+												<key>IsDisclosed</key>
+												<false/>
+												<key>MacroActionType</key>
+												<string>PromptForUserInput</string>
+												<key>Prompt</key>
+												<string></string>
+												<key>TimeOutAbortsMacro</key>
+												<true/>
+												<key>Title</key>
+												<string></string>
+												<key>Variables</key>
+												<array>
+													<dict>
+														<key>Default</key>
+														<string>%Variable%Local__FileName%</string>
+														<key>Type</key>
+														<string>Automatic</string>
+														<key>Variable</key>
+														<string>Local__Icon Name</string>
+													</dict>
+												</array>
+											</dict>
+										</array>
+										<key>ConditionType</key>
+										<string>Is</string>
+										<key>TestValue</key>
+										<string>Image File</string>
+									</dict>
+									<dict>
+										<key>Actions</key>
+										<array>
+											<dict>
+												<key>ActionName</key>
+												<string>Open icon-icons.com</string>
+												<key>ActionUID</key>
+												<integer>999442942</integer>
+												<key>Actions</key>
+												<array>
+													<dict>
+														<key>ActionUID</key>
+														<integer>999442943</integer>
+														<key>IsDefaultApplication</key>
+														<true/>
+														<key>IsDisclosed</key>
+														<false/>
+														<key>MacroActionType</key>
+														<string>OpenURL</string>
+														<key>TimeOutAbortsMacro</key>
+														<true/>
+														<key>URL</key>
+														<string>https://icon-icons.com/</string>
+													</dict>
+													<dict>
+														<key>ActionUID</key>
+														<integer>999442944</integer>
+														<key>Argument</key>
+														<string>0</string>
+														<key>Command</key>
+														<string>WaitForComplete</string>
+														<key>IsDisclosed</key>
+														<false/>
+														<key>MacroActionType</key>
+														<string>SafariControl</string>
+														<key>TimeOutAbortsMacro</key>
+														<true/>
+														<key>WebBrowser</key>
+														<string>Front Browser</string>
+													</dict>
+													<dict>
+														<key>ActionUID</key>
+														<integer>999442945</integer>
+														<key>Argument</key>
+														<string>//input[@placeholder='E.g: Facebook, user, home, folder...']</string>
+														<key>Command</key>
+														<string>FocusField</string>
+														<key>IsDisclosed</key>
+														<false/>
+														<key>MacroActionType</key>
+														<string>SafariControl</string>
+														<key>WebBrowser</key>
+														<string>Front Browser</string>
+													</dict>
+													<dict>
+														<key>Action</key>
+														<string>CancelThisMacro</string>
+														<key>ActionUID</key>
+														<integer>999442946</integer>
+														<key>IsDisclosed</key>
+														<false/>
+														<key>MacroActionType</key>
+														<string>Cancel</string>
+													</dict>
+												</array>
+												<key>MacroActionType</key>
+												<string>Group</string>
+												<key>TimeOutAbortsMacro</key>
+												<true/>
+											</dict>
+										</array>
+										<key>ConditionType</key>
+										<string>Is</string>
+										<key>TestValue</key>
+										<string>Search Online</string>
+									</dict>
+								</array>
+								<key>MacroActionType</key>
+								<string>Switch</string>
+								<key>Source</key>
+								<string>Variable</string>
+								<key>Variable</key>
+								<string>Local__ButtonChoice</string>
+							</dict>
+							<dict>
+								<key>ActionName</key>
+								<string>Create New Icon</string>
+								<key>ActionUID</key>
+								<integer>999442947</integer>
+								<key>Actions</key>
+								<array>
+									<dict>
+										<key>ActionName</key>
+										<string>Set Output Icon Path</string>
+										<key>ActionUID</key>
+										<integer>999442948</integer>
+										<key>IsDisclosed</key>
+										<false/>
+										<key>MacroActionType</key>
+										<string>SetVariableToText</string>
+										<key>Text</key>
+										<string>%Variable%Local__IconFolder%/%Variable%Local__Icon Name%.png</string>
+										<key>Variable</key>
+										<string>Local__OutputIconPath</string>
+									</dict>
+									<dict>
+										<key>ActionName</key>
+										<string>Existing Icon Name Conflict Dialog</string>
+										<key>ActionUID</key>
+										<integer>999442949</integer>
+										<key>Actions</key>
+										<array>
+											<dict>
+												<key>ActionName</key>
+												<string>Replace/Rename Dialog</string>
+												<key>ActionUID</key>
+												<integer>999442950</integer>
+												<key>DisplayKind</key>
+												<string>Variable</string>
+												<key>HonourFailureSettings</key>
+												<true/>
+												<key>IncludeStdErr</key>
+												<false/>
+												<key>IncludedVariables</key>
+												<array>
+													<string>9999</string>
+												</array>
+												<key>IsDisclosed</key>
+												<false/>
+												<key>MacroActionType</key>
+												<string>ExecuteAppleScript</string>
+												<key>NotifyOnFailure</key>
+												<false/>
+												<key>Path</key>
+												<string>/Users/noisyneil/Documents/- MY DOCUMENTS/Keyboard Maestro Stuff/Compiled Scripts/Keyboard Maestro/Icon Manager/Replace Rename Dialog.scpt</string>
+												<key>Text</key>
+												<string>-- Fetch the Keyboard Maestro variable for the icon path
+set inst to system attribute "KMINSTANCE"
+tell application "Keyboard Maestro Engine"
+	set iconPath to getvariable "Local__OutputIconPath" instance inst
+end tell
+
+-- Ensure the icon path is in POSIX format and get the basename
+set posixIconPath to POSIX file iconPath
+set AppleScript's text item delimiters to "/"
+set iconName to last text item of iconPath
+set AppleScript's text item delimiters to "."
+
+if (count of text items of iconName) &gt; 1 then
+	set iconName to text items 1 thru -2 of iconName as text
+end if
+
+-- Prepare the dialog text
+set dialogText to linefeed &amp; "← This icon already exists with the name \"" &amp; iconName &amp; "\""
+
+-- Display the dialog
+display dialog dialogText buttons {"Cancel", "Replace", "Rename"} default button "Rename" with icon posixIconPath
+</string>
+												<key>TimeOutAbortsMacro</key>
+												<true/>
+												<key>TrimResults</key>
+												<true/>
+												<key>TrimResultsNew</key>
+												<true/>
+												<key>UseText</key>
+												<true/>
+												<key>Variable</key>
+												<string>Local__ConflictButton</string>
+											</dict>
+											<dict>
+												<key>ActionUID</key>
+												<integer>999442951</integer>
+												<key>Conditions</key>
+												<dict>
+													<key>ConditionList</key>
+													<array>
+														<dict>
+															<key>ConditionType</key>
+															<string>Variable</string>
+															<key>Variable</key>
+															<string>Local__ConflictButton</string>
+															<key>VariableConditionType</key>
+															<string>Contains</string>
+															<key>VariableValue</key>
+															<string>Rename</string>
+														</dict>
+													</array>
+													<key>ConditionListMatch</key>
+													<string>All</string>
+												</dict>
+												<key>ElseActions</key>
+												<array>
+													<dict>
+														<key>Action</key>
+														<string>BreakFromLoop</string>
+														<key>ActionUID</key>
+														<integer>999442954</integer>
+														<key>IsDisclosed</key>
+														<false/>
+														<key>MacroActionType</key>
+														<string>Cancel</string>
+													</dict>
+												</array>
+												<key>IsDisclosed</key>
+												<false/>
+												<key>MacroActionType</key>
+												<string>IfThenElse</string>
+												<key>ThenActions</key>
+												<array>
+													<dict>
+														<key>ActionName</key>
+														<string>Prompt for New Name</string>
+														<key>ActionUID</key>
+														<integer>999442952</integer>
+														<key>Buttons</key>
+														<array>
+															<dict>
+																<key>Button</key>
+																<string>OK</string>
+															</dict>
+															<dict>
+																<key>Button</key>
+																<string>Cancel</string>
+																<key>Cancel</key>
+																<true/>
+															</dict>
+														</array>
+														<key>IsDisclosed</key>
+														<false/>
+														<key>MacroActionType</key>
+														<string>PromptForUserInput</string>
+														<key>Prompt</key>
+														<string></string>
+														<key>TimeOutAbortsMacro</key>
+														<true/>
+														<key>Title</key>
+														<string></string>
+														<key>Variables</key>
+														<array>
+															<dict>
+																<key>Default</key>
+																<string></string>
+																<key>Type</key>
+																<string>Automatic</string>
+																<key>Variable</key>
+																<string>Local__Rename as</string>
+															</dict>
+														</array>
+													</dict>
+													<dict>
+														<key>ActionName</key>
+														<string>Set Output File Path</string>
+														<key>ActionUID</key>
+														<integer>999442953</integer>
+														<key>IsDisclosed</key>
+														<false/>
+														<key>MacroActionType</key>
+														<string>SetVariableToText</string>
+														<key>Text</key>
+														<string>%Variable%Local__IconFolder%/%Variable%Local__Rename as%.png</string>
+														<key>Variable</key>
+														<string>Local__OutputIconPath</string>
+													</dict>
+												</array>
+												<key>TimeOutAbortsMacro</key>
+												<true/>
+											</dict>
+										</array>
+										<key>Conditions</key>
+										<dict>
+											<key>ConditionList</key>
+											<array>
+												<dict>
+													<key>ConditionType</key>
+													<string>Path</string>
+													<key>Path</key>
+													<string>%Variable%Local__OutputIconPath%</string>
+													<key>PathConditionType</key>
+													<string>SomethingExists</string>
+												</dict>
+											</array>
+											<key>ConditionListMatch</key>
+											<string>All</string>
+										</dict>
+										<key>MacroActionType</key>
+										<string>While</string>
+										<key>TimeOutAbortsMacro</key>
+										<true/>
+									</dict>
+									<dict>
+										<key>ActionName</key>
+										<string>Resize Clipboard Image to 64x64px</string>
+										<key>ActionUID</key>
+										<integer>999442955</integer>
+										<key>Height</key>
+										<string>64</string>
+										<key>Left</key>
+										<string>100</string>
+										<key>MacroActionType</key>
+										<string>ResizeImage</string>
+										<key>ResizeAction</key>
+										<string>ScaleToFit</string>
+										<key>Top</key>
+										<string>100</string>
+										<key>Width</key>
+										<string>64</string>
+									</dict>
+									<dict>
+										<key>ActionName</key>
+										<string>Write Clipboard Image to File</string>
+										<key>ActionUID</key>
+										<integer>999442956</integer>
+										<key>Append</key>
+										<false/>
+										<key>Destination</key>
+										<string>%Variable%Local__OutputIconPath%</string>
+										<key>Encoding</key>
+										<string>UTF8</string>
+										<key>Format</key>
+										<string>PNG</string>
+										<key>Format2</key>
+										<string>PNG</string>
+										<key>IsDisclosed</key>
+										<false/>
+										<key>MacroActionType</key>
+										<string>WriteFile</string>
+										<key>Source</key>
+										<string>Clipboard</string>
+									</dict>
+									<dict>
+										<key>ActionUID</key>
+										<integer>999442957</integer>
+										<key>Buttons</key>
+										<array>
+											<dict>
+												<key>Button</key>
+												<string>Use/</string>
+												<key>Cancel</key>
+												<false/>
+											</dict>
+											<dict>
+												<key>Button</key>
+												<string>Reveal/r</string>
+												<key>Cancel</key>
+												<false/>
+											</dict>
+											<dict>
+												<key>Button</key>
+												<string>Cancel/.</string>
+												<key>Cancel</key>
+												<true/>
+											</dict>
+										</array>
+										<key>IsDisclosed</key>
+										<false/>
+										<key>MacroActionType</key>
+										<string>PromptForUserInput</string>
+										<key>Prompt</key>
+										<string>Custom Icon Saved!</string>
+										<key>TimeOutAbortsMacro</key>
+										<true/>
+										<key>Title</key>
+										<string></string>
+										<key>Variables</key>
+										<array/>
+									</dict>
+								</array>
+								<key>MacroActionType</key>
+								<string>Group</string>
+								<key>TimeOutAbortsMacro</key>
+								<true/>
+							</dict>
+							<dict>
+								<key>ActionName</key>
+								<string>Reveal/Use?</string>
+								<key>ActionUID</key>
+								<integer>999442958</integer>
+								<key>CaseEntries</key>
+								<array>
+									<dict>
+										<key>Actions</key>
+										<array>
+											<dict>
+												<key>ActionUID</key>
+												<integer>999442959</integer>
+												<key>Destination</key>
+												<string></string>
+												<key>IsDisclosed</key>
+												<false/>
+												<key>MacroActionType</key>
+												<string>File</string>
+												<key>Operation</key>
+												<string>Reveal</string>
+												<key>Source</key>
+												<string>%Variable%Local__OutputIconPath%</string>
+											</dict>
+										</array>
+										<key>ConditionType</key>
+										<string>Is</string>
+										<key>TestValue</key>
+										<string>Reveal</string>
+									</dict>
+									<dict>
+										<key>Actions</key>
+										<array>
+											<dict>
+												<key>ActionName</key>
+												<string>Paste Icon</string>
+												<key>ActionUID</key>
+												<integer>999442960</integer>
+												<key>Actions</key>
+												<array>
+													<dict>
+														<key>ActionName</key>
+														<string>Set System Clipboard to Chosen Icon (AS)</string>
+														<key>ActionUID</key>
+														<integer>999442961</integer>
+														<key>DisplayKind</key>
+														<string>None</string>
+														<key>HonourFailureSettings</key>
+														<true/>
+														<key>IncludeStdErr</key>
+														<false/>
+														<key>IncludedVariables</key>
+														<array>
+															<string>9999</string>
+														</array>
+														<key>IsDisclosed</key>
+														<false/>
+														<key>MacroActionType</key>
+														<string>ExecuteAppleScript</string>
+														<key>Path</key>
+														<string></string>
+														<key>Text</key>
+														<string>set inst to system attribute "KMINSTANCE"tell application "Keyboard Maestro Engine"	set imagePath to getvariable "Local__OutputIconPath" instance instend tellset the clipboard to (read (POSIX file imagePath) as «class PNGf»)</string>
+														<key>TimeOutAbortsMacro</key>
+														<true/>
+														<key>TrimResults</key>
+														<true/>
+														<key>TrimResultsNew</key>
+														<true/>
+														<key>UseText</key>
+														<true/>
+													</dict>
+													<dict>
+														<key>ActionName</key>
+														<string>Focus Macro Icon Well</string>
+														<key>ActionUID</key>
+														<integer>999442962</integer>
+														<key>DisplayKind</key>
+														<string>None</string>
+														<key>HonourFailureSettings</key>
+														<true/>
+														<key>IncludeStdErr</key>
+														<false/>
+														<key>IncludedVariables</key>
+														<array>
+															<string>9999</string>
+														</array>
+														<key>IsDisclosed</key>
+														<false/>
+														<key>MacroActionType</key>
+														<string>ExecuteAppleScript</string>
+														<key>Path</key>
+														<string></string>
+														<key>Text</key>
+														<string>tell application "System Events"
+	tell application process "Keyboard Maestro"
+		set frontmost to true
+		tell (first window whose subrole is "AXStandardWindow")
+			tell group 6
+				tell splitter group 1
+					tell scroll area 3
+						set focused of image 1 to true
+					end tell
+				end tell
+			end tell
+		end tell
+	end tell
+end tell
+</string>
+														<key>TimeOutAbortsMacro</key>
+														<true/>
+														<key>TrimResults</key>
+														<true/>
+														<key>TrimResultsNew</key>
+														<true/>
+														<key>UseText</key>
+														<true/>
+													</dict>
+													<dict>
+														<key>Action</key>
+														<string>Paste</string>
+														<key>ActionName</key>
+														<string>Paste Icon</string>
+														<key>ActionUID</key>
+														<integer>999442963</integer>
+														<key>IsDisclosed</key>
+														<false/>
+														<key>MacroActionType</key>
+														<string>CutCopyPaste</string>
+														<key>TimeOutAbortsMacro</key>
+														<true/>
+													</dict>
+												</array>
+												<key>IsDisclosed</key>
+												<false/>
+												<key>MacroActionType</key>
+												<string>Group</string>
+												<key>TimeOutAbortsMacro</key>
+												<true/>
+											</dict>
+										</array>
+										<key>ConditionType</key>
+										<string>Is</string>
+										<key>TestValue</key>
+										<string>Use</string>
+									</dict>
+								</array>
+								<key>IsDisclosed</key>
+								<false/>
+								<key>MacroActionType</key>
+								<string>Switch</string>
+								<key>Source</key>
+								<string>Text</string>
+								<key>Text</key>
+								<string>%PromptButton%</string>
+							</dict>
+							<dict>
+								<key>ActionName</key>
+								<string>Check for Large Files and Resize if Necessary</string>
+								<key>ActionUID</key>
+								<integer>999442964</integer>
+								<key>DisplayKind</key>
+								<string>None</string>
+								<key>HonourFailureSettings</key>
+								<true/>
+								<key>IncludeStdErr</key>
+								<false/>
+								<key>IncludedVariables</key>
+								<array>
+									<string>9999</string>
+								</array>
+								<key>MacroActionType</key>
+								<string>ExecuteShellScript</string>
+								<key>Path</key>
+								<string></string>
+								<key>Source</key>
+								<string>Nothing</string>
+								<key>Text</key>
+								<string>#!/bin/bash
+
+# Get the value of the Keyboard Maestro variable
+Local__IconFolder="$KMVAR_Local__IconFolder"
+
+# Find .png files over 15KB
+over_15kb_png_files=$(find "$Local__IconFolder" -type f -name "*.png" -size +15k)
+
+# Process each .png file
+while IFS= read -r file; do
+    sips -Z 64 "$file" --out "$file"
+done &lt;&lt;&lt; "$over_15kb_png_files"
+</string>
+								<key>TimeOutAbortsMacro</key>
+								<true/>
+								<key>TrimResults</key>
+								<true/>
+								<key>TrimResultsNew</key>
+								<true/>
+								<key>UseText</key>
+								<true/>
+							</dict>
+						</array>
+						<key>TimeOutAbortsMacro</key>
+						<true/>
+					</dict>
+				</array>
+				<key>CreationDate</key>
+				<real>720542487.96802104</real>
+				<key>CustomIconData</key>
+				<data>
+				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
+				AAAAAQAFAAABBgADAAAAAQACAAABCgADAAAAAQABAAAB
+				EQAEAAAAAQAAAAgBEgADAAAAAQABAAABFQADAAAAAQAE
+				AAABFgADAAAAAQBAAAABFwAEAAAAAQAAEyMBHAADAAAA
+				AQABAAABKAADAAAAAQACAAABPQADAAAAAQACAAABUgAD
+				AAAAAQABAAABUwADAAAABAAAFAaHcwAHAAAHyAAAFA4A
+				ACNGAAgACAAIAAgAAQABAAEAAQAAB8hhcHBsAiAAAG1u
+				dHJSR0IgWFlaIAfZAAIAGQALABoAC2Fjc3BBUFBMAAAA
+				AGFwcGwAAAAAAAAAAAAAAAAAAAAAAAD21gABAAAAANMt
+				YXBwbAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+				AAAAAAAAAAAAAAAAAAAAAAAAC2Rlc2MAAAEIAAAAb2Rz
+				Y20AAAF4AAAFimNwcnQAAAcEAAAAOHd0cHQAAAc8AAAA
+				FHJYWVoAAAdQAAAAFGdYWVoAAAdkAAAAFGJYWVoAAAd4
+				AAAAFHJUUkMAAAeMAAAADmNoYWQAAAecAAAALGJUUkMA
+				AAeMAAAADmdUUkMAAAeMAAAADmRlc2MAAAAAAAAAFEdl
+				bmVyaWMgUkdCIFByb2ZpbGUAAAAAAAAAAAAAABRHZW5l
+				cmljIFJHQiBQcm9maWxlAAAAAAAAAAAAAAAAAAAAAAAA
+				AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABt
+				bHVjAAAAAAAAAB8AAAAMc2tTSwAAACgAAAGEZGFESwAA
+				ACQAAAGsY2FFUwAAACQAAAHQdmlWTgAAACQAAAH0cHRC
+				UgAAACYAAAIYdWtVQQAAACoAAAI+ZnJGVQAAACgAAAJo
+				aHVIVQAAACgAAAKQemhUVwAAABIAAAK4a29LUgAAABYA
+				AALKbmJOTwAAACYAAALgY3NDWgAAACIAAAMGaGVJTAAA
+				AB4AAAMocm9STwAAACQAAANGZGVERQAAACwAAANqaXRJ
+				VAAAACgAAAOWc3ZTRQAAACYAAALgemhDTgAAABIAAAO+
+				amFKUAAAABoAAAPQZWxHUgAAACIAAAPqcHRQTwAAACYA
+				AAQMbmxOTAAAACgAAAQyZXNFUwAAACYAAAQMdGhUSAAA
+				ACQAAARadHJUUgAAACIAAAR+ZmlGSQAAACgAAASgaHJI
+				UgAAACgAAATIcGxQTAAAACwAAATwcnVSVQAAACIAAAUc
+				ZW5VUwAAACYAAAU+YXJFRwAAACYAAAVkAFYBYQBlAG8A
+				YgBlAGMAbgD9ACAAUgBHAEIAIABwAHIAbwBmAGkAbABH
+				AGUAbgBlAHIAZQBsACAAUgBHAEIALQBwAHIAbwBmAGkA
+				bABQAGUAcgBmAGkAbAAgAFIARwBCACAAZwBlAG4A6ABy
+				AGkAYwBDHqUAdQAgAGgA7ABuAGgAIABSAEcAQgAgAEMA
+				aAB1AG4AZwBQAGUAcgBmAGkAbAAgAFIARwBCACAARwBl
+				AG4A6QByAGkAYwBvBBcEMAQzBDAEOwRMBD0EOAQ5ACAE
+				PwRABD4ERAQwBDkEOwAgAFIARwBCAFAAcgBvAGYAaQBs
+				ACAAZwDpAG4A6QByAGkAcQB1AGUAIABSAFYAQgDBAGwA
+				dABhAGwA4QBuAG8AcwAgAFIARwBCACAAcAByAG8AZgBp
+				AGyQGnUoAFIARwBCgnJfaWPPj/DHfLwYACAAUgBHAEIA
+				INUEuFzTDMd8AEcAZQBuAGUAcgBpAHMAawAgAFIARwBC
+				AC0AcAByAG8AZgBpAGwATwBiAGUAYwBuAP0AIABSAEcA
+				QgAgAHAAcgBvAGYAaQBsBeQF6AXVBeQF2QXcACAAUgBH
+				AEIAIAXbBdwF3AXZAFAAcgBvAGYAaQBsACAAUgBHAEIA
+				IABnAGUAbgBlAHIAaQBjAEEAbABsAGcAZQBtAGUAaQBu
+				AGUAcwAgAFIARwBCAC0AUAByAG8AZgBpAGwAUAByAG8A
+				ZgBpAGwAbwAgAFIARwBCACAAZwBlAG4AZQByAGkAYwBv
+				Zm6QGgBSAEcAQmPPj/Blh072TgCCLAAgAFIARwBCACAw
+				1zDtMNUwoTCkMOsDkwO1A70DuQO6A8wAIAPAA8EDvwPG
+				A68DuwAgAFIARwBCAFAAZQByAGYAaQBsACAAUgBHAEIA
+				IABnAGUAbgDpAHIAaQBjAG8AQQBsAGcAZQBtAGUAZQBu
+				ACAAUgBHAEIALQBwAHIAbwBmAGkAZQBsDkIOGw4jDkQO
+				Hw4lDkwAIABSAEcAQgAgDhcOMQ5IDicORA4bAEcAZQBu
+				AGUAbAAgAFIARwBCACAAUAByAG8AZgBpAGwAaQBZAGwA
+				ZQBpAG4AZQBuACAAUgBHAEIALQBwAHIAbwBmAGkAaQBs
+				AGkARwBlAG4AZQByAGkBDQBrAGkAIABSAEcAQgAgAHAA
+				cgBvAGYAaQBsAFUAbgBpAHcAZQByAHMAYQBsAG4AeQAg
+				AHAAcgBvAGYAaQBsACAAUgBHAEIEHgQxBEkEOAQ5ACAE
+				PwRABD4ERAQ4BDsETAAgAFIARwBCAEcAZQBuAGUAcgBp
+				AGMAIABSAEcAQgAgAFAAcgBvAGYAaQBsAGUGRQZEBkEA
+				IAYqBjkGMQZKBkEAIABSAEcAQgAgBicGRAY5BicGRQAA
+				dGV4dAAAAABDb3B5cmlnaHQgMjAwNyBBcHBsZSBJbmMu
+				LCBhbGwgcmlnaHRzIHJlc2VydmVkLgBYWVogAAAAAAAA
+				81IAAQAAAAEWz1hZWiAAAAAAAAB0TQAAPe4AAAPQWFla
+				IAAAAAAAAFp1AACscwAAFzRYWVogAAAAAAAAKBoAABWf
+				AAC4NmN1cnYAAAAAAAAAAQHNAABzZjMyAAAAAAABDEIA
+				AAXe///zJgAAB5IAAP2R///7ov///aMAAAPcAADAbIAA
+				IFA4JBYNB4RCYVC4ZDYdD4hEYlE4pFYtF4xCCYGg0VXU
+				+Xy52U7XaxAGAQCAyUGQ0UxiEAgM084G+l3I9ns4IzO5
+				5Di0Hg+ZkQHhAlgCBAIAly83isgYAwGDh+BwUQQK+n2A
+				GkAX+2F28XesHQ+Hu5lm5nMqXc+n07H8/3+/iQGAyUQL
+				KAKs3O5lVPYwNAiEh0SQyGSauXS6FqiA2H08JHq+BK+7
+				gAAQDgYAH+/X8AHw9HrmsqBgSCMsDgaAH6AgEAHWBwI6
+				28+Hw3HW+306CgCwcUVC43Eojq324X79F08KhYsyqDwk
+				THWBQG/X26HY/wG+32BABKM1tM1b+6BgL3aRAsrooF3g
+				H5wIBwMAAL53E73g7y+5nAVGvuF846LCCBIFjATQLg4T
+				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
+				AQAFAAABBgADAAAAAQACAAABCgADAAAAAQABAAABEQAE
+				AAAAAQAAG9YBEgADAAAAAQABAAABFQADAAAAAQAEAAAB
+				FgADAAAAAQAgAAABFwAEAAAAAQAAB3ABHAADAAAAAQAB
+				AAABKAADAAAAAQACAAABPQADAAAAAQACAAABUgADAAAA
+				AQABAAABUwADAAAABAAAJCCHcwAHAAAHyAAAJCgAAC6a
+				AAgACAAIAAgAAQABAAEAAQAAB8hhcHBsAiAAAG1udHJS
+				R0IgWFlaIAfZAAIAGQALABoAC2Fjc3BBUFBMAAAAAGFw
+				cGwAAAAAAAAAAAAAAAAAAAAAAAD21gABAAAAANMtYXBw
+				bAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+				AAAAAAAAAAAAAAAAAAAAC2Rlc2MAAAEIAAAAb2RzY20A
+				AAF4AAAFimNwcnQAAAcEAAAAOHd0cHQAAAc8AAAAFHJY
+				WVoAAAdQAAAAFGdYWVoAAAdkAAAAFGJYWVoAAAd4AAAA
+				FHJUUkMAAAeMAAAADmNoYWQAAAecAAAALGJUUkMAAAeM
+				AAAADmdUUkMAAAeMAAAADmRlc2MAAAAAAAAAFEdlbmVy
+				aWMgUkdCIFByb2ZpbGUAAAAAAAAAAAAAABRHZW5lcmlj
+				IFJHQiBQcm9maWxlAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+				AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABtbHVj
+				AAAAAAAAAB8AAAAMc2tTSwAAACgAAAGEZGFESwAAACQA
+				AAGsY2FFUwAAACQAAAHQdmlWTgAAACQAAAH0cHRCUgAA
+				ACYAAAIYdWtVQQAAACoAAAI+ZnJGVQAAACgAAAJoaHVI
+				VQAAACgAAAKQemhUVwAAABIAAAK4a29LUgAAABYAAALK
+				bmJOTwAAACYAAALgY3NDWgAAACIAAAMGaGVJTAAAAB4A
+				AAMocm9STwAAACQAAANGZGVERQAAACwAAANqaXRJVAAA
+				ACgAAAOWc3ZTRQAAACYAAALgemhDTgAAABIAAAO+amFK
+				UAAAABoAAAPQZWxHUgAAACIAAAPqcHRQTwAAACYAAAQM
+				bmxOTAAAACgAAAQyZXNFUwAAACYAAAQMdGhUSAAAACQA
+				AARadHJUUgAAACIAAAR+ZmlGSQAAACgAAASgaHJIUgAA
+				ACgAAATIcGxQTAAAACwAAATwcnVSVQAAACIAAAUcZW5V
+				UwAAACYAAAU+YXJFRwAAACYAAAVkAFYBYQBlAG8AYgBl
+				AGMAbgD9ACAAUgBHAEIAIABwAHIAbwBmAGkAbABHAGUA
+				bgBlAHIAZQBsACAAUgBHAEIALQBwAHIAbwBmAGkAbABQ
+				AGUAcgBmAGkAbAAgAFIARwBCACAAZwBlAG4A6AByAGkA
+				YwBDHqUAdQAgAGgA7ABuAGgAIABSAEcAQgAgAEMAaAB1
+				AG4AZwBQAGUAcgBmAGkAbAAgAFIARwBCACAARwBlAG4A
+				6QByAGkAYwBvBBcEMAQzBDAEOwRMBD0EOAQ5ACAEPwRA
+				BD4ERAQwBDkEOwAgAFIARwBCAFAAcgBvAGYAaQBsACAA
+				ZwDpAG4A6QByAGkAcQB1AGUAIABSAFYAQgDBAGwAdABh
+				AGwA4QBuAG8AcwAgAFIARwBCACAAcAByAG8AZgBpAGyQ
+				GnUoAFIARwBCgnJfaWPPj/DHfLwYACAAUgBHAEIAINUE
+				uFzTDMd8AEcAZQBuAGUAcgBpAHMAawAgAFIARwBCAC0A
+				cAByAG8AZgBpAGwATwBiAGUAYwBuAP0AIABSAEcAQgAg
+				AHAAcgBvAGYAaQBsBeQF6AXVBeQF2QXcACAAUgBHAEIA
+				IAXbBdwF3AXZAFAAcgBvAGYAaQBsACAAUgBHAEIAIABn
+				AGUAbgBlAHIAaQBjAEEAbABsAGcAZQBtAGUAaQBuAGUA
+				cwAgAFIARwBCAC0AUAByAG8AZgBpAGwAUAByAG8AZgBp
+				AGwAbwAgAFIARwBCACAAZwBlAG4AZQByAGkAYwBvZm6Q
+				GgBSAEcAQmPPj/Blh072TgCCLAAgAFIARwBCACAw1zDt
+				MNUwoTCkMOsDkwO1A70DuQO6A8wAIAPAA8EDvwPGA68D
+				uwAgAFIARwBCAFAAZQByAGYAaQBsACAAUgBHAEIAIABn
+				AGUAbgDpAHIAaQBjAG8AQQBsAGcAZQBtAGUAZQBuACAA
+				UgBHAEIALQBwAHIAbwBmAGkAZQBsDkIOGw4jDkQOHw4l
+				DkwAIABSAEcAQgAgDhcOMQ5IDicORA4bAEcAZQBuAGUA
+				bAAgAFIARwBCACAAUAByAG8AZgBpAGwAaQBZAGwAZQBp
+				AG4AZQBuACAAUgBHAEIALQBwAHIAbwBmAGkAaQBsAGkA
+				RwBlAG4AZQByAGkBDQBrAGkAIABSAEcAQgAgAHAAcgBv
+				AGYAaQBsAFUAbgBpAHcAZQByAHMAYQBsAG4AeQAgAHAA
+				cgBvAGYAaQBsACAAUgBHAEIEHgQxBEkEOAQ5ACAEPwRA
+				BD4ERAQ4BDsETAAgAFIARwBCAEcAZQBuAGUAcgBpAGMA
+				IABSAEcAQgAgAFAAcgBvAGYAaQBsAGUGRQZEBkEAIAYq
+				BjkGMQZKBkEAIABSAEcAQgAgBicGRAY5BicGRQAAdGV4
+				dAAAAABDb3B5cmlnaHQgMjAwNyBBcHBsZSBJbmMuLCBh
+				bGwgcmlnaHRzIHJlc2VydmVkLgBYWVogAAAAAAAA81IA
+				AQAAAAEWz1hZWiAAAAAAAAB0TQAAPe4AAAPQWFlaIAAA
+				AAAAAFp1AACscwAAFzRYWVogAAAAAAAAKBoAABWfAAC4
+				NmN1cnYAAAAAAAAAAQHNAABzZjMyAAAAAAABDEIAAAXe
+				///zJgAAB5IAAP2R///7ov///aMAAAPcAADAbIAAIFA4
+				JBYNB4RCYVC4ZChsEQiPQeBQMEASAgECwcAwGD107nas
+				XU93u6AQBAICX+/n8/3zLHxDYOGwQCA+WQ0GzGTwMCS8
+				IH6AA+/X6/AAApQAHYCQO62q/H0zgA/X8BTy324ZXI+X
+				y3plBhaDAaOFeGQ8xwG93yAAUUygAAKHw8AHmrliAH43
+				a8DAMBQAuH+/WIaHK4CQ96I9a+ABACQUJVIHxEuw2BQQ
+				HgkdzmAQcWyxBX88nkAHuvF8AHioVKAHS02m8iXhRc53
+				0+XDDQDuQzGA+uxqOmuIEwlQQCxeLYa7Xs9gA4VmtAA7
+				zqem8S3I3hY+X+/3vCAiBQKFD4IBGkQhRAgPRWLSQ/Ue
+				iQECgMBwAEwkEgBNQQAG7/f4cBwAABJ4Hi+pBEOeomG2
+				aoWnEfR9G+hABtyAohgiCYuEACAJkODAMAyC5/E4Sypv
+				AAB/H4ox6RWAB1xcAD5voAR8LWEZBkQAA9Gyao0lKd52
+				kwhg7gwDZGjkBgIDkeIEgSo5QE0AAAvtKKWAA0TRxcdc
+				oo4AB/gCgQSEDHBOGiZ5IEKd51jihgEtyCYzw2Pw4AmC
+				w3HkPg8QEIQgLhLh6HgeAAHRF5+pIgRVlcAAUGEYwAFA
+				eR3EwP51HONLFhYA4EBsWgNhCZJ3S6AB7BcFj8icJYAA
+				OGgZgAchmqkBZQFGAASG825Yn6fRdEodp1EGap8nwYjF
+				hC+YUk6DAOl0EoCAMDkHrW7qBHiD4OgABsCVEd53ncZR
+				+n2Y5mH0fBhlFH5EsWhAdASBYoESCoNEoB6MAkeJ/H6e
+				QMqOChfHwepgkceB2kEbFxmCgYBoGoN0oM3IAgGUAPhG
+				X52pIdQ+nWc44AyAgChGcZ9n0aztH/LWGZOgQkAYBwyn
+				67Z7l2ep5lJlGa5tm6FICAAAEQEAAAMAAAABABAAAAEB
+				AAMAAAABABAAAAECAAMAAAAEAAAvbAEDAAMAAAABAAUA
+				AAEGAAMAAAABAAIAAAEKAAMAAAABAAEAAAERAAQAAAAB
+				AAAr8AESAAMAAAABAAEAAAEVAAMAAAABAAQAAAEWAAMA
+				AAABABAAAAEXAAQAAAABAAACqQEcAAMAAAABAAEAAAEo
+				AAMAAAABAAIAAAE9AAMAAAABAAIAAAFSAAMAAAABAAEA
+				AAFTAAMAAAAEAAAvdIdzAAcAAAfIAAAvfAAAAAAACAAI
+				AAgACAABAAEAAQABAAAHyGFwcGwCIAAAbW50clJHQiBY
+				WVogB9kAAgAZAAsAGgALYWNzcEFQUEwAAAAAYXBwbAAA
+				AAAAAAAAAAAAAAAAAAAAAPbWAAEAAAAA0y1hcHBsAAAA
+				AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+				AAAAAAAAAAAAAAALZGVzYwAAAQgAAABvZHNjbQAAAXgA
+				AAWKY3BydAAABwQAAAA4d3RwdAAABzwAAAAUclhZWgAA
+				B1AAAAAUZ1hZWgAAB2QAAAAUYlhZWgAAB3gAAAAUclRS
+				QwAAB4wAAAAOY2hhZAAAB5wAAAAsYlRSQwAAB4wAAAAO
+				Z1RSQwAAB4wAAAAOZGVzYwAAAAAAAAAUR2VuZXJpYyBS
+				R0IgUHJvZmlsZQAAAAAAAAAAAAAAFEdlbmVyaWMgUkdC
+				IFByb2ZpbGUAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+				AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAG1sdWMAAAAA
+				AAAAHwAAAAxza1NLAAAAKAAAAYRkYURLAAAAJAAAAaxj
+				YUVTAAAAJAAAAdB2aVZOAAAAJAAAAfRwdEJSAAAAJgAA
+				Ahh1a1VBAAAAKgAAAj5mckZVAAAAKAAAAmhodUhVAAAA
+				KAAAApB6aFRXAAAAEgAAArhrb0tSAAAAFgAAAspuYk5P
+				AAAAJgAAAuBjc0NaAAAAIgAAAwZoZUlMAAAAHgAAAyhy
+				b1JPAAAAJAAAA0ZkZURFAAAALAAAA2ppdElUAAAAKAAA
+				A5ZzdlNFAAAAJgAAAuB6aENOAAAAEgAAA75qYUpQAAAA
+				GgAAA9BlbEdSAAAAIgAAA+pwdFBPAAAAJgAABAxubE5M
+				AAAAKAAABDJlc0VTAAAAJgAABAx0aFRIAAAAJAAABFp0
+				clRSAAAAIgAABH5maUZJAAAAKAAABKBockhSAAAAKAAA
+				BMhwbFBMAAAALAAABPBydVJVAAAAIgAABRxlblVTAAAA
+				JgAABT5hckVHAAAAJgAABWQAVgFhAGUAbwBiAGUAYwBu
+				AP0AIABSAEcAQgAgAHAAcgBvAGYAaQBsAEcAZQBuAGUA
+				cgBlAGwAIABSAEcAQgAtAHAAcgBvAGYAaQBsAFAAZQBy
+				AGYAaQBsACAAUgBHAEIAIABnAGUAbgDoAHIAaQBjAEMe
+				pQB1ACAAaADsAG4AaAAgAFIARwBCACAAQwBoAHUAbgBn
+				AFAAZQByAGYAaQBsACAAUgBHAEIAIABHAGUAbgDpAHIA
+				aQBjAG8EFwQwBDMEMAQ7BEwEPQQ4BDkAIAQ/BEAEPgRE
+				BDAEOQQ7ACAAUgBHAEIAUAByAG8AZgBpAGwAIABnAOkA
+				bgDpAHIAaQBxAHUAZQAgAFIAVgBCAMEAbAB0AGEAbADh
+				AG4AbwBzACAAUgBHAEIAIABwAHIAbwBmAGkAbJAadSgA
+				UgBHAEKCcl9pY8+P8Md8vBgAIABSAEcAQgAg1QS4XNMM
+				x3wARwBlAG4AZQByAGkAcwBrACAAUgBHAEIALQBwAHIA
+				bwBmAGkAbABPAGIAZQBjAG4A/QAgAFIARwBCACAAcABy
+				AG8AZgBpAGwF5AXoBdUF5AXZBdwAIABSAEcAQgAgBdsF
+				3AXcBdkAUAByAG8AZgBpAGwAIABSAEcAQgAgAGcAZQBu
+				AGUAcgBpAGMAQQBsAGwAZwBlAG0AZQBpAG4AZQBzACAA
+				UgBHAEIALQBQAHIAbwBmAGkAbABQAHIAbwBmAGkAbABv
+				ACAAUgBHAEIAIABnAGUAbgBlAHIAaQBjAG9mbpAaAFIA
+				RwBCY8+P8GWHTvZOAIIsACAAUgBHAEIAIDDXMO0w1TCh
+				MKQw6wOTA7UDvQO5A7oDzAAgA8ADwQO/A8YDrwO7ACAA
+				UgBHAEIAUABlAHIAZgBpAGwAIABSAEcAQgAgAGcAZQBu
+				AOkAcgBpAGMAbwBBAGwAZwBlAG0AZQBlAG4AIABSAEcA
+				QgAtAHAAcgBvAGYAaQBlAGwOQg4bDiMORA4fDiUOTAAg
+				AFIARwBCACAOFw4xDkgOJw5EDhsARwBlAG4AZQBsACAA
+				UgBHAEIAIABQAHIAbwBmAGkAbABpAFkAbABlAGkAbgBl
+				AG4AIABSAEcAQgAtAHAAcgBvAGYAaQBpAGwAaQBHAGUA
+				bgBlAHIAaQENAGsAaQAgAFIARwBCACAAcAByAG8AZgBp
+				AGwAVQBuAGkAdwBlAHIAcwBhAGwAbgB5ACAAcAByAG8A
+				ZgBpAGwAIABSAEcAQgQeBDEESQQ4BDkAIAQ/BEAEPgRE
+				BDgEOwRMACAAUgBHAEIARwBlAG4AZQByAGkAYwAgAFIA
+				RwBCACAAUAByAG8AZgBpAGwAZQZFBkQGQQAgBioGOQYx
+				BkoGQQAgAFIARwBCACAGJwZEBjkGJwZFAAB0ZXh0AAAA
+				AENvcHlyaWdodCAyMDA3IEFwcGxlIEluYy4sIGFsbCBy
+				aWdodHMgcmVzZXJ2ZWQuAFhZWiAAAAAAAADzUgABAAAA
+				ARbPWFlaIAAAAAAAAHRNAAA97gAAA9BYWVogAAAAAAAA
+				WnUAAKxzAAAXNFhZWiAAAAAAAAAoGgAAFZ8AALg2Y3Vy
+				dgAAAAAAAAABAc0AAHNmMzIAAAAAAAEMQgAABd7///Mm
+				AAAHkgAA/ZH///ui///9owAAA9wAAMBs
+				</data>
+				<key>IsActive</key>
+				<false/>
+				<key>ModificationDate</key>
+				<real>792450932.10276902</real>
+				<key>Name</key>
+				<string>Icon Manager</string>
+				<key>Triggers</key>
+				<array/>
+				<key>UID</key>
+				<string>502D7230-C69F-4116-A4DB-F4A98E8CCC7B</string>
+			</dict>
+		</array>
+		<key>Name</key>
+		<string>ϟ Backup</string>
+		<key>ToggleMacroUID</key>
+		<string>F6487E97-939D-451C-864C-23628103705C</string>
+		<key>UID</key>
+		<string>347E8B18-E177-40F4-AFCE-CE79D9B471F2</string>
+	</dict>
+</array>
+</plist>

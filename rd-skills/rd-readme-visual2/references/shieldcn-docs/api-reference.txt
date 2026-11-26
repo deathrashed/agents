@@ -1,0 +1,239 @@
+# source: https://shieldcn.dev/docs/api-reference (fetched 2026-10-15)
+shieldcn
+Docs
+Studio
+Showcase
+Builder
+Sponsorjal-co/shieldcn919
+Search docs⌘KSearch documentation
+Search all badge providers, guides, and reference docs.
+Getting Started
+IntroductionREADME StudioCLIAgent SkillNewSelf-HostingAPI ReferenceToken PoolSponsor
+Customization
+Badges
+Badge GroupStatic BadgeDynamic JSONHTTPS Endpoint
+Badge Providers
+Charts
+OverviewStar history
+Headers
+OverviewGenerator
+Sponsors
+OverviewGenerator
+Contributors
+OverviewGenerator
+Registry
+More
+shieldcnMember of the Vercel OSS Program
+Analytics provided by OpenPanel
+Monitored by Sentry
+Powered by Neon.
+Community
+GitHubjal-co/uiStatsllms.txtPrivacyContact
+Product
+DocumentationAPI ReferenceToken PoolGeneratorAgent Skill
+inspired by shields.io and badgen.net
+Made with  in  by Justin Levine
+API Reference
+Complete URL specification, query parameters, and response formats.
+URL format
+All endpoints support both .svg and .png — swap .json to get raw badge data, or append /shields.json for shields.io compatibility. Use SVG by default for the crispest rendering.
+https://shieldcn.dev/{provider}/{...params}.svg
+https://shieldcn.dev/{provider}/{...params}.png
+https://shieldcn.dev/{provider}/{...params}.json
+https://shieldcn.dev/{provider}/{...params}/shields.json
+Badge endpoints
+npm
+Endpoint | Description |
+/npm/{package}.svg | Latest version |
+/npm/{package}/downloads.svg | Weekly download count |
+/npm/@scope/package.svg | Scoped package version |
+GitHub
+Endpoint | Description |
+/github/{owner}/{repo}/stars.svg | Star count |
+/github/{owner}/{repo}/release.svg | Latest release tag |
+/github/{owner}/{repo}/ci.svg | CI workflow status |
+/github/{owner}/{repo}/license.svg | SPDX license identifier |
+/github/downloads/{owner}/{repo}.svg | Downloads — all assets, all releases |
+/github/downloads/{owner}/{repo}/latest.svg | Downloads — all assets, latest release |
+/github/downloads/{owner}/{repo}/{tag}.svg | Downloads — all assets, specific tag |
+/github/downloads-asset/{owner}/{repo}/{asset}.svg | Downloads — specific asset, all releases |
+/github/downloads-asset/{owner}/{repo}/{asset}/latest.svg | Downloads — specific asset, latest release |
+/github/downloads-asset/{owner}/{repo}/{asset}/{tag}.svg | Downloads — specific asset, specific tag |
+Views
+Stateful view counters — the count increments on every render and the response is
+served uncached (Cache-Control: no-store). Use ?base=N to add an existing
+total when migrating from another counter (the base is added at render, never
+stored, and must stay in the URL).
+Endpoint | Description |
+/views/repo/{owner}/{repo}.svg | Repository view counter |
+/views/user/{username}.svg | Profile view counter |
+/views/user/{username}/repos.svg | All-repos view counter |
+Discord
+Endpoint | Description |
+/discord/{serverId}.svg | Online member count |
+/discord/members/{inviteCode}.svg | Approximate member count from invite |
+/discord/online-members/{inviteCode}.svg | Approximate online member count from invite |
+NBA
+Endpoint | Description |
+/nba.svg | Default “2026 champs / Knicks” badge using the branded Knicks color |
+/nba/{team}.svg | NBA team fan badge with team logo and team color |
+{team} accepts common team slugs, names, abbreviations, and nicknames such as knicks, ny, celtics, bos, warriors, and gs. Omit {team} for the default “2026 champs / Knicks” badge. See NBA docs.
+X / Twitter
+Endpoint | Description |
+/x/{username}.svg | Follow CTA (default) |
+/x/follow/{username}.svg | "follow @username" CTA |
+/x/mention/{username}.svg | "@username" mention CTA |
+Static badges — no API token required.
+Homebrew
+Endpoint | Description |
+/homebrew/{formula}.svg | Formula version |
+/homebrew/cask/{cask}.svg | Cask version |
+/homebrew/dm/{formula}.svg | Formula downloads (monthly) |
+/homebrew/dq/{formula}.svg | Formula downloads (quarterly) |
+/homebrew/dy/{formula}.svg | Formula downloads (yearly) |
+/homebrew/cask-dm/{cask}.svg | Cask downloads (monthly) |
+/homebrew/cask-dq/{cask}.svg | Cask downloads (quarterly) |
+/homebrew/cask-dy/{cask}.svg | Cask downloads (yearly) |
+Tokscale
+Endpoint | Description |
+/tokscale/{username}.svg | Total token count (default) |
+/tokscale/tokens/{username}.svg | Total token count |
+/tokscale/cost/{username}.svg | Estimated total cost |
+/tokscale/rank/{username}.svg | Global leaderboard rank |
+/tokscale/active-days/{username}.svg | Days with AI activity |
+/tokscale/stats.svg | Global user count |
+skills.sh
+Endpoint | Description |
+/skills/{owner}/{repo}/{skill}.svg | All-time install count (default) |
+/skills/installs/{owner}/{repo}/{skill}.svg | All-time install count |
+/skills/rank/{owner}/{repo}/{skill}.svg | All-time leaderboard rank |
+/skills/trending/{owner}/{repo}/{skill}.svg | Trending leaderboard rank |
+/skills/hot/{owner}/{repo}/{skill}.svg | Hot (last 24h) leaderboard rank |
+Country Flags
+Endpoint | Description |
+/flag/{code}.svg | “built in country” with a flag chip |
+{code} is an ISO 3166-1 alpha-2 country code (case-insensitive), plus regions
+and subdivisions like eu, gb-eng, es-ct. 265 codes supported. Definite
+articles are applied automatically (us → “the USA”). See Country Flags docs.
+Badge Group
+Endpoint | Description |
+/group/{badge1}+{badge2}+{badge3}.svg | Multiple badges joined in one image |
+Join any badge paths with +. Query params apply to all segments. See Badge Group docs.
+Static
+Endpoint | Description |
+/badge/{label}-{message}-{color}.svg | Custom text badge |
+/badge/dynamic/json.svg?url=...&query=... | Dynamic JSON badge |
+Charts
+Endpoint | Description |
+/chart/github/stars/{owner}/{repo}.svg | GitHub star history from privacy-safe weekly counts; also supports .png, .json, and /chart/stars/{owner}/{repo} |
+/chart/github/issues/{owner}/{repo}.svg | GitHub issues over time |
+/chart/npm/{package}.svg | npm weekly downloads |
+/chart/json.svg?values=1,2,3 | Inline JSON data |
+/chart/json.svg?url=...&query=... | Remote JSON (JSONPath) |
+Shadcn-styled line/area charts. Support mode, theme, color, fill,
+area, bg, border, font, width, height, title, days (npm), and
+values/dates/labels or url/query (JSON). See Charts docs.
+Headers
+Endpoint | Description |
+/header/{preset}.svg | Repository header banner |
+/header.svg | Default preset (surface) |
+/header/{preset}.png | PNG banner |
+/header/{preset}.json | Resolved header config |
+Premade backgrounds: surface, gradient, dots, grid, graph, glow,
+transparent. Support title, subtitle, logo, logoColor, size
+(banner, wide, social, square), width, height, align, bg,
+gradient, glow, accent, titleColor, subtitleColor, radius, border,
+watermark, pattern, plus mode, theme, and font. See
+Headers docs.
+Sponsors
+Endpoint | Description |
+/sponsors/{login}.svg | Active public GitHub Sponsors grid |
+/sponsors/{login}.png | PNG grid |
+/sponsors/{login}.json | Resolved sponsor list |
+A grid of an account's active public GitHub Sponsors. Arrange tiers by pinning
+logins with special and backers (comma-separated). Support specialTitle,
+sponsorsTitle, backersTitle, title, size, width, limit, names,
+bg, accent, radius, border, watermark, plus mode and font. See
+Sponsors docs.
+Contributors
+Endpoint | Description |
+/contributors/{owner}/{repo}.svg | Repository contributors grid |
+/contributors/{owner}/{repo}.png | PNG grid |
+/contributors/{owner}/{repo}.json | Resolved contributor list |
+A contrib.rocks-style grid of a repository's top contributors, ordered by
+contributions. Bots are excluded by default (bots=true to include). Supports
+title, limit, min, names, size, width, align, titleAlign, the
+full header background system (preset, theme, bg, gradient, pattern,
+glow, image, overlay, tint, accent), radius, border, watermark,
+plus mode and font. See Contributors docs.
+Query parameters
+Appearance
+PropType
+variant?"default" | "secondary" | "outline" | "ghost" | "destructive" | "branded"
+size?"xs" | "sm" | "default" | "lg"
+mode?"dark" | "light"
+theme?string
+font?"inter" | "geist" | "geist-mono" | "jetbrains-mono" | "fira-code" | "roboto" | "space-grotesk"
+Colors
+PropType
+color?string
+labelColor?string
+valueColor?string
+labelTextColor?string
+labelOpacity?number
+gradient?string
+Icons
+PropType
+logo?string | false
+logoColor?string
+Layout
+PropType
+label?string
+split?boolean
+statusDot?boolean
+height?number
+fontSize?number
+radius?number
+padX?number
+iconSize?number
+gap?number
+labelGap?number
+Effects
+PropType
+animate?pulse | glow | shimmer
+Animation is SVG-only and works inside GitHub's image sandbox because it uses pure CSS keyframes — no JavaScript. pulse and glow require a status dot (auto for CI badges, or set statusDot=true with a color).
+Response formats
+PNG
+http
+Copy
+Content-Type: image/png
+Cache-Control: public, max-age=3600, s-maxage=3600, stale-while-revalidate=86400
+PNG badges are rasterized at exact badge dimensions. Use SVG when you want the crispest badge rendering; use PNG only where SVG is not accepted.
+SVG
+http
+Copy
+Content-Type: image/svg+xml
+Cache-Control: public, max-age=3600, s-maxage=3600, stale-while-revalidate=86400
+SVG badges are scalable and have smaller file sizes. Use .svg when you need crisp rendering at any scale.
+JSON
+json
+Copy
+{
+"label": "npm",
+"value": "v19.1.0",
+"color": "blue",
+"link": "https://www.npmjs.com/package/react"
+}
+Shields.io compatible
+json
+Copy
+{
+"schemaVersion": 1,
+"label": "npm",
+"message": "v19.1.0",
+"color": "blue"
+}
+Use with shields.io endpoint badge:
+![npm](https://img.shields.io/endpoint?url=https://shieldcn.dev/npm/react/shields.json)
+On This Page
+URL formatBadge endpointsnpmGitHubViewsDiscordNBAX / TwitterHomebrewTokscaleskills.shCountry FlagsBadge GroupStaticChartsHeadersSponsorsContributorsQuery parametersResponse formatsPNGSVGJSONShields.io compatible

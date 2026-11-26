@@ -1,0 +1,565 @@
+{
+  "description": "Curated source manifest for rebuilding the Typinator feature map.",
+  "feature_areas": [
+    {
+      "title": "Core Product",
+      "use_for": [
+        "what Typinator is",
+        "installation and permissions",
+        "overall feature inventory",
+        "global product behavior"
+      ],
+      "sources": [
+        {
+          "kind": "local guide",
+          "path": "/Users/rd/.config/typinator/Sets/Includes/Documentation/Core/Introduction for AI Models.md"
+        },
+        {
+          "kind": "local guide",
+          "path": "/Users/rd/.config/typinator/Sets/Includes/Documentation/Core/Typinator Complete Reference.md"
+        },
+        {
+          "kind": "local guide",
+          "path": "/Users/rd/.config/typinator/Sets/Includes/Documentation/Core/Typinator User's Guide.md"
+        },
+        {
+          "kind": "online",
+          "path": "https://help.typinator.ergonis.com/hc/en-us"
+        },
+        {
+          "kind": "online category",
+          "path": "https://help.typinator.ergonis.com/hc/en-us/categories/22696912473244-Getting-Started"
+        }
+      ]
+    },
+    {
+      "title": "Abbreviations And Expansion Modes",
+      "use_for": [
+        "plain text vs formatted text vs picture vs HTML",
+        "expand at word break vs expand on match",
+        "case behavior",
+        "suffix and prefix design",
+        "avoiding collisions"
+      ],
+      "sources": [
+        {
+          "kind": "local canonical",
+          "path": "/Users/rd/.config/typinator/Sets/Includes/Documentation/Core/Complete Guide to Creating Typinator Text Expansions.md"
+        },
+        {
+          "kind": "local guide",
+          "path": "/Users/rd/.config/typinator/Sets/Includes/Documentation/Core/Typinator Complete Reference.md"
+        },
+        {
+          "kind": "local guide",
+          "path": "/Users/rd/.config/typinator/Sets/Includes/Documentation/Core/Typinator User's Guide.md"
+        },
+        {
+          "kind": "local reference",
+          "path": "/Users/rd/.config/typinator/Sets/Includes/Documentation/Core/Expansion Triggers.md"
+        },
+        {
+          "kind": "online article",
+          "path": "https://help.typinator.ergonis.com/hc/en-us/articles/22842375363868-Triggers-for-expansions"
+        },
+        {
+          "kind": "online article",
+          "path": "https://help.typinator.ergonis.com/hc/en-us/articles/22840990097180-Maximize-your-productivity-with-Typinator-essential-tips-and-tricks"
+        }
+      ]
+    },
+    {
+      "title": "Sets, Defaults, Prefixes, Suffixes",
+      "use_for": [
+        "set-level defaults",
+        "preset options",
+        "naming systems",
+        "set organization and tiering",
+        "abbreviation prefixes, suffixes, and magic-key strategy"
+      ],
+      "sources": [
+        {
+          "kind": "local reference",
+          "path": "/Users/rd/.config/typinator/Sets/Includes/Documentation/Core/Default Options.md"
+        },
+        {
+          "kind": "local guide",
+          "path": "/Users/rd/.config/typinator/Sets/Includes/Documentation/Core/Tips Tricks & Workflows.md"
+        },
+        {
+          "kind": "local guide",
+          "path": "/Users/rd/.config/typinator/Sets/Includes/Documentation/Core/Typinator User's Guide.md"
+        },
+        {
+          "kind": "online article",
+          "path": "https://help.typinator.ergonis.com/hc/en-us/articles/22843122721436-Preset-for-Options"
+        },
+        {
+          "kind": "online article",
+          "path": "https://help.typinator.ergonis.com/hc/en-us/articles/22842119453724-Fast-searching-and-editing-abbreviations"
+        }
+      ]
+    },
+    {
+      "title": "Includes Folder And Includable Assets",
+      "use_for": [
+        "Includes folder purpose",
+        "text file includes",
+        "rich text includes",
+        "script includes",
+        "restoring default Includes safely"
+      ],
+      "sources": [
+        {
+          "kind": "local reference",
+          "path": "/Users/rd/.config/typinator/Sets/Includes/Documentation/Includes/About the “Includes” folder.md"
+        },
+        {
+          "kind": "local reference",
+          "path": "/Users/rd/.config/typinator/Sets/Includes/Documentation/Includes/Typinator's Default Includes.md"
+        },
+        {
+          "kind": "local guide",
+          "path": "/Users/rd/.config/typinator/Sets/Includes/Documentation/Core/Typinator User's Guide.md"
+        }
+      ]
+    },
+    {
+      "title": "Scripts And External Commands",
+      "use_for": [
+        "script placeholder syntax",
+        "one-parameter contract",
+        "parameter comment syntax",
+        "AppleScript vs JavaScript vs shell, Python, Ruby, Swift",
+        "nested script invocations",
+        "caching and typed-text consumption patterns"
+      ],
+      "sources": [
+        {
+          "kind": "local canonical",
+          "path": "/Users/rd/.config/typinator/Sets/Includes/Documentation/Scripts/Creating-Typinator-Scripts.md"
+        },
+        {
+          "kind": "local canonical",
+          "path": "/Users/rd/.config/typinator/Sets/Includes/Documentation/Scripts/Typinator™ Scripting Guide.md"
+        },
+        {
+          "kind": "local reference",
+          "path": "/Users/rd/.config/typinator/Sets/Includes/Documentation/Scripts/Creating Typinator Scripts.md"
+        },
+        {
+          "kind": "local reference",
+          "path": "/Users/rd/.config/typinator/Sets/Includes/Documentation/Scripts/Convert Script for Typinator.md"
+        },
+        {
+          "kind": "local reference",
+          "path": "/Users/rd/.config/typinator/Sets/Includes/Documentation/Scripts/TinyURL Script for Typinator.md"
+        },
+        {
+          "kind": "local guide",
+          "path": "/Users/rd/.config/typinator/Sets/Includes/Documentation/Core/Typinator User's Guide.md"
+        }
+      ]
+    },
+    {
+      "title": "Regular Expressions And Pattern Matching",
+      "use_for": [
+        "regex abbreviations",
+        "capturing groups and replacement syntax",
+        "look-ahead and look-behind patterns",
+        "ICU regex behavior in Typinator",
+        "pattern-based expansions and transformations"
+      ],
+      "sources": [
+        {
+          "kind": "local canonical",
+          "path": "/Users/rd/.config/typinator/Sets/Includes/Documentation/Regex/Typinator™ Regular Expressions.md"
+        },
+        {
+          "kind": "local project note",
+          "path": "/Users/rd/.config/typinator/Sets/Includes/Documentation/Regex/Typinator - Regex.md"
+        },
+        {
+          "kind": "local guide",
+          "path": "/Users/rd/.config/typinator/Sets/Includes/Documentation/Core/Typinator Complete Reference.md"
+        },
+        {
+          "kind": "local reference",
+          "path": "/Users/rd/.config/typinator/Sets/Includes/Documentation/Core/Quick Ref.md"
+        }
+      ]
+    },
+    {
+      "title": "Forms And Interactive Input",
+      "use_for": [
+        "text fields",
+        "pop-ups",
+        "combo boxes",
+        "checkboxes",
+        "default values",
+        "variable assignment from forms",
+        "extended text results",
+        "form composition patterns"
+      ],
+      "sources": [
+        {
+          "kind": "local reference",
+          "path": "/Users/rd/.config/typinator/Sets/Includes/Documentation/Forms/Input Forms.md"
+        },
+        {
+          "kind": "local reference",
+          "path": "/Users/rd/.config/typinator/Sets/Includes/Documentation/Forms/The power of Typinator forms.md"
+        },
+        {
+          "kind": "local guide",
+          "path": "/Users/rd/.config/typinator/Sets/Includes/Documentation/Core/Advanced Features & Techniques.md"
+        },
+        {
+          "kind": "online article",
+          "path": "https://help.typinator.ergonis.com/hc/en-us/articles/22843804128284-The-power-of-Typinator-forms"
+        },
+        {
+          "kind": "online article",
+          "path": "https://help.typinator.ergonis.com/hc/en-us/articles/22842848756636-Input-fields-with-default-values"
+        },
+        {
+          "kind": "online article",
+          "path": "https://help.typinator.ergonis.com/hc/en-us/articles/23134671458588-Creating-expansions-with-interactive-input-fields"
+        }
+      ]
+    },
+    {
+      "title": "Variables, Clip Collections, And Reuse",
+      "use_for": [
+        "variable assignment and reuse",
+        "temporary clip slots",
+        "quote, code, and list wrappers around stored text",
+        "combining variables with forms, calculations, and scripts"
+      ],
+      "sources": [
+        {
+          "kind": "local library",
+          "path": "/Users/rd/.config/typinator/Sets/Includes/Documentation/Project/Variables/VARIABLE-LIBRARY.md"
+        },
+        {
+          "kind": "local library",
+          "path": "/Users/rd/.config/typinator/Sets/Includes/Documentation/Project/Variables/Variable-Library-Master.txt"
+        },
+        {
+          "kind": "local library",
+          "path": "/Users/rd/.config/typinator/Sets/Includes/Documentation/Project/Variables/Variable-Library-Reference.txt"
+        },
+        {
+          "kind": "local reference",
+          "path": "/Users/rd/.config/typinator/Sets/Includes/Documentation/Project/Variables/Clip Variables.md"
+        },
+        {
+          "kind": "local reference",
+          "path": "/Users/rd/.config/typinator/Sets/Includes/Documentation/Core/Advanced Expansions.md"
+        },
+        {
+          "kind": "local guide",
+          "path": "/Users/rd/.config/typinator/Sets/Includes/Documentation/Core/Advanced Features & Techniques.md"
+        },
+        {
+          "kind": "online article",
+          "path": "https://help.typinator.ergonis.com/hc/en-us/articles/23133977323676-Variables-in-Typinator"
+        },
+        {
+          "kind": "online article",
+          "path": "https://help.typinator.ergonis.com/hc/en-us/articles/22842523422236-Using-Typinator-as-a-clip-collection"
+        }
+      ]
+    },
+    {
+      "title": "Clipboard And Plain Text Conversion",
+      "use_for": [
+        "converting clipboard to plain text",
+        "stripping formatting",
+        "clipboard-based workflows"
+      ],
+      "sources": [
+        {
+          "kind": "local reference",
+          "path": "/Users/rd/.config/typinator/Sets/Includes/Documentation/Text/Plain Text.md"
+        },
+        {
+          "kind": "local guide",
+          "path": "/Users/rd/.config/typinator/Sets/Includes/Documentation/Core/Advanced Features & Techniques.md"
+        },
+        {
+          "kind": "online article",
+          "path": "https://help.typinator.ergonis.com/hc/en-us/articles/22844444413852-Convert-clipboard-to-plain-text"
+        }
+      ]
+    },
+    {
+      "title": "Rich Text, Hyperlinks, Pictures, HTML",
+      "use_for": [
+        "formatted-text expansions",
+        "ruler-driven formatting",
+        "hyperlink workflow via TextEdit",
+        "app compatibility caveats",
+        "picture and HTML expansion expectations"
+      ],
+      "sources": [
+        {
+          "kind": "local reference",
+          "path": "/Users/rd/.config/typinator/Sets/Includes/Documentation/Text/Formatted Text.md"
+        },
+        {
+          "kind": "local guide",
+          "path": "/Users/rd/.config/typinator/Sets/Includes/Documentation/Text/Text Formatting & Hyperlinks.md"
+        },
+        {
+          "kind": "local guide",
+          "path": "/Users/rd/.config/typinator/Sets/Includes/Documentation/Core/Typinator User's Guide.md"
+        }
+      ]
+    },
+    {
+      "title": "Dates, Times, Calculations, And Markers",
+      "use_for": [
+        "date markers",
+        "relative date calculations",
+        "ordinal dates",
+        "calculator fields",
+        "built-in functions like /Case and /Choose",
+        "advanced marker composition"
+      ],
+      "sources": [
+        {
+          "kind": "local guide",
+          "path": "/Users/rd/.config/typinator/Sets/Includes/Documentation/Core/Typinator Complete Reference.md"
+        },
+        {
+          "kind": "local guide",
+          "path": "/Users/rd/.config/typinator/Sets/Includes/Documentation/Core/Typinator User's Guide.md"
+        },
+        {
+          "kind": "online article",
+          "path": "https://help.typinator.ergonis.com/hc/en-us/articles/22697393296156-Date-Calculation-Creating-a-date-for-next-Saturday-etc"
+        },
+        {
+          "kind": "online article",
+          "path": "https://help.typinator.ergonis.com/hc/en-us/articles/22766189079068-Formatting-dates-with-ordinal-numbers"
+        },
+        {
+          "kind": "online article",
+          "path": "https://help.typinator.ergonis.com/hc/en-us/articles/22844315955356-Easy-calculations-with-Typinator"
+        },
+        {
+          "kind": "online article",
+          "path": "https://help.typinator.ergonis.com/hc/en-us/articles/23135187588508-Performing-calculations-in-Typinator-expansions"
+        },
+        {
+          "kind": "online article",
+          "path": "https://help.typinator.ergonis.com/hc/en-us/articles/23135814142620-Advanced-markers-in-Typinator"
+        }
+      ]
+    },
+    {
+      "title": "Random Text And Built-In Functions",
+      "use_for": [
+        "{/Any /pattern/text/}",
+        "random file-backed content",
+        "non-script dynamic text generation"
+      ],
+      "sources": [
+        {
+          "kind": "local reference",
+          "path": "/Users/rd/.config/typinator/Sets/Includes/Documentation/Text/Random Text.md"
+        },
+        {
+          "kind": "local reference",
+          "path": "/Users/rd/.config/typinator/Sets/Includes/Documentation/Core/Advanced Expansions.md"
+        },
+        {
+          "kind": "local guide",
+          "path": "/Users/rd/.config/typinator/Sets/Includes/Documentation/Core/Advanced Features & Techniques.md"
+        }
+      ]
+    },
+    {
+      "title": "Quick Search And Discoverability",
+      "use_for": [
+        "descriptions",
+        "inline comments",
+        "exact phrase search",
+        "editing from results",
+        "search optimization"
+      ],
+      "sources": [
+        {
+          "kind": "local reference",
+          "path": "/Users/rd/.config/typinator/Sets/Includes/Documentation/Search/Quick Search.md"
+        },
+        {
+          "kind": "local guide",
+          "path": "/Users/rd/.config/typinator/Sets/Includes/Documentation/Search/Quick Search & Productivity Tips.md"
+        },
+        {
+          "kind": "online article",
+          "path": "https://help.typinator.ergonis.com/hc/en-us/articles/22842119453724-Fast-searching-and-editing-abbreviations"
+        },
+        {
+          "kind": "online article",
+          "path": "https://help.typinator.ergonis.com/hc/en-us/articles/22842751424028-Custom-search-terms-in-Quick-Search"
+        }
+      ]
+    },
+    {
+      "title": "Syncing, Publishing, Sharing, Importing",
+      "use_for": [
+        "Dropbox sync",
+        "publications and subscriptions",
+        "set sharing",
+        "aText import and migration"
+      ],
+      "sources": [
+        {
+          "kind": "local guide",
+          "path": "/Users/rd/.config/typinator/Sets/Includes/Documentation/Core/Typinator User's Guide.md"
+        },
+        {
+          "kind": "online article",
+          "path": "https://help.typinator.ergonis.com/hc/en-us/articles/22844179587356-Sync-Typinator-sets-with-Dropbox"
+        },
+        {
+          "kind": "online article",
+          "path": "https://help.typinator.ergonis.com/hc/en-us/articles/22844229015324-Publish-Sets-to-share-with-others"
+        },
+        {
+          "kind": "online article",
+          "path": "https://help.typinator.ergonis.com/hc/en-us/articles/22844603463964-Import-your-abbreviations-from-aText"
+        }
+      ]
+    },
+    {
+      "title": "Line Breaks, Output Shaping, And Trigger Loops",
+      "use_for": [
+        "line break techniques",
+        "output shaping in forms and scripts",
+        "looping or re-trigger workflows"
+      ],
+      "sources": [
+        {
+          "kind": "online article",
+          "path": "https://help.typinator.ergonis.com/hc/en-us/articles/22844734799388-Different-ways-to-create-a-line-break-in-Typinator"
+        },
+        {
+          "kind": "online article",
+          "path": "https://help.typinator.ergonis.com/hc/en-us/articles/22844517013660-Trigger-abbreviations-with-user-input-in-a-loop"
+        },
+        {
+          "kind": "local guide",
+          "path": "/Users/rd/.config/typinator/Sets/Includes/Documentation/Core/Advanced Features & Techniques.md"
+        }
+      ]
+    },
+    {
+      "title": "Troubleshooting",
+      "use_for": [
+        "expansions not firing",
+        "permission issues",
+        "app compatibility",
+        "known issues",
+        "reporting problems"
+      ],
+      "sources": [
+        {
+          "kind": "local guide",
+          "path": "/Users/rd/.config/typinator/Sets/Includes/Documentation/Core/Typinator User's Guide.md"
+        },
+        {
+          "kind": "online category",
+          "path": "https://help.typinator.ergonis.com/hc/en-us/categories/22697007832348-Troubleshooting"
+        },
+        {
+          "kind": "online",
+          "path": "https://help.typinator.ergonis.com/hc/en-us"
+        }
+      ]
+    },
+    {
+      "title": "Canonical Authoring And AI Notes",
+      "use_for": [
+        "copy-paste-ready Typinator expansions",
+        "AI-focused authoring conventions",
+        "comprehensive local synthesis beyond the official user docs",
+        "project-specific Typinator authoring notes"
+      ],
+      "sources": [
+        {
+          "kind": "local canonical",
+          "path": "/Users/rd/.config/typinator/Sets/Includes/Documentation/Core/Complete Guide to Creating Typinator Text Expansions.md"
+        },
+        {
+          "kind": "local project note",
+          "path": "/Users/rd/.config/typinator/Sets/Includes/Documentation/Project/AI Notes/Typinator — Comprehensive Expansion & Scripting Reference.md"
+        },
+        {
+          "kind": "local project note",
+          "path": "/Users/rd/.config/typinator/Sets/Includes/Documentation/Project/AI Notes/AGENTS.md"
+        },
+        {
+          "kind": "local project note",
+          "path": "/Users/rd/.config/typinator/Sets/Includes/Documentation/Project/AI Notes/CLAUDE.md"
+        }
+      ]
+    },
+    {
+      "title": "Script Samples And Implementation Examples",
+      "use_for": [
+        "sample script placeholders",
+        "reference implementations for Typinator scripting",
+        "small worked examples for shell and script authoring",
+        "example-based script adaptation"
+      ],
+      "sources": [
+        {
+          "kind": "local sample doc",
+          "path": "/Users/rd/.config/typinator/Sets/Includes/Documentation/Examples/Creating Typinator Scripts.pdf"
+        },
+        {
+          "kind": "local sample doc",
+          "path": "/Users/rd/.config/typinator/Sets/Includes/Documentation/Examples/Into Includes/Hello/HelloBash.md"
+        },
+        {
+          "kind": "local sample doc",
+          "path": "/Users/rd/.config/typinator/Sets/Includes/Documentation/Examples/Into Includes/Hello/HelloPHP.md"
+        },
+        {
+          "kind": "local sample doc",
+          "path": "/Users/rd/.config/typinator/Sets/Includes/Documentation/Examples/Into Includes/Samples/Multiply.md"
+        },
+        {
+          "kind": "local sample doc",
+          "path": "/Users/rd/.config/typinator/Sets/Includes/Documentation/Examples/Into Includes/Samples/Repeat.md"
+        },
+        {
+          "kind": "local sample doc",
+          "path": "/Users/rd/.config/typinator/Sets/Includes/Documentation/Examples/Into Includes/Samples/UsageDays.md"
+        },
+        {
+          "kind": "local sample doc",
+          "path": "/Users/rd/.config/typinator/Sets/Includes/Documentation/Examples/Into Includes/Samples/Username.md"
+        }
+      ]
+    },
+    {
+      "title": "Audits And Maintenance",
+      "use_for": [
+        "set-audit history",
+        "project-specific maintenance context",
+        "cleanup planning and retrospective notes"
+      ],
+      "sources": [
+        {
+          "kind": "local audit",
+          "path": "/Users/rd/.config/typinator/Sets/Includes/Documentation/Project/Audits/Typinator Set Audit 2026-03-11.md"
+        }
+      ]
+    }
+  ]
+}

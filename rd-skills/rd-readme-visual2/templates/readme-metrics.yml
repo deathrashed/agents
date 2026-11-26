@@ -1,0 +1,40 @@
+name: Update README Metrics
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths-ignore:
+      - 'stats/badges.json'
+      - 'stats/history.json'
+  schedule:
+    - cron: '23 3 * * *'
+permissions:
+  contents: write
+concurrency:
+  group: readme-metrics-${{ github.ref }}
+  cancel-in-progress: false
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Validate setup
+        shell: bash
+        run: |
+          test -f .readme-metrics.json || { echo 'Missing .readme-metrics.json: install and customise the example config' >&2; exit 1; }
+          test -f scripts/repo_metrics.py || { echo 'Missing scripts/repo_metrics.py' >&2; exit 1; }
+      - name: Refresh metrics
+        run: python3 scripts/repo_metrics.py --config .readme-metrics.json
+      - name: Commit if changed
+        shell: bash
+        run: |
+          git add stats/badges.json stats/history.json
+          if ! git diff --cached --quiet; then
+            git -c user.name='github-actions[bot]' -c user.email='41898282+github-actions[bot]@users.noreply.github.com' commit -m 'docs: refresh README metrics'
+            git push
+          fi

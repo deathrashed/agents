@@ -1,0 +1,13 @@
+{
+  "preset": "../presets/white-yellow-outline.json",
+  "title": "PROJECT NAME",
+  "tagline": "Replace with one accurate description backed by the repository.",
+  "header": {"title":"PROJECT NAME", "subtitle":"A useful, tested project description", "preset":"graph", "logo":"lu:Zap", "width":1280, "height":400},
+  "rows": [
+    [{"type":"badge", "label":"Python", "value":"3.11+", "logo":"python", "link":"https://www.python.org/"},
+     {"type":"badge", "label":"License", "value":"MIT", "logo":"lu:Scale", "link":"#license"}],
+    [{"type":"badge", "label":"macOS", "value":"✓", "logo":"apple", "link":"#platforms"},
+     {"type":"badge", "label":"CachyOS", "value":"✓", "logo":"cachyos", "link":"#platforms"}]
+  ],
+  "nav": [{"label":"Features", "anchor":"features"},{"label":"Install", "anchor":"installation"}]
+}

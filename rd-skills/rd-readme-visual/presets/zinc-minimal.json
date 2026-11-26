@@ -1,0 +1,5 @@
+{
+ "base":{"variant":"outline","color":"a1a1aa","logoColor":"e4e4e7","labelTextColor":"fafafa","valueColor":"e4e4e7"},
+ "header":{"bg":"18181b","titleColor":"fafafa","subtitleColor":"a1a1aa","accent":"a1a1aa"},
+ "chart":{"color":"a1a1aa","bg":"transparent","border":"false"}
+}

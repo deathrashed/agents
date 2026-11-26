@@ -18,6 +18,11 @@ boundaries, rules 4 and 13), CR (Behavior).
 
 - Remove with `gio trash -- <path>` (Linux) or the Finder Trash (macOS). Use
   `rm` only for caches listed as safe. [G][CX]
+- **Never trash a symlink.** On m3, `~/.local/bin/trash` resolves the real path
+  first, so trashing a link trashes its target (it once trashed an app's binary
+  out of `/Applications`). Remove a link with `unlink <link>`: that deletes only
+  the link. Writing to a link (`>`, `cp`) also writes into its target; check
+  `[ -L path ]` before writing to any path that may be a link. [RD]
 - Move without overwriting. Check the destination first; on a collision,
   leave both in place and report it. [G]
 - Search before moving. Grep for the path in systemd units, autostart,

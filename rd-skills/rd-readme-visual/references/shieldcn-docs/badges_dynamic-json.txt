@@ -1,0 +1,75 @@
+# source: https://shieldcn.dev/docs/badges/dynamic-json (fetched 2026-10-15)
+shieldcn
+Docs
+Studio
+Showcase
+Builder
+Sponsorjal-co/shieldcn919
+Search docs⌘KSearch documentation
+Search all badge providers, guides, and reference docs.
+Getting Started
+IntroductionREADME StudioCLIAgent SkillNewSelf-HostingAPI ReferenceToken PoolSponsor
+Customization
+Badges
+Badge GroupStatic BadgeDynamic JSONHTTPS Endpoint
+Badge Providers
+Charts
+OverviewStar history
+Headers
+OverviewGenerator
+Sponsors
+OverviewGenerator
+Contributors
+OverviewGenerator
+Registry
+More
+shieldcnMember of the Vercel OSS Program
+Analytics provided by OpenPanel
+Monitored by Sentry
+Powered by Neon.
+Community
+GitHubjal-co/uiStatsllms.txtPrivacyContact
+Product
+DocumentationAPI ReferenceToken PoolGeneratorAgent Skill
+inspired by shields.io and badgen.net
+Made with  in  by Justin Levine
+Dynamic JSON
+Create a badge from any JSON API using JSONPath queries.
+GET/badge/dynamic/json.svg
+urlURL to a public JSON document.
+queryJSONPath expression to extract the value.
+prefixText to prepend to the extracted value.
+suffixText to append to the extracted value.
+format
+variant
+size
+theme
+mode
+logoAutoUpload SVG
+logoColor—
+label
+flagssplit
++Show color overrides
+URLMarkdownHTMLrStAsciiDoc
+<picture><source media="(prefers-color-scheme: dark)" srcset="https://shieldcn.dev/badge/dynamic/json.svg?url=https%3A%2F%2Fapi.github.com%2Frepos%2Fvercel%2Fnext.js&amp;query=%24.stargazers_count&amp;mode=dark"><img alt="badge" src="https://shieldcn.dev/badge/dynamic/json.svg?url=https%3A%2F%2Fapi.github.com%2Frepos%2Fvercel%2Fnext.js&amp;query=%24.stargazers_count&amp;mode=light"></picture>
+Execute
+JSONPath syntax
+Expression | Description |
+$.key | Top-level field |
+$.nested.key | Nested field |
+$.array[0] | First array element |
+$.array.length | Array length |
+Examples
+GitHub stars count
+Secondary variant
+Outline variant
+Custom label
+Copy-paste examples
+Default — pull any value from any public JSON API
+<picture><source media="(prefers-color-scheme: dark)" srcset="https://shieldcn.dev/badge/dynamic/json.svg?url=https%3A%2F%2Fapi.github.com%2Frepos%2Fvercel%2Fnext.js&amp;query=%24.stargazers_count&amp;mode=dark"><img alt="dynamic json" src="https://shieldcn.dev/badge/dynamic/json.svg?url=https%3A%2F%2Fapi.github.com%2Frepos%2Fvercel%2Fnext.js&amp;query=%24.stargazers_count&amp;mode=light"></picture>
+Secondary — softer look for README rows
+<picture><source media="(prefers-color-scheme: dark)" srcset="https://shieldcn.dev/badge/dynamic/json.svg?url=https%3A%2F%2Fapi.github.com%2Frepos%2Fvercel%2Fnext.js&amp;query=%24.stargazers_count&amp;variant=secondary&amp;mode=dark"><img alt="dynamic json" src="https://shieldcn.dev/badge/dynamic/json.svg?url=https%3A%2F%2Fapi.github.com%2Frepos%2Fvercel%2Fnext.js&amp;query=%24.stargazers_count&amp;variant=secondary&amp;mode=light"></picture>
+Caching
+Dynamic JSON responses are cached for 5 minutes.
+On This Page
+JSONPath syntaxExamplesCopy-paste examplesCaching

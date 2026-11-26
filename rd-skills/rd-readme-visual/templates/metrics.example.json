@@ -1,0 +1,12 @@
+{
+ "notes":"Adapt metric patterns to actual repo; these are illustrative, not facts.",
+ "metrics": [
+  {"name":"Skills", "glob":"**/SKILL.md", "unit":"files", "logo":"lu:Zap"},
+  {"name":"Scripts", "glob":"scripts/**/*", "unit":"tracked files", "logo":"ri:TbScript"},
+  {"name":"Tests", "glob":"tests/test_*.py", "unit":"test files", "logo":"lu:FlaskConical"}
+ ],
+ "external": [
+  {"name":"Stars","endpoint":"/github/stars/OWNER/REPO.svg","source":"GitHub"},
+  {"name":"Views","endpoint":"/views/repo/OWNER/REPO.svg","source":"badge image fetches, not unique visitors"}
+ ]
+}

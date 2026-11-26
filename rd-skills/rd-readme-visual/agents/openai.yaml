@@ -1,0 +1,4 @@
+interface:
+  display_name: "README Visual"
+  short_description: "Write, restyle, and audit visual README files"
+  default_prompt: "Use $readme-visual to audit this local project and generate a polished README.md."

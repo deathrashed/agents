@@ -133,6 +133,9 @@ def skill_entries(d):
 
 # ---------------------------------------------------------------- checks
 def check_broken_links(r, cfg, tools):
+    # Paths that only exist on the other machine (m3 is macOS, cachy is Linux).
+    other_prefixes = ("/home/", "/usr/share/") if sys.platform == "darwin" else ("/Users/",)
+    foreign = []
     roots = [X(cfg["shared"]["agents_dir"])]
     for t in tools.values():
         roots += [X(s) for s in t.get("skills", [])]
@@ -154,10 +157,32 @@ def check_broken_links(r, cfg, tools):
             for n in list(dirs) + list(files):
                 p = os.path.join(base, n)
                 if os.path.islink(p) and not os.path.exists(p):
-                    broken.append(f"{short(p)} -> {os.readlink(p)}")
-    broken = sorted(set(broken))
+                    target = os.readlink(p)
+                    resolved = os.path.normpath(os.path.join(os.path.dirname(p), target))
+                    if resolved.startswith(other_prefixes):
+                        foreign.append(f"INFO {short(p)} -> {target}")
+                    else:
+                        broken.append(f"FAIL {short(p)} -> {target}")
+    broken, foreign = sorted(set(broken)), sorted(set(foreign))
+    # ~/.agents/skills is synced between machines by Syncthing, so a link that is
+    # valid on the other machine (its home or system dirs) shows up dangling here.
+    # Deleting it would sync the deletion back, so it is reported, not failed.
     r.add("broken_links", "Broken symlinks (~/.agents tree + every tool skills dir)",
-          "FAIL" if broken else "OK", f"{len(broken)} broken", broken)
+          "FAIL" if broken else "OK",
+          f"{len(broken)} broken, {len(foreign)} valid only on the other machine", broken + foreign)
+
+def strip_fenced(txt):
+    """Drop lines inside ``` or ~~~ fences so example code isn't scanned."""
+    out, fence = [], None
+    for line in txt.splitlines():
+        m = re.match(r"^\s*(`{3,}|~{3,})", line)
+        if m:
+            mark = m.group(1)[0]
+            fence = None if fence == mark else (fence or mark)
+            continue
+        if fence is None:
+            out.append(line)
+    return "\n".join(out)
 
 def check_conflicts(r, cfg):
     root = X(cfg["shared"]["agents_dir"])
@@ -175,6 +200,8 @@ def check_conflicts(r, cfg):
                     txt = f.read()
             except (OSError, UnicodeDecodeError):
                 continue
+            # Markers inside fenced code blocks are examples (git tutorials), not conflicts.
+            txt = strip_fenced(txt)
             if re.search(r"^<{7}( |$)", txt, re.M) and re.search(r"^>{7}( |$)", txt, re.M):
                 n = len(re.findall(r"^<{7}( |$)", txt, re.M))
                 hits.append(f"{short(p)} ({n} block(s))")
@@ -209,8 +236,11 @@ def check_writers(r, cfg, machine_cfg):
         r.add("unknown_writers", "~/.agents/skills entries outside npx-skills lock and repo",
               "WARN", f"lockfile unreadable: {short(lock)} ({type(e).__name__})")
         return
-    repo_sk = X(cfg["shared"]["repo"]) + "/skills"
-    own = set(os.listdir(repo_sk)) if os.path.isdir(repo_sk) else set()
+    own = set()
+    for sub in ("skills", "rd-skills"):  # skills owned by the rd-agents repo itself
+        d = os.path.join(X(cfg["shared"]["repo"]), sub)
+        if os.path.isdir(d):
+            own |= set(os.listdir(d))
     groups = {}
     try:
         names = sorted(os.listdir(skills_dir))
@@ -489,9 +519,15 @@ def check_repo(r, cfg, machine):
         if os.path.isdir(d):
             names |= {n for n in os.listdir(d) if n.endswith(".md")}
     pairs += [(f"rules/{n}", f"rules/{n}") for n in sorted(names) if f"rules/{n}" not in ignore]
-    details, linked = [], 0
+    details, linked, local = [], 0, []
     for lrel, rrel in pairs:
         lp, rp = os.path.join(live, lrel), os.path.join(repo, rrel)
+        base = os.path.basename(lrel)
+        # Per-machine by design: vault.md is written by the vault installer on each
+        # machine, *.local.md holds private facts kept out of git.
+        if base == "vault.md" or base.endswith(".local.md"):
+            local.append(f"INFO machine-local: ~/.agents/{lrel}")
+            continue
         if os.path.islink(lp) and os.path.realpath(lp) == os.path.realpath(rp):
             linked += 1; continue
         le, re_ = os.path.isfile(lp), os.path.isfile(rp)
@@ -504,8 +540,46 @@ def check_repo(r, cfg, machine):
             details.append(f"repo only: {rrel}")
     r.add("repo_drift", f"Live ~/.agents vs {short(repo)} (not linked yet)",
           "WARN" if details else "OK",
-          f"{len(details)} difference(s), {linked} linked, {len(pairs)} compared"
-          + (f", ignored {sorted(ignore)}" if ignore else ""), details)
+          f"{len(details)} difference(s), {linked} linked, {len(local)} machine-local, {len(pairs)} compared"
+          + (f", ignored {sorted(ignore)}" if ignore else ""), details + local)
+
+def check_rd_skills(r, cfg):
+    """Riley's own skills: rd- prefix, name matches folder, linked into ~/.agents/skills."""
+    src = X(cfg["shared"].get("rd_skills", os.path.join(cfg["shared"]["repo"], "rd-skills")))
+    live = os.path.join(X(cfg["shared"]["agents_dir"]), "skills")
+    if not os.path.isdir(src):
+        r.add("rd_skills", "rd-skills: naming and links", "WARN", f"missing: {short(src)}")
+        return
+    details, sts = [], []
+    folder_name = {p: nm for nm, ents in skill_entries(src).items() for p, _ in ents}
+    for n in sorted(os.listdir(src)):
+        d = os.path.join(src, n)
+        if d not in folder_name:
+            continue
+        name = folder_name[d]
+        if name != n or not n.startswith("rd-"):
+            sts.append("FAIL"); details.append(f"FAIL {n}: name '{name}' must equal the folder and start with rd-")
+            continue
+        link = os.path.join(live, n)
+        if os.path.islink(link) and os.path.realpath(link) == os.path.realpath(d):
+            sts.append("OK")
+            # ~/.agents/skills is synced to the other machine; only a relative link works on both.
+            if os.path.isabs(os.readlink(link)):
+                sts.append("WARN"); details.append(f"WARN {n}: absolute link breaks on the other machine")
+        else:
+            sts.append("WARN"); details.append(f"WARN {n}: not linked as ~/.agents/skills/{n} -> {short(d)}")
+        old = os.path.join(live, n[3:])
+        if os.path.exists(old):
+            sts.append("WARN"); details.append(f"WARN {n}: old unprefixed copy still present: {short(old)}")
+    links = 0
+    for base, dirs, files in os.walk(X(cfg["shared"]["agents_dir"])):
+        dirs[:] = [x for x in dirs if x not in SKIP_DIRS and not os.path.islink(os.path.join(base, x))]
+        links += sum(1 for x in dirs + files if os.path.islink(os.path.join(base, x)))
+    details.append(f"INFO {links} links under ~/.agents: remove a link with `unlink`, never `trash` "
+                   "(m3's trash resolves links and trashes the target)")
+    ok = sts.count("OK")
+    r.add("rd_skills", "rd-skills: naming and links", worst(sts),
+          f"{ok} linked, {sts.count('WARN')} WARN, {sts.count('FAIL')} FAIL", details)
 
 def check_telemetry(r):
     details, sts = [], []
@@ -555,7 +629,11 @@ def check_token_tools(r, cfg):
         "grok": lambda: "ponytail" in (load_any(X("~/.grok/config.toml")).get("plugins", {}) or {}).get("enabled", []),
         "kilo": lambda: "@dietrichgebert/ponytail" in json.dumps(load_json(X("~/.config/kilo/kilo.jsonc")).get("plugin", [])),
         "cursor-agent": lambda: "ponytail" in _text("~/.cursor/hooks.json"),
-        "codex": lambda: "ponytail" in _text("~/.codex/hooks.json") or "ponytail" in _text("~/.codex/config.toml"),
+        # Codex keeps marketplace and hook-trust entries for a disabled plugin, so
+        # check the plugin's enabled flag and the hooks file, not any mention.
+        "codex": lambda: "ponytail" in _text("~/.codex/hooks.json") or any(
+            k.startswith("ponytail@") and (v or {}).get("enabled", False)
+            for k, v in (load_any(X("~/.codex/config.toml")).get("plugins", {}) or {}).items()),
     }
     def probe(a):
         try:
@@ -658,7 +736,8 @@ def main(argv):
     tools = {tid: tool_paths(t, machine) for tid, t in cfg.get("tools", {}).items()}
     r = Report()
     for fn, args in ((check_broken_links, (r, cfg, tools)), (check_conflicts, (r, cfg)),
-                     (check_duplicates, (r, tools)), (check_writers, (r, cfg, mcfg)),
+                     (check_duplicates, (r, tools)), (check_rd_skills, (r, cfg)),
+                     (check_writers, (r, cfg, mcfg)),
                      (check_pointers, (r, cfg, tools)), (check_hooks, (r, cfg, tools)),
                      (check_plugins, (r,)), (check_manifest, (r, cfg)),
                      (check_repo, (r, cfg, machine)), (check_telemetry, (r,)),

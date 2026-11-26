@@ -1,0 +1,15 @@
+# README visual review checklist
+- [ ] Existing project facts, install instructions, and links preserved
+- [ ] Hero has one focal point and does not crowd mobile width
+- [ ] Every badge label/value has a valid underlying data source
+- [ ] Icons and custom logo names tested for HTTP success and actual image bytes
+- [ ] SVG banners checked in light/dark themes
+- [ ] Alt text is meaningful; decorative heading icons use empty alt
+- [ ] Section navigation anchors work on GitHub (explicit IDs for HTML-containing headings)
+- [ ] Badge links lead to useful destinations, not dead `#` anchors
+- [ ] External images have fallback or local copies when critical
+- [ ] No private tokens, private filesystem paths, or secrets in generated URLs
+- [ ] Chart measures a coherent time series; no fabricated historical samples
+- [ ] Cache, rate limits, provider outages, and data lag disclosed where relevant
+- [ ] Rendered README inspected at desktop and mobile widths
+- [ ] Review `git diff` before committing the final README

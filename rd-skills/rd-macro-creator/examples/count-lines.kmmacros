@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>Activate</key><string>Normal</string>
+		<key>Macros</key><array>
+			<dict>
+				<key>Actions</key><array>
+					<dict>
+						<key>ActionUID</key><integer>1001</integer>
+						<key>MacroActionType</key><string>SetVariableToText</string>
+						<key>Text</key><string>%Clipboard%</string>
+						<key>Variable</key><string>TaioText</string>
+					</dict>
+					<dict>
+						<key>ActionUID</key><integer>1002</integer>
+						<key>MacroActionType</key><string>ExecuteShellScript</string>
+						<key>Script</key><string>echo "%Variable%TaioText%" | wc -l</string>
+						<key>Shell</key><string>/bin/bash</string>
+					</dict>
+					<dict>
+						<key>ActionUID</key><integer>1003</integer>
+						<key>MacroActionType</key><string>SetClipboardToText</string>
+						<key>Text</key><string>%Variable%Result%</string>
+					</dict>
+				</array>
+				<key>Name</key><string>Taio: Count Lines</string>
+				<key>Triggers</key><array>
+					<dict><key>MacroTriggerType</key><string>StatusMenu</string></dict>
+				</array>
+				<key>UID</key><string>TAIO-COUNT-001</string>
+			</dict>
+		</array>
+		<key>Name</key><string>Global Macro Group</string>
+		<key>UID</key><string>TAIO-GROUP-004</string>
+	</dict>
+</array>
+</plist>

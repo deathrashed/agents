@@ -1,0 +1,4 @@
+interface:
+  display_name: "Typinator Directory Ingest"
+  short_description: "Ingest raw files into canonical Directory docs"
+  default_prompt: "Use $typinator-directory-ingest to process a staged _extracted file into the correct canonical Directory documents."

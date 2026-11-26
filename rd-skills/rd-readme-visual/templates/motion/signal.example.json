@@ -1,0 +1,12 @@
+{
+  "title": "AUDIO / ROUTING ENGINE",
+  "subtitle": "INPUT → NORMALIZE → TAG → EXPORT  •  DETERMINISTIC SIGNAL MAP",
+  "background": "#101115",
+  "foreground": "#F5F5F5",
+  "accent": "#FFDA00",
+  "muted": "#747A84",
+  "seed": 47,
+  "nodes": ["SOURCE", "MATCH", "NORMALIZE", "EXPORT"],
+  "lines": ["$ audio-agent inspect --json", "[ok] metadata providers connected", "[ok] normalization pipeline ready", "> select artist or album"],
+  "motion": true
+}

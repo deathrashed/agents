@@ -1,0 +1,86 @@
+{
+  "metrics": {
+    "skills": {
+      "type": "files",
+      "include": [
+        "skills/**/SKILL.md",
+        "**/SKILL.md"
+      ],
+      "exclude": [
+        "vendor/**",
+        ".cache/**"
+      ]
+    },
+    "plugins": {
+      "type": "files",
+      "include": [
+        "plugins/**/plugin.json",
+        "plugins/**/manifest.json"
+      ]
+    },
+    "scripts": {
+      "type": "files",
+      "include": [
+        "scripts/*.py",
+        "scripts/*.sh",
+        "scripts/**/*.py",
+        "scripts/**/*.sh"
+      ]
+    },
+    "rules": {
+      "type": "files",
+      "include": [
+        "rules/**/*.md",
+        "rules/*.md"
+      ]
+    },
+    "marketplaces": {
+      "type": "files",
+      "include": [
+        "marketplaces/*.json",
+        "marketplaces/*.toml"
+      ]
+    },
+    "agents": {
+      "type": "files",
+      "include": [
+        "agents/*.md",
+        "agents/**/*.md"
+      ]
+    },
+    "tests": {
+      "type": "files",
+      "include": [
+        "tests/test_*.py",
+        "**/*.test.ts",
+        "**/*_test.go"
+      ]
+    },
+    "docs": {
+      "type": "files",
+      "include": [
+        "docs/**/*.md",
+        "docs/*.md"
+      ]
+    },
+    "source_lines": {
+      "type": "lines",
+      "include": [
+        "src/**/*.py",
+        "src/**/*.go",
+        "src/**/*.rs",
+        "src/**/*.ts"
+      ],
+      "exclude": [
+        "**/*.generated.ts"
+      ]
+    },
+    "cli_commands": {
+      "type": "regex_matches",
+      "include": [
+        "cmd/**/*.go"
+      ],
+      "pattern": "&cobra\\.Command\\s*\\{"
+    }
+  }
+}

@@ -1,0 +1,115 @@
+{
+  "skill_name": "lastfm-wiki-editor",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "Write a standard Last.fm wiki for the Cleveland death metal band 200 Stab Wounds. Use accurate release dates and linked album and track names.",
+      "expected_output": "A factually supported, neutral, third-person artist biography using valid Last.fm BBCode, with no external links or additional commentary.",
+      "assertions": [
+        "The entry identifies the requested artist rather than another artist with a similar name",
+        "Release-date and label claims are traceable to reliable sources",
+        "The published entry has no external URLs, Markdown, or citation list",
+        "Album and track tags have artist attributes and close correctly"
+      ]
+    },
+    {
+      "id": 2,
+      "prompt": "I have an album entry saying a deluxe reissue date was the album's debut release. Check the original date against primary sources, explain the discrepancy and show links first. Do not write the wiki yet.",
+      "expected_output": "A sourced verification report that differentiates original release from reissue, and no unwanted final wiki rewrite.",
+      "assertions": [
+        "The agent does not invent specific release dates without sufficient identification or source evidence",
+        "The response honors the instruction not to write a wiki",
+        "Source discrepancies are explained or the subject is identified as insufficiently specified"
+      ]
+    },
+    {
+      "id": 3,
+      "prompt": "Here's my existing wiki: 'Example Artist is the best group ever. They dropped a masterpiece in 2021. [album]First Album[/album]' Improve its neutrality and markup, but don't invent names, recording credits, or new releases.",
+      "expected_output": "A conservative revision removing hype and invalid tags, not fabricating missing music information; request disambiguation only if essential.",
+      "assertions": [
+        "Subjective promotion is removed",
+        "Unsupported extra facts are not invented",
+        "An album link is not constructed with a guessed or unverified credited artist",
+        "No Markdown or external links appear in any final wiki text"
+      ]
+    },
+    {
+      "id": 4,
+      "prompt": "Make the previous wiki comprehensive, but only add facts with solid sources, no current/former band-member list, and focus on recording context.",
+      "expected_output": "A source-conscious focused expansion preserving accurate context, without padded prose or a band-member roster.",
+      "assertions": [
+        "Verified earlier facts are preserved",
+        "Recording detail is supported rather than invented",
+        "No standalone band-member roster appears",
+        "The expansion remains neutral, coherent, and in third person"
+      ]
+    },
+    {
+      "id": 5,
+      "prompt": "Check this Last.fm artist page https://www.last.fm/music/200+Stab+Wounds and tell me what its existing wiki needs. Don't change the site or write replacement BBCode yet.",
+      "expected_output": "Read-only inspection of the specific public Last.fm URL with a sourced audit. No edit controls operated, and no speculative claim that an inaccessible page has no wiki.",
+      "assertions": [
+        "The supplied URL is inspected before or instead of a guessed replacement URL",
+        "The canonical subject and any access limitations are made clear",
+        "The output is an audit rather than a forced new wiki",
+        "The agent does not enter or submit any Last.fm edit interface"
+      ]
+    },
+    {
+      "id": 6,
+      "prompt": "Write a comprehensive album wiki for Manual Manic Procedures by 200 Stab Wounds. Look at the Last.fm album page first and check that you have the right album and its original release date.",
+      "expected_output": "An album-specific neutral BBCode entry grounded in verified release evidence and inspection, with no confusion between the album, its title track, or a reissue.",
+      "assertions": [
+        "The Last.fm album rather than artist or similarly named track page is targeted",
+        "The album and primary credited artist are verified before research",
+        "The entry distinguishes original release dates from later editions",
+        "The output is BBCode-only when the user asks for the wiki alone"
+      ]
+    },
+    {
+      "id": 7,
+      "prompt": "Find an artist image for this band, and give me the file to upload to Last.fm. The only candidate you find is a copyrighted press photo on a news site with no reuse permission.",
+      "expected_output": "The candidate image can be linked as a lead but must not be repackaged or declared upload-ready without verified permission.",
+      "assertions": [
+        "The photo is not described as user-authorized or freely reusable without evidence",
+        "The agent does not download or repackage an unauthorized photo as an upload-ready file",
+        "The response indicates permission not established and identifies source/rights questions",
+        "The agent does not upload to Last.fm"
+      ]
+    },
+    {
+      "id": 8,
+      "prompt": "I own this band photo and authorize its use on Last.fm. Check its file format and dimensions, then help me prepare it to upload manually. Don't edit Last.fm.",
+      "expected_output": "The supplied local image is checked for basic format and dimensions when available; rights are user-supplied, current Last.fm acceptance remains subject to site rules, and user manually uploads.",
+      "assertions": [
+        "Only actually accessible image files are reported as inspected",
+        "The image-checking script is used if appropriate tools and the file are available",
+        "Technical checks are not misrepresented as proof of image ownership or guaranteed acceptance",
+        "No upload, account interaction, or site modification occurs"
+      ]
+    },
+    {
+      "id": 9,
+      "prompt": "Rewrite the wiki at this Last.fm artist page. It describes two unrelated bands with the same name, but I'm only interested in the metal band.",
+      "expected_output": "Maintains the other same-name artist's existing information rather than deleting it. If the full wiki cannot be inspected, asks for the full text to preserve material or limits the result to a standalone draft for the desired act.",
+      "assertions": [
+        "Other artists' material is not silently discarded",
+        "Missing page access is acknowledged rather than presented as an empty biography",
+        "The metal band is correctly distinguished from the other act",
+        "No autonomous Last.fm edit is performed"
+      ]
+    },
+    {
+      "id": 10,
+      "prompt": "Use this Last.fm album URL to check and update the existing wiki. Also find the correct original album cover and show where it's from and whether I can upload it; I will publish everything myself.",
+      "expected_output": "A read-only page inspection, researched BBCode kept separate from a source-and-rights-qualified artwork report, with no Last.fm publishing.",
+      "assertions": [
+        "Album edition and credited artist are identified from the actual page",
+        "Existing content is preserved when accessible, not assumed empty if inaccessible",
+        "The BBCode section contains no artwork URLs, research URLs, Markdown or source lists",
+        "The artwork section documents candidate image identity and permission status",
+        "No edit, save, publish, or upload action occurs"
+      ]
+    }
+  ]
+}

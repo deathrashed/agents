@@ -1,0 +1,5 @@
+{
+ "base":{"variant":"outline","color":"f8211c","logoColor":"f8211c","labelTextColor":"ffffff","valueColor":"ffffff"},
+ "header":{"bg":"101010","accent":"f8211c","titleColor":"ffffff","subtitleColor":"f8211c"},
+ "chart":{"color":"f8211c","bg":"transparent","border":"false"}
+}

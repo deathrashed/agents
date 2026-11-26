@@ -1,0 +1,72 @@
+# source: https://shieldcn.dev/docs/studio (fetched 2026-10-15)
+shieldcn
+Docs
+Studio
+Showcase
+Builder
+Sponsorjal-co/shieldcn919
+Search docs⌘KSearch documentation
+Search all badge providers, guides, and reference docs.
+Getting Started
+IntroductionREADME StudioCLIAgent SkillNewSelf-HostingAPI ReferenceToken PoolSponsor
+Customization
+Badges
+Badge GroupStatic BadgeDynamic JSONHTTPS Endpoint
+Badge Providers
+Charts
+OverviewStar history
+Headers
+OverviewGenerator
+Sponsors
+OverviewGenerator
+Contributors
+OverviewGenerator
+Registry
+More
+shieldcnMember of the Vercel OSS Program
+Analytics provided by OpenPanel
+Monitored by Sentry
+Powered by Neon.
+Community
+GitHubjal-co/uiStatsllms.txtPrivacyContact
+Product
+DocumentationAPI ReferenceToken PoolGeneratorAgent Skill
+inspired by shields.io and badgen.net
+Made with  in  by Justin Levine
+README Studio
+A free visual GitHub README builder. Compose headers, badges, charts, tables, and Markdown with a live preview, then export clean Markdown.
+README Studio is a free, browser-based visual tool for building a GitHub README. It is a Figma-style editor: a document of reorderable blocks, a live preview, and a property inspector that maps to the real badge, header, and chart options. When you are done, it exports clean GitHub-flavored Markdown you can paste straight into README.md.
+No signup, no install, no build step. Everything runs in your browser and the output renders identically on GitHub.
+Open the builder at shieldcn.dev/studio and start from the example document, or reset to a blank canvas.
+Why use a visual README builder?
+Writing a README by hand means hand-crafting badge URLs, remembering <picture> markup for light/dark images, and eyeballing alignment. The Studio removes that friction:
+See it as you build it. The live preview renders Markdown (via GitHub-flavored Markdown) and your badges, headers, and charts exactly as GitHub will.
+Edit real props, not raw URLs. Pick a badge type, variant, theme, logo, and colors from an inspector. The Studio writes the URL for you.
+Export clean Markdown. Copy the whole README or download README.md in one click.
+Block types
+A README in the Studio is an ordered list of blocks. Add any of:
+Block | What it does |
+Text | Rich text with inline WYSIWYG editing — double-click on the canvas and a selection toolbar appears (bold, italic, code, H1/H2, highlight, link, lists). Edits round-trip to clean Markdown, so headings, lists, tables, code blocks, and task lists all export correctly. Per-block alignment too. |
+Header | A repository header banner: logo, title, tagline, a shadcn-styled or photo (Unsplash) background, served from a single image URL. |
+Badges | A row of badges with a searchable type picker, variants, themes, logos, split styling, per-row alignment, and links. |
+Group | A badge group — multiple badges fused into one joined image with shared rounded edges (shadcn ButtonGroup style). One variant, size, theme, and font apply to every segment. |
+Chart | An issues, commits, npm-downloads, or inline-JSON chart. |
+Table | A spreadsheet-style grid editor with per-column alignment, exported as a GitHub-flavored Markdown table. |
+Image | Any image by URL or repo-relative path, with alignment, width, and an optional link. |
+How it works
+Add blocks from the toolbar (Text, Header, Badges, Group, Chart, Table, Image).
+Select a block to edit its properties in the inspector. On the canvas you can drag the grip handle to reorder, double-click a text block to edit it in place, and drag the corner handle on an image to resize it. The Layers panel also reorders blocks.
+Toggle Adaptive to export every badge, header, and chart as a GitHub <picture> that follows the reader's light or dark theme. See Light & Dark Mode.
+Copy or Download the generated Markdown from the toolbar, or switch to the Markdown tab to edit the source directly — paste in existing GitHub-flavored Markdown and it parses back into typed blocks (badges, charts, tables, headers, images, and text). Pasted HTML is sanitized — scripts and event handlers are stripped.
+Your work is saved to your browser automatically, so a work-in-progress README survives a reload.
+Export
+The Studio produces standard GitHub-flavored Markdown:
+![npm version](https://shieldcn.dev/npm/react.svg)
+Badges, headers, and charts become image URLs; text blocks pass through as Markdown; tables become Markdown tables; and centered content is wrapped in the small HTML (<p align> / <div align>) that GitHub supports.
+Related
+Repository headers — the header banners you can drop into the Studio, including photo backgrounds.
+Badges — every badge provider the Studio can add.
+Charts — star history, issues, commits, and npm-download charts.
+Agent Skill — let AI coding agents add shieldcn badges and build READMEs for you.
+On This Page
+Why use a visual README builder?Block typesHow it worksExportRelated

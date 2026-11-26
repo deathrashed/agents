@@ -1,0 +1,49 @@
+KEYBOARD MAESTRO MACRO STRUCTURE REFERENCE
+======================================
+
+ROOT (always <array>):
+<plist version="1.0">
+<array>
+    <dict>           ← Macro Group
+        <key>Activate</key><string>Normal</string>
+        <key>Macros</key><array>
+            <dict>       ← Each Macro
+                <key>Actions</key><array>
+                    <dict>   ← Each Action
+                        <key>ActionUID</key><integer>1001</integer>
+                        <key>MacroActionType</key><string>ActionName</string>
+                        <!-- Remaining keys should match a real exported action block -->
+                    </dict>
+                </array>
+                <key>Name</key><string>Macro Name</string>
+                <key>Triggers</key><array>...</array>
+                <key>UID</key><string>UUID</string>
+            </dict>
+        </array>
+        <key>Name</key><string>Global Macro Group</string>
+        <key>UID</key><string>GROUP-UUID</string>
+    </dict>
+</array>
+</plist>
+
+VARIABLE SYNTAX:
+- %Clipboard%         → current clipboard
+- %Variable%Name%    → variable Name
+- %System%Date%       → system date
+
+COMMON ACTIONS:
+- ExecuteShellScript  → run bash/zsh
+- SetVariableToText   → set variable
+- SetClipboardToText → set clipboard
+- GetClipboard       → get clipboard
+- IfThenElse          → conditional
+- PromptForUserInput → prompt user
+
+SCHEMA RULE:
+- Template the wrapper
+- Clone schema-sensitive action blocks from real exports
+- `plutil -lint` proves plist syntax only, not KM import safety
+
+VALIDATION:
+plutil -lint macro.kmmacros
+plutil -convert xml1 macro.kmmacros -o - | less

@@ -1,0 +1,24 @@
+#!/usr/bin/env bash
+# One command that rebuilds every README media file for this repo. Copy to assets/build-media.sh, then fill in
+# the variables. Needs the readme-visual scripts (SK below), vhs, ffmpeg with libwebp, rsvg-convert, magick.
+set -euo pipefail
+cd "$(dirname "$0")/.."
+
+SK=${README_VISUAL:-$HOME/.agents/skills/rd-readme-visual}
+ACCENT='{{ACCENT}}'                 # from palette.py on the logo, or the owner's answer
+NAME='{{PROJECT}}'                  # folder shown in the prompt and window titles
+
+# 1. Banner: dark terminal window with the owner's wordmark (drop --wordmark for a text title)
+python3 "$SK/scripts/header.py" --wordmark assets/wordmark.webp --accent "$ACCENT" \
+  --subtitle '{{WORD1}}|{{WORD2}}|{{WORD3}}' --window-title "$NAME  -  zsh" \
+  --command '{{BANNER_COMMAND}}' --listing '{{BANNER_LISTING}}' --out assets/header.svg
+
+# 2. Real terminal recording of one real command, 2x, lossless animated WebP
+python3 "$SK/scripts/make-tape.py" --command '{{DEMO_COMMAND}}' --wait '{{DEMO_DONE_PATTERN}}' \
+  --name "$NAME" --out assets/demo.tape --output assets/.raw/demo.mp4
+bash "$SK/scripts/record.sh" assets/demo.tape assets/demo.webp
+
+# 3. Hub-and-spoke map from assets/flow.json (see references/flow-example.json), if the project has one
+[ -f assets/flow.json ] && python3 "$SK/scripts/flow.py" assets/flow.json
+
+ls -l assets

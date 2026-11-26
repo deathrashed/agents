@@ -1,0 +1,11 @@
+{
+  "out": "assets/flow.svg",
+  "window_title": "rd-agents  -  map",
+  "accent": "#ffda00",
+  "accent2": "#e6edf3",
+  "source": {"title": "rd-agents", "chips": ["AGENTS.md", "main.md", "rules/*.md", "manifest.toml"]},
+  "hub": {"label": "~/.agents", "sub": "hub"},
+  "targets": ["Gemini", "Cursor", "opencode", "Grok", "pi", "omp", "kilo", "agy", "grokbot", "Codex", "Claude"],
+  "lane2": {"title": "marketplace/", "chips": ["rd marketplace", "obsidian  37 skills"], "caption": "claude + codex", "to": ["Codex", "Claude"], "badge": "obsidian@rd"},
+  "legend": ["symlinks and pointers", "plugin marketplace"]
+}

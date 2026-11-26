@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+  <dict>
+    <key>Activate</key><string>Normal</string>
+    <key>Macros</key><array>
+      <dict>
+        <key>Actions</key><array>
+          <!-- Clone real exported action dictionaries here. Do not hand-author schema-sensitive action bodies. -->
+        </array>
+        <key>Name</key><string>MACRO NAME</string>
+        <key>Triggers</key><array>
+          <dict><key>MacroTriggerType</key><string>StatusMenu</string></dict>
+        </array>
+        <key>UID</key><string>GENERATE-A-REAL-UUID-FOR-MACRO</string>
+      </dict>
+    </array>
+    <key>Name</key><string>Global Macro Group</string>
+    <key>UID</key><string>GENERATE-A-REAL-UUID-FOR-GROUP</string>
+  </dict>
+</array>
+</plist>

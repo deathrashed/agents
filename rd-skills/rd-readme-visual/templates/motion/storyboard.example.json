@@ -1,0 +1,12 @@
+{
+  "purpose": "Explain an actual transformation, not decorate an empty hero",
+  "project_fact": "Source metadata travels through matching, normalization and export stages",
+  "subject": "A single yellow event traversing four labeled pipeline stages",
+  "format": "SVG + GIF fallback",
+  "canvas": "1100x360",
+  "composition": "Horizontal schematic, restrained 22px grid, high-contrast labels",
+  "palette": {"background":"#101115", "foreground":"#F5F5F5", "accent":"#FFDA00"},
+  "timeline": [{"time":"0-1s", "action":"Event departs source"},{"time":"1-2s", "action":"Event traverses intermediate stages"},{"time":"2-3s", "action":"Event reaches output; motion loops without hiding labels"}],
+  "static_keyframe": "Every stage and connection remains legible with animation disabled",
+  "verification": ["SVG parses", "reduced motion", "GIF last frame", "GitHub rendering", "mobile readability"]
+}

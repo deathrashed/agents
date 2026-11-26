@@ -1,0 +1,6 @@
+{
+  "base": {"variant":"outline", "color":"ffffff", "logoColor":"ffda00", "labelTextColor":"ffffff", "valueColor":"ffda00", "font":"inter"},
+  "header": {"bg":"101010", "titleColor":"ffffff", "subtitleColor":"ffda00", "accent":"ffda00", "logoColor":"ffda00", "border":"false"},
+  "chart": {"bg":"transparent", "color":"ffda00", "border":"false"},
+  "group": {"variant":"outline"}
+}

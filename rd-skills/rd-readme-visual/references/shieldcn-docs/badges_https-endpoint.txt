@@ -1,0 +1,97 @@
+# source: https://shieldcn.dev/docs/badges/https-endpoint (fetched 2026-10-15)
+shieldcn
+Docs
+Studio
+Showcase
+Builder
+Sponsorjal-co/shieldcn919
+Search docs⌘KSearch documentation
+Search all badge providers, guides, and reference docs.
+Getting Started
+IntroductionREADME StudioCLIAgent SkillNewSelf-HostingAPI ReferenceToken PoolSponsor
+Customization
+Badges
+Badge GroupStatic BadgeDynamic JSONHTTPS Endpoint
+Badge Providers
+Charts
+OverviewStar history
+Headers
+OverviewGenerator
+Sponsors
+OverviewGenerator
+Contributors
+OverviewGenerator
+Registry
+More
+shieldcnMember of the Vercel OSS Program
+Analytics provided by OpenPanel
+Monitored by Sentry
+Powered by Neon.
+Community
+GitHubjal-co/uiStatsllms.txtPrivacyContact
+Product
+DocumentationAPI ReferenceToken PoolGeneratorAgent Skill
+inspired by shields.io and badgen.net
+Made with  in  by Justin Levine
+HTTPS Endpoint
+Create a badge from any HTTPS endpoint that returns JSON.
+GET/https/:url.svg
+Path Parameters
+urlrequired
+Any HTTPS URL that returns JSON with label/value/color fields.
+format
+variant
+size
+theme
+mode
+logoAutoUpload SVG
+logoColor—
+label
+flagssplit
++Show color overrides
+URLMarkdownHTMLrStAsciiDoc
+<picture><source media="(prefers-color-scheme: dark)" srcset="https://shieldcn.dev/https/cal-badge-icd0onfvrxx6.runkit.sh.svg?mode=dark"><img alt="badge" src="https://shieldcn.dev/https/cal-badge-icd0onfvrxx6.runkit.sh.svg?mode=light"></picture>
+Execute
+How it works
+Create an HTTPS endpoint on any platform (RunKit, Vercel, Cloudflare Workers, etc.) that returns JSON:
+{
+"label": "hello",
+"value": "world",
+"color": "blue"
+}
+The badgen format is also supported:
+{
+"subject": "hello",
+"status": "world",
+"color": "blue"
+}
+Then use it as a badge:
+![badge](https://shieldcn.dev/https/your-endpoint.example.com/path/args)
+Path arguments
+Any path segments after the hostname are forwarded to the endpoint:
+Badge URL | Fetches |
+/https/example.com | https://example.com |
+/https/example.com/foo/bar | https://example.com/foo/bar |
+Response format
+The endpoint must return JSON with these fields (all optional except value/status):
+Endpoint response
+PropType
+label?string
+valuestring
+color?string
+Examples
+Default variant
+Secondary variant
+Outline variant
+Branded variant
+Copy-paste examples
+Default — pull badge data from any HTTPS endpoint
+<picture><source media="(prefers-color-scheme: dark)" srcset="https://shieldcn.dev/https/cal-badge-icd0onfvrxx6.runkit.sh.svg?mode=dark"><img alt="https endpoint" src="https://shieldcn.dev/https/cal-badge-icd0onfvrxx6.runkit.sh.svg?mode=light"></picture>
+Secondary — softer look for README rows
+<picture><source media="(prefers-color-scheme: dark)" srcset="https://shieldcn.dev/https/cal-badge-icd0onfvrxx6.runkit.sh.svg?variant=secondary&amp;mode=dark"><img alt="https endpoint" src="https://shieldcn.dev/https/cal-badge-icd0onfvrxx6.runkit.sh.svg?variant=secondary&amp;mode=light"></picture>
+Caching
+Endpoint responses are cached for 5 minutes.
+Credits
+This endpoint format is inspired by badgen.net's HTTPS endpoint feature.
+On This Page
+How it worksPath argumentsResponse formatExamplesCopy-paste examplesCachingCredits

@@ -1,0 +1,6 @@
+# Generated or synced junk; never part of a skill
+__pycache__/
+*.pyc
+*.zip
+.sync-conflict-*
+.DS_Store

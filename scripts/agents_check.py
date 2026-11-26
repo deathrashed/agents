@@ -443,6 +443,11 @@ def ver(s):
     m = re.search(r"\d+\.\d+\.\d+", s or "")
     return m.group(0) if m else None
 
+def skipped(entry):
+    """A manifest entry that records a tool deliberately not used on this machine."""
+    entry = entry or {}
+    return entry.get("owner") == "skip" or str(entry.get("status", "")).lower() in ("not installed", "removed")
+
 def check_manifest(r, cfg):
     mp = X(cfg["shared"]["agents_dir"]) + "/manifest.toml"
     try:
@@ -481,7 +486,8 @@ def check_manifest(r, cfg):
     probes = {
         "rtk": lambda: ver(run(["rtk", "--version"])),
         "context-mode": lambda: pkg("~/.local/share/cc-presets/runtime/node_modules/context-mode/package.json"),
-        "rea": codex_rea,
+        # Codex's plugin pin on m3; cachy has the npm CLI only.
+        "rea": lambda: codex_rea() or ver(run(["rea", "--version"], timeout=20)),
         # upstream 4.x (Claude plugin) when installed, else the old cc-presets CLI
         "caveman": lambda: claude_plugin("caveman@caveman") or pkg("~/.local/share/cc-presets/runtime/node_modules/@caveman-ai/cli/package.json"),
         "ponytail": lambda: claude_plugin("ponytail@ponytail"),
@@ -492,7 +498,9 @@ def check_manifest(r, cfg):
     for name, probe in probes.items():
         pin = ver(str(man.get(name, {}).get("version", "")))
         got = probe()
-        if pin is None:
+        if got is None and (name not in man or skipped(man[name])):
+            st, msg = "INFO", "not used on this machine (manifest says so, not installed)"
+        elif pin is None:
             st, msg = "WARN", f"no pin in manifest, installed {got}"
         elif got is None:
             st, msg = "WARN", f"pin {pin}, installed version not found"
@@ -573,8 +581,9 @@ def check_rd_skills(r, cfg):
             sts.append("WARN"); details.append(f"WARN {n}: old unprefixed copy still present: {short(old)}")
     links = 0
     for base, dirs, files in os.walk(X(cfg["shared"]["agents_dir"])):
-        dirs[:] = [x for x in dirs if x not in SKIP_DIRS and not os.path.islink(os.path.join(base, x))]
+        # Count links (to files and to dirs) before pruning, then don't descend into them.
         links += sum(1 for x in dirs + files if os.path.islink(os.path.join(base, x)))
+        dirs[:] = [x for x in dirs if x not in SKIP_DIRS and not os.path.islink(os.path.join(base, x))]
     details.append(f"INFO {links} links under ~/.agents: remove a link with `unlink`, never `trash` "
                    "(m3's trash resolves links and trashes the target)")
     ok = sts.count("OK")
@@ -620,6 +629,15 @@ def check_token_tools(r, cfg):
     """ponytail + headroom + reply-style rule. Read-only; prints names and switches, never values of secrets."""
     tt = cfg.get("token_tools", {})
     details, sts = [], []
+    # Each machine's manifest lists the token tools it uses. Wiring and install
+    # expectations apply only there; "never" rules apply everywhere.
+    try:
+        with open(X(cfg["shared"]["agents_dir"]) + "/manifest.toml", "rb") as f:
+            used = tomllib.load(f).get("tools", {})
+    except (OSError, ValueError):
+        used = None  # unreadable manifest: keep every expectation
+    def in_use(name):
+        return used is None or (name in used and not skipped(used[name]))
     # --- ponytail: where it is wired (native plugin per agent), and where it must not be
     pt = tt.get("ponytail", {})
     probes = {
@@ -640,7 +658,9 @@ def check_token_tools(r, cfg):
             return probes[a]()
         except (OSError, ValueError, KeyError, AttributeError):
             return None
-    for a in pt.get("agents", []):
+    if not in_use("ponytail"):
+        details.append("INFO ponytail: not used on this machine (not in its manifest)")
+    for a in (pt.get("agents", []) if in_use("ponytail") else []):
         got = probe(a)
         st = "OK" if got else "WARN"
         sts.append(st); details.append(f"{st:<4} ponytail on {a}: {'wired' if got else ('not wired' if got is False else 'config unreadable')}")
@@ -685,7 +705,9 @@ def check_token_tools(r, cfg):
     # --- headroom: installed, telemetry off, no permanent proxy routing
     hr = tt.get("headroom", {})
     hbin = next((X(b) for b in hr.get("bin", []) if os.path.isfile(X(b))), None)
-    if not hbin:
+    if not hbin and not in_use("headroom"):
+        details.append("INFO headroom: not used on this machine (not in its manifest)")
+    elif not hbin:
         sts.append("WARN"); details.append("WARN headroom: not installed (looked in " + ", ".join(hr.get("bin", [])) + ")")
     else:
         details.append(f"OK   headroom: {ver(run([hbin, '--version'], timeout=20)) or '?'} at {short(hbin)}")
